@@ -13,22 +13,151 @@
     content="해버싯은 공간에 머무는 사람을 생각하며 가구와 공간의 새로운 관계를 제안합니다."
   >
 
+  <meta name="theme-color" content="#f5f3ee">
+
   <title>have a seat</title>
 
+  <!-- 메인 이미지 우선 로딩 -->
   <link
     rel="preload"
     as="image"
-    href="./assets/images/30001500banner1.jpg"
+    href="./assets/images/products/30001500banner4.jpg"
   >
 
+  <!-- 공통 CSS -->
   <link
     rel="stylesheet"
     href="./assets/css/style.css"
   >
+
+  <!-- 헤더·푸터 최종 보정 -->
+  <style>
+    /* 헤더 기준 좌우 여백 40px로 통일 */
+    .hs-container,
+    .hs-container--wide {
+      width: calc(100% - 80px);
+      max-width: none;
+      margin-inline: auto;
+    }
+
+    .hs-container--reading {
+      width: min(calc(100% - 80px), 760px);
+      margin-inline: auto;
+    }
+
+    .hs-header__inner {
+      padding-inline: 40px;
+    }
+
+    /* 공식 로고 */
+    .hs-logo {
+      width: 168px;
+    }
+
+    .hs-logo svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    /* 헤더 폰트 약 2px 확대 */
+    .hs-nav__link {
+      font-size: 13px;
+    }
+
+    .hs-dropdown a {
+      font-size: 13px;
+    }
+
+    .hs-header__text-link {
+      font-size: 12px;
+    }
+
+    .hs-header__utilities {
+      gap: 20px;
+    }
+
+    /* 푸터를 헤더 좌우 기준에 정렬 */
+    .hs-footer {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    .hs-footer__inner {
+      width: 100%;
+      max-width: none;
+    }
+
+    /* 푸터 폰트 약 2px 확대 */
+    .hs-footer__title {
+      font-size: 12px;
+    }
+
+    .hs-footer__text,
+    .hs-footer__link {
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .hs-footer__bottom {
+      font-size: 12px;
+    }
+
+    @media (max-width: 1180px) {
+      .hs-container,
+      .hs-container--wide {
+        width: calc(100% - 48px);
+      }
+
+      .hs-container--reading {
+        width: min(calc(100% - 48px), 760px);
+      }
+
+      .hs-header__inner {
+        padding-inline: 24px;
+      }
+
+      .hs-footer {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .hs-container,
+      .hs-container--wide,
+      .hs-container--reading {
+        width: calc(100% - 32px);
+      }
+
+      .hs-header__inner {
+        padding-inline: 16px;
+      }
+
+      .hs-logo {
+        width: 145px;
+      }
+
+      .hs-footer {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .hs-footer__text,
+      .hs-footer__link {
+        font-size: 12px;
+      }
+
+      .hs-footer__bottom {
+        font-size: 11px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
+  <!-- 접근성 -->
   <a href="#main-content" class="hs-skip-link">
     본문 바로가기
   </a>
@@ -37,31 +166,34 @@
        HEADER
   ====================================================== -->
 
-  <header class="hs-header hs-header--overlay">
+  <header class="hs-header hs-header--solid">
     <div class="hs-header__inner">
 
-      <!-- LOGO -->
+      <!-- OFFICIAL LOGO -->
       <a
         href="./index.html"
         class="hs-logo"
         aria-label="have a seat 홈"
       >
         <svg
-          viewBox="0 0 148 24"
+          width="251"
+          height="30"
+          viewBox="0 0 251 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
           role="img"
           aria-label="have a seat"
         >
-          <text
-            x="0"
-            y="18"
-            fill="currentColor"
-            font-family="Pretendard, sans-serif"
-            font-size="18"
-            font-weight="500"
-            letter-spacing="-0.7"
-          >
-            have a seat
-          </text>
+          <path d="M26.1263 17.2789V28.8986H22.5985V17.382C22.5985 16.3946 21.9105 15.5895 21.0586 15.5895H3.52779V28.8986H0V0.190384H3.52779V12.2741L21.8466 12.2979C24.2104 12.2979 26.1303 14.5306 26.1303 17.2789H26.1263Z" fill="#4B3A32"/>
+          <path d="M53.9282 7.3448H57.928L68.0592 25.5834H68.0993L78.0786 7.3448H81.9264L69.8511 28.8988H66.0034L53.9282 7.3448Z" fill="#4B3A32"/>
+          <path d="M155.249 21.3835H158.401C158.401 23.521 159.413 25.7458 166.133 25.7458C172.852 25.7458 174.388 24.1318 174.388 22.1251C174.388 21.1217 174.088 20.3365 172.888 19.9439C171.688 19.5513 168.385 19.464 165.681 19.3768C161.701 19.2459 158.737 18.7224 157.273 17.85C155.885 17.0211 155.245 15.3634 155.245 13.6185C155.245 9.387 159.297 6.55147 166.129 6.55147C174.836 6.55147 176.636 10.3467 176.636 14.2728H173.484C173.448 11.6554 172.32 9.77961 166.205 9.77961C161.249 9.77961 158.549 10.9138 158.549 13.4876C158.549 14.4473 158.885 15.1453 160.013 15.5379C161.365 16.0178 164.141 16.0614 167.445 16.2359C171.16 16.4104 173.524 16.6285 175.176 17.4137C176.94 18.2862 177.692 20.1184 177.692 22.0378C177.692 25.2223 175.476 28.974 166.133 28.974C156.789 28.974 155.249 24.568 155.249 21.3835Z" fill="#4B3A32"/>
+          <path d="M203.403 18.8097H183.596C183.852 22.5177 185.916 25.7458 192.395 25.7458C197.919 25.7458 199.943 23.6519 200.311 21.558H203.403C203.107 25.0479 199.943 28.974 192.395 28.974C183.008 28.974 180.32 23.172 180.32 17.9372C180.32 11.0883 184.776 6.55147 192.211 6.55147C199.647 6.55147 203.403 10.6957 203.403 17.152V18.8097ZM200.311 15.8869C200.311 12.2662 197.807 9.77961 192.247 9.77961C187.092 9.77961 184.332 12.0044 183.708 16.0178H200.311V15.8869Z" fill="#4B3A32"/>
+          <path d="M105.001 18.8097H85.1942C85.4502 22.5177 87.5141 25.7458 93.9936 25.7458C99.5173 25.7458 101.541 23.6519 101.909 21.558H105.001C104.705 25.0479 101.541 28.974 93.9936 28.974C84.6063 28.974 81.9185 23.172 81.9185 17.9372C81.9185 11.0883 86.3742 6.55147 93.8097 6.55147C101.245 6.55147 105.001 10.6957 105.001 17.152V18.8097ZM101.905 15.8869C101.905 12.2662 99.4013 9.77961 93.8417 9.77961C88.686 9.77961 85.9262 12.0044 85.3022 16.0178H101.905V15.8869Z" fill="#4B3A32"/>
+          <path d="M235.76 20.523V10.7513H231.82V7.34865H234.936C235.612 7.34865 235.836 6.95604 235.912 5.90907L236.136 2.46281H239.064V7.34865H250.475V10.7513H239.064V20.2176C239.064 23.7075 240.492 25.6705 245.855 25.6705C247.431 25.6705 249.459 25.3652 250.395 25.1034V28.4188C249.683 28.6806 247.767 29.0732 245.739 29.0732C238.384 29.0732 235.756 25.4088 235.756 20.523H235.76Z" fill="#4B3A32"/>
+          <path d="M23.9302 4.36246C25.1453 4.36246 26.1304 3.38592 26.1304 2.18128C26.1304 0.976653 25.1453 0.000106812 23.9302 0.000106812C22.7151 0.000106812 21.73 0.976653 21.73 2.18128C21.73 3.38592 22.7151 4.36246 23.9302 4.36246Z" fill="#4B3A32"/>
+          <path d="M206.039 22.1807C206.039 17.4257 209.866 15.994 214.034 15.994H225.817V15.9425C225.817 11.9291 223.301 9.74795 217.486 9.74795C211.67 9.74795 209.83 11.5365 209.83 13.8922C209.83 14.0231 209.83 14.1539 209.866 14.4593H206.715C206.679 14.0667 206.679 13.8049 206.679 13.7177C206.679 9.44258 210.206 6.51981 217.486 6.51981C225.253 6.51981 229.121 10.4895 229.121 16.3351V29.0137H225.817C225.929 27.5305 226.005 24.6236 226.041 22.9659H226.005C225.141 26.7175 222.142 28.8987 215.57 28.8987C208.998 28.8987 206.039 25.8014 206.039 22.1807ZM225.817 19.3888V18.786H214.446C211.182 18.786 209.19 19.5632 209.19 22.0934C209.19 23.6202 210.054 25.6705 215.758 25.6705C222.813 25.6705 225.817 22.5296 225.817 19.3888Z" fill="#4B3A32"/>
+          <path d="M118.428 22.1768C118.428 17.4219 122.256 15.9902 126.423 15.9902H138.207V15.9387C138.207 11.9253 135.691 9.74412 129.875 9.74412C124.06 9.74412 122.22 11.5327 122.22 13.8884C122.22 14.0192 122.22 14.1501 122.256 14.4555H119.104C119.068 14.0628 119.068 13.8011 119.068 13.7139C119.068 9.43875 122.596 6.51598 129.875 6.51598C137.643 6.51598 141.51 10.4857 141.51 16.3313V29.0099H138.207C138.319 27.5267 138.395 24.6197 138.431 22.9621H138.395C137.531 26.7137 134.531 28.8949 127.959 28.8949C121.388 28.8949 118.428 25.7976 118.428 22.1768ZM138.207 19.3849V18.7821H126.835C123.572 18.7821 121.58 19.5594 121.58 22.0896C121.58 23.6164 122.444 25.6667 128.147 25.6667C135.203 25.6667 138.207 22.5258 138.207 19.3849Z" fill="#4B3A32"/>
+          <path d="M30.5659 22.1768C30.5659 17.4219 34.3937 15.9902 38.5614 15.9902H50.3447V15.9387C50.3447 11.9253 47.8288 9.74412 42.0132 9.74412C36.1976 9.74412 34.3577 11.5327 34.3577 13.8884C34.3577 14.0192 34.3577 14.1501 34.3937 14.4555H31.2419C31.2059 14.0628 31.2059 13.8011 31.2059 13.7139C31.2059 9.43875 34.7337 6.51598 42.0132 6.51598C49.7807 6.51598 53.6484 10.4857 53.6484 16.3313V29.0099H50.3447C50.4567 27.5267 50.5326 24.6197 50.5686 22.9621H50.5327C49.6687 26.7137 46.6689 28.8949 40.0973 28.8949C33.5258 28.8949 30.5659 25.7976 30.5659 22.1768ZM50.3447 19.3849V18.7821H38.9734C35.7096 18.7821 33.7178 19.5594 33.7178 22.0896C33.7178 23.6164 34.5817 25.6667 40.2853 25.6667C47.3408 25.6667 50.3447 22.5258 50.3447 19.3849Z" fill="#4B3A32"/>
         </svg>
       </a>
 
@@ -152,7 +284,6 @@
           FAQ
         </a>
 
-        <!-- ACCOUNT -->
         <a
           href="./login.html"
           class="hs-icon-button hs-account-button"
@@ -164,7 +295,6 @@
           </svg>
         </a>
 
-        <!-- SEARCH -->
         <button
           type="button"
           class="hs-icon-button"
@@ -178,7 +308,6 @@
           </svg>
         </button>
 
-        <!-- CART -->
         <a
           href="./cart.html"
           class="hs-icon-button"
@@ -194,7 +323,6 @@
           </span>
         </a>
 
-        <!-- MOBILE MENU -->
         <button
           type="button"
           class="hs-icon-button hs-menu-button"
@@ -328,7 +456,7 @@
 
   <main
     id="main-content"
-    class="hs-main hs-main--overlay"
+    class="hs-main"
   >
 
     <!-- HERO -->
@@ -336,8 +464,8 @@
 
       <div class="hs-hero__media">
         <img
-          src="./assets/images/30001500banner1.jpg"
-          alt="해버싯 가구가 배치된 공간"
+          src="./assets/images/products/30001500banner4.jpg"
+          alt="브라운 라운지 체어가 배치된 해버싯 공간"
           fetchpriority="high"
         >
       </div>
@@ -410,95 +538,115 @@
 
         <div class="hs-category-grid">
 
+          <!-- CHAIR -->
           <a
             href="./shop.html?category=chair"
             class="hs-category-card"
             data-reveal
           >
             <img
-              src="./assets/images/30001500banner2.jpg"
-              alt="체어 컬렉션"
+              src="./assets/images/products/product%20cut14.png"
+              alt="우드 체어가 배치된 밝은 공간"
               loading="lazy"
             >
 
             <div class="hs-category-card__content">
-              <p class="hs-category-card__title">Chair</p>
+              <p class="hs-category-card__title">
+                Chair
+              </p>
+
               <p class="hs-category-card__meta">
                 View collection
               </p>
             </div>
           </a>
 
+          <!-- TABLE -->
           <a
             href="./shop.html?category=table"
             class="hs-category-card"
             data-reveal
           >
             <img
-              src="./assets/images/30001500banner8.jpg"
-              alt="테이블 컬렉션"
+              src="./assets/images/products/product%20cut15.png"
+              alt="테이블과 체어가 배치된 공간"
               loading="lazy"
             >
 
             <div class="hs-category-card__content">
-              <p class="hs-category-card__title">Table</p>
+              <p class="hs-category-card__title">
+                Table
+              </p>
+
               <p class="hs-category-card__meta">
                 View collection
               </p>
             </div>
           </a>
 
+          <!-- STOOL -->
           <a
             href="./shop.html?category=stool"
             class="hs-category-card"
             data-reveal
           >
             <img
-              src="./assets/images/30001500banner5.jpg"
-              alt="스툴 컬렉션"
+              src="./assets/images/products/product%20cut11.png"
+              alt="블랙 하이 스툴이 배치된 바 공간"
               loading="lazy"
             >
 
             <div class="hs-category-card__content">
-              <p class="hs-category-card__title">Stool</p>
+              <p class="hs-category-card__title">
+                Stool
+              </p>
+
               <p class="hs-category-card__meta">
                 View collection
               </p>
             </div>
           </a>
 
+          <!-- LOUNGE -->
           <a
             href="./shop.html?category=lounge"
             class="hs-category-card"
             data-reveal
           >
             <img
-              src="./assets/images/30001500banner4.jpg"
-              alt="라운지 컬렉션"
+              src="./assets/images/products/product%20cut16.png"
+              alt="브라운 라운지 체어가 배치된 공간"
               loading="lazy"
             >
 
             <div class="hs-category-card__content">
-              <p class="hs-category-card__title">Lounge</p>
+              <p class="hs-category-card__title">
+                Lounge
+              </p>
+
               <p class="hs-category-card__meta">
                 View collection
               </p>
             </div>
           </a>
 
+          <!-- SIDE TABLE -->
           <a
-            href="./shop.html?category=outdoor"
+            href="./shop.html?category=side-table"
             class="hs-category-card"
             data-reveal
           >
             <img
-              src="./assets/images/30001500banner7.jpg"
-              alt="아웃도어 컬렉션"
+              src="./assets/images/products/product%20cut1.png"
+              alt="블루와 오렌지 컬러의 사이드 테이블"
               loading="lazy"
             >
 
             <div class="hs-category-card__content">
-              <p class="hs-category-card__title">Outdoor</p>
+              <p class="hs-category-card__title">
+                Side Table
+              </p>
+
               <p class="hs-category-card__meta">
                 View collection
               </p>
@@ -518,7 +666,9 @@
           data-reveal
         >
           <div class="hs-section-head__label">
-            <p class="hs-eyebrow">Featured products</p>
+            <p class="hs-eyebrow">
+              Featured products
+            </p>
           </div>
 
           <div class="hs-section-head__content">
@@ -543,17 +693,21 @@
 
         <div class="hs-product-grid">
 
+          <!-- PRODUCT 01 -->
           <article
             class="hs-product-card"
             data-reveal
           >
-            <span class="hs-product-card__badge">New</span>
+            <span class="hs-product-card__badge">
+              New
+            </span>
 
             <a href="./product-01.html">
+
               <div class="hs-product-card__image">
                 <img
-                  src="./assets/images/product11.png"
-                  alt="블루 오렌지 사이드 테이블"
+                  src="./assets/images/products/product11.png"
+                  alt="블루 오렌지 컬러 사이드 테이블"
                   loading="lazy"
                 >
               </div>
@@ -567,20 +721,25 @@
                   198,000원
                 </p>
               </div>
+
             </a>
           </article>
 
+          <!-- PRODUCT 02 -->
           <article
             class="hs-product-card"
             data-reveal
           >
-            <span class="hs-product-card__badge">Best</span>
+            <span class="hs-product-card__badge">
+              Best
+            </span>
 
             <a href="./product-02.html">
+
               <div class="hs-product-card__image">
                 <img
-                  src="./assets/images/product7.png"
-                  alt="라운드 페데스탈 테이블"
+                  src="./assets/images/products/product10.png"
+                  alt="화이트 페데스탈 테이블"
                   loading="lazy"
                 >
               </div>
@@ -594,19 +753,24 @@
                   220,000원
                 </p>
               </div>
+
             </a>
           </article>
 
+          <!-- PRODUCT 03 -->
           <article
             class="hs-product-card"
             data-reveal
           >
-            <span class="hs-product-card__badge">New</span>
+            <span class="hs-product-card__badge">
+              New
+            </span>
 
             <a href="./product-03.html">
+
               <div class="hs-product-card__image">
                 <img
-                  src="./assets/images/product9.png"
+                  src="./assets/images/products/product9.png"
                   alt="블랙 하이 체어"
                   loading="lazy"
                 >
@@ -621,6 +785,7 @@
                   185,000원
                 </p>
               </div>
+
             </a>
           </article>
 
@@ -628,7 +793,7 @@
       </div>
     </section>
 
-    <!-- COLLECTION STORY -->
+    <!-- COLLECTION -->
     <section class="hs-split">
 
       <div
@@ -667,8 +832,8 @@
 
       <div class="hs-split__media">
         <img
-          src="./assets/images/30001500banner3.jpg"
-          alt="옐로 체어 컬렉션"
+          src="./assets/images/products/product%20cut12.png"
+          alt="컬러 사이드 테이블이 배치된 밝은 공간"
           loading="lazy"
         >
       </div>
@@ -709,6 +874,7 @@
 
         <div class="hs-project-grid">
 
+          <!-- PROJECT 01 -->
           <article
             class="hs-project-card"
             data-reveal
@@ -717,8 +883,8 @@
 
               <div class="hs-project-card__image">
                 <img
-                  src="./assets/images/product%20cut10.png"
-                  alt="카페 공간 프로젝트"
+                  src="./assets/images/products/product%20cut10.png"
+                  alt="밝은 카페와 레스토랑 가구 프로젝트"
                   loading="lazy"
                 >
               </div>
@@ -734,12 +900,15 @@
                   </p>
                 </div>
 
-                <span class="hs-caption">01</span>
+                <span class="hs-caption">
+                  01
+                </span>
               </div>
 
             </a>
           </article>
 
+          <!-- PROJECT 02 -->
           <article
             class="hs-project-card"
             data-reveal
@@ -748,8 +917,8 @@
 
               <div class="hs-project-card__image">
                 <img
-                  src="./assets/images/product%20cut13.png"
-                  alt="라운지 공간 프로젝트"
+                  src="./assets/images/products/product%20cut11.png"
+                  alt="바 테이블과 하이 체어 프로젝트"
                   loading="lazy"
                 >
               </div>
@@ -757,20 +926,23 @@
               <div class="hs-project-card__info">
                 <div>
                   <h3 class="hs-project-card__title">
-                    Lounge Project
+                    Office &amp; Lounge
                   </h3>
 
                   <p class="hs-project-card__category">
-                    Hospitality
+                    Work Space
                   </p>
                 </div>
 
-                <span class="hs-caption">02</span>
+                <span class="hs-caption">
+                  02
+                </span>
               </div>
 
             </a>
           </article>
 
+          <!-- PROJECT 03 -->
           <article
             class="hs-project-card"
             data-reveal
@@ -779,8 +951,8 @@
 
               <div class="hs-project-card__image">
                 <img
-                  src="./assets/images/product%20cut16.png"
-                  alt="주거 공간 프로젝트"
+                  src="./assets/images/products/product%20cut16.png"
+                  alt="브라운 라운지 체어 공간 프로젝트"
                   loading="lazy"
                 >
               </div>
@@ -788,15 +960,17 @@
               <div class="hs-project-card__info">
                 <div>
                   <h3 class="hs-project-card__title">
-                    Residential Project
+                    Hospitality Project
                   </h3>
 
                   <p class="hs-project-card__category">
-                    Living Space
+                    Public &amp; Hotel
                   </p>
                 </div>
 
-                <span class="hs-caption">03</span>
+                <span class="hs-caption">
+                  03
+                </span>
               </div>
 
             </a>
@@ -845,8 +1019,8 @@
 
       <div class="hs-split__media">
         <img
-          src="./assets/images/product%20cut12.png"
-          alt="해버싯 오더메이드 공간"
+          src="./assets/images/products/product%20cut15.png"
+          alt="테이블과 체어를 활용한 오더메이드 공간"
           loading="lazy"
         >
       </div>
@@ -881,7 +1055,10 @@
           </div>
 
           <div class="hs-section-head__action">
-            <a href="./brand.html" class="hs-line-link">
+            <a
+              href="./brand.html"
+              class="hs-line-link"
+            >
               View our story
             </a>
           </div>
@@ -889,8 +1066,13 @@
 
         <div class="hs-info-grid">
 
-          <article class="hs-info-card" data-reveal>
-            <span class="hs-info-card__number">01</span>
+          <article
+            class="hs-info-card"
+            data-reveal
+          >
+            <span class="hs-info-card__number">
+              01
+            </span>
 
             <h3 class="hs-info-card__title">
               Spatial Balance
@@ -902,8 +1084,13 @@
             </p>
           </article>
 
-          <article class="hs-info-card" data-reveal>
-            <span class="hs-info-card__number">02</span>
+          <article
+            class="hs-info-card"
+            data-reveal
+          >
+            <span class="hs-info-card__number">
+              02
+            </span>
 
             <h3 class="hs-info-card__title">
               Quality Material
@@ -915,8 +1102,13 @@
             </p>
           </article>
 
-          <article class="hs-info-card" data-reveal>
-            <span class="hs-info-card__number">03</span>
+          <article
+            class="hs-info-card"
+            data-reveal
+          >
+            <span class="hs-info-card__number">
+              03
+            </span>
 
             <h3 class="hs-info-card__title">
               Made to Order
@@ -928,8 +1120,13 @@
             </p>
           </article>
 
-          <article class="hs-info-card" data-reveal>
-            <span class="hs-info-card__number">04</span>
+          <article
+            class="hs-info-card"
+            data-reveal
+          >
+            <span class="hs-info-card__number">
+              04
+            </span>
 
             <h3 class="hs-info-card__title">
               Long-lasting Use
@@ -950,8 +1147,8 @@
 
       <div class="hs-showroom-cta__media">
         <img
-          src="./assets/images/product%20cut6.png"
-          alt="해버싯 쇼룸 공간"
+          src="./assets/images/products/product%20cut2.png"
+          alt="어두운 무드의 해버싯 가구 전시 공간"
           loading="lazy"
         >
       </div>
@@ -1001,6 +1198,7 @@
         data-reveal
       >
 
+        <!-- COMPANY -->
         <div>
           <h2 class="hs-footer__title">
             Company
@@ -1023,10 +1221,18 @@
           </p>
 
           <p class="hs-footer__text">
-            haveaseat@naver.com
+            개인정보 보호 책임자 Lee Kyoung Ha
           </p>
+
+          <a
+            href="mailto:haveaseat@naver.com"
+            class="hs-footer__link"
+          >
+            haveaseat@naver.com
+          </a>
         </div>
 
+        <!-- CUSTOMER CENTER -->
         <div>
           <h2 class="hs-footer__title">
             Customer Center
@@ -1073,6 +1279,7 @@
           </div>
         </div>
 
+        <!-- SHOWROOM -->
         <div>
           <h2 class="hs-footer__title">
             Showroom
@@ -1091,6 +1298,7 @@
           </p>
 
           <div class="hs-footer__links">
+
             <a
               href="./showroom.html"
               class="hs-footer__link"
@@ -1104,9 +1312,11 @@
             >
               View map
             </a>
+
           </div>
         </div>
 
+        <!-- SERVICE -->
         <div>
           <h2 class="hs-footer__title">
             Service
@@ -1156,11 +1366,19 @@
               Instagram
             </a>
 
+            <a
+              href="#"
+              class="hs-footer__link"
+            >
+              Kakao
+            </a>
+
           </div>
         </div>
 
       </div>
 
+      <!-- FOOTER BOTTOM -->
       <div class="hs-footer__bottom">
 
         <p>
@@ -1168,6 +1386,7 @@
         </p>
 
         <div class="hs-footer__policy">
+
           <a href="./terms.html">
             Terms and Conditions
           </a>
@@ -1179,6 +1398,7 @@
           <a href="./guide.html">
             Shopping Guide
           </a>
+
         </div>
 
       </div>
@@ -1186,6 +1406,7 @@
     </div>
   </footer>
 
+  <!-- 공통 JS -->
   <script src="./assets/js/main.js"></script>
 
 </body>
