@@ -1641,3 +1641,137 @@ body.is-search-open .hs-search {
     transform: none;
   }
 }
+
+/* =========================================================
+   HAVE A SEAT
+   Header / Footer refinement
+========================================================= */
+
+/* 전체 콘텐츠 좌우를 헤더 기준 40px에 맞춤 */
+.hs-container,
+.hs-container--wide,
+.hs-container--reading {
+  width: calc(100% - 80px);
+  max-width: none;
+  margin-inline: auto;
+}
+
+.hs-header__inner {
+  padding-inline: 40px;
+}
+
+.hs-footer {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.hs-footer__inner {
+  width: 100%;
+  max-width: none;
+  margin-inline: auto;
+}
+
+/* 공식 로고 */
+.hs-logo {
+  width: 168px;
+}
+
+.hs-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 헤더 글씨 기존보다 약 2px 확대 */
+.hs-nav__link {
+  font-size: 13px;
+}
+
+.hs-dropdown a {
+  font-size: 13px;
+}
+
+.hs-header__text-link {
+  font-size: 12px;
+}
+
+.hs-header__utilities {
+  gap: 20px;
+}
+
+/* 푸터 글씨 기존보다 약 2px 확대 */
+.hs-footer__title {
+  font-size: 12px;
+}
+
+.hs-footer__text,
+.hs-footer__link {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.hs-footer__bottom {
+  font-size: 12px;
+}
+
+/* 카드 이미지 로딩 실패 시 대체 배경 */
+.hs-category-card,
+.hs-product-card__image,
+.hs-project-card__image,
+.hs-split__media,
+.hs-showroom-cta__media {
+  background: #ebe9e3;
+}
+
+/* 태블릿 */
+@media (max-width: 1180px) {
+  .hs-container,
+  .hs-container--wide,
+  .hs-container--reading {
+    width: calc(100% - 48px);
+  }
+
+  .hs-header__inner {
+    padding-inline: 24px;
+  }
+
+  .hs-footer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* 모바일 */
+@media (max-width: 760px) {
+  .hs-container,
+  .hs-container--wide,
+  .hs-container--reading {
+    width: calc(100% - 32px);
+  }
+
+  .hs-header__inner {
+    padding-inline: 16px;
+  }
+
+  .hs-footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hs-logo {
+    width: 145px;
+  }
+
+  .hs-footer__title {
+    font-size: 12px;
+  }
+
+  .hs-footer__text,
+  .hs-footer__link {
+    font-size: 12px;
+  }
+
+  .hs-footer__bottom {
+    font-size: 11px;
+  }
+}
