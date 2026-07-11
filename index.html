@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+
+  <meta
+    name="description"
+    content="해버싯은 공간에 머무는 사람을 생각하며 가구와 공간의 새로운 관계를 제안합니다."
+  >
+
+  <title>have a seat</title>
+
+  <link
+    rel="preload"
+    as="image"
+    href="./assets/images/30001500banner1.jpg"
+  >
+
+  <link
+    rel="stylesheet"
+    href="./assets/css/style.css"
+  >
+</head>
+
+<body>
+
+  <a href="#main-content" class="hs-skip-link">
+    본문 바로가기
+  </a>
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <header class="hs-header hs-header--overlay">
+    <div class="hs-header__inner">
+
+      <!-- LOGO -->
+      <a
+        href="./index.html"
+        class="hs-logo"
+        aria-label="have a seat 홈"
+      >
+        <svg
+          viewBox="0 0 148 24"
+          role="img"
+          aria-label="have a seat"
+        >
+          <text
+            x="0"
+            y="18"
+            fill="currentColor"
+            font-family="Pretendard, sans-serif"
+            font-size="18"
+            font-weight="500"
+            letter-spacing="-0.7"
+          >
+            have a seat
+          </text>
+        </svg>
+      </a>
+
+      <!-- PC NAVIGATION -->
+      <nav class="hs-nav" aria-label="주요 메뉴">
+
+        <div class="hs-nav__item">
+          <a href="./brand.html" class="hs-nav__link">
+            Brand
+          </a>
+        </div>
+
+        <div class="hs-nav__item">
+          <a href="./shop.html" class="hs-nav__link">
+            Shop
+          </a>
+
+          <div class="hs-dropdown">
+            <a href="./shop.html">All Products</a>
+            <a href="./shop.html?category=chair">Chair</a>
+            <a href="./shop.html?category=table">Table</a>
+            <a href="./shop.html?category=stool">Stool</a>
+            <a href="./shop.html?category=lounge">Lounge</a>
+            <a href="./shop.html?category=outdoor">Outdoor</a>
+          </div>
+        </div>
+
+        <div class="hs-nav__item">
+          <a href="./ordermade.html" class="hs-nav__link">
+            Ordermade
+          </a>
+
+          <div class="hs-dropdown">
+            <a href="./ordermade.html">Ordermade Service</a>
+            <a href="./ordermade.html#process">Process</a>
+            <a href="./ordermade.html#b2b">B2B Membership</a>
+            <a href="./ordermade.html#contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="hs-nav__item">
+          <a href="./portfolio.html" class="hs-nav__link">
+            Portfolio
+          </a>
+
+          <div class="hs-dropdown">
+            <a href="./portfolio.html">All Projects</a>
+            <a href="./portfolio.html?category=cafe">
+              Cafe &amp; Restaurant
+            </a>
+            <a href="./portfolio.html?category=office">
+              Office
+            </a>
+            <a href="./portfolio.html?category=hospitality">
+              Hospitality
+            </a>
+          </div>
+        </div>
+
+        <div class="hs-nav__item">
+          <a href="./community.html" class="hs-nav__link">
+            Community
+          </a>
+
+          <div class="hs-dropdown">
+            <a href="./notice.html">Notice</a>
+            <a href="./faq.html">FAQ</a>
+            <a href="./qna.html">Q&amp;A</a>
+          </div>
+        </div>
+
+      </nav>
+
+      <!-- UTILITIES -->
+      <div class="hs-header__utilities">
+
+        <a
+          href="./showroom.html"
+          class="hs-header__text-link"
+        >
+          Showroom
+        </a>
+
+        <a
+          href="./faq.html"
+          class="hs-header__text-link"
+        >
+          FAQ
+        </a>
+
+        <!-- ACCOUNT -->
+        <a
+          href="./login.html"
+          class="hs-icon-button hs-account-button"
+          aria-label="회원 메뉴"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="8" r="3.4"></circle>
+            <path d="M5.5 19c.8-4 3-6 6.5-6s5.7 2 6.5 6"></path>
+          </svg>
+        </a>
+
+        <!-- SEARCH -->
+        <button
+          type="button"
+          class="hs-icon-button"
+          aria-label="검색 열기"
+          aria-expanded="false"
+          data-search-open
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.5" cy="10.5" r="6"></circle>
+            <path d="M15 15l4.5 4.5"></path>
+          </svg>
+        </button>
+
+        <!-- CART -->
+        <a
+          href="./cart.html"
+          class="hs-icon-button"
+          aria-label="장바구니"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.5 8.5h11l-1 10h-9z"></path>
+            <path d="M9 9V7a3 3 0 016 0v2"></path>
+          </svg>
+
+          <span class="hs-cart-count">
+            <span>0</span>
+          </span>
+        </a>
+
+        <!-- MOBILE MENU -->
+        <button
+          type="button"
+          class="hs-icon-button hs-menu-button"
+          aria-label="메뉴 열기"
+          aria-expanded="false"
+          data-menu-toggle
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 8h16"></path>
+            <path d="M4 16h16"></path>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- =====================================================
+       MOBILE MENU
+  ====================================================== -->
+
+  <aside
+    class="hs-mobile-menu"
+    aria-hidden="true"
+  >
+    <div class="hs-mobile-menu__inner">
+
+      <div>
+        <nav
+          class="hs-mobile-menu__nav"
+          aria-label="모바일 메뉴"
+        >
+          <a href="./brand.html">
+            <span>Brand</span>
+            <span>01</span>
+          </a>
+
+          <a href="./shop.html">
+            <span>Shop</span>
+            <span>02</span>
+          </a>
+
+          <a href="./ordermade.html">
+            <span>Ordermade</span>
+            <span>03</span>
+          </a>
+
+          <a href="./portfolio.html">
+            <span>Portfolio</span>
+            <span>04</span>
+          </a>
+
+          <a href="./community.html">
+            <span>Community</span>
+            <span>05</span>
+          </a>
+        </nav>
+
+        <div class="hs-mobile-menu__sub">
+          <a href="./showroom.html">Showroom</a>
+          <a href="./faq.html">FAQ</a>
+          <a href="./login.html">Login</a>
+          <a href="./mypage.html">My Page</a>
+          <a href="./orders.html">Order List</a>
+          <a href="./qna.html">Q&amp;A</a>
+        </div>
+      </div>
+
+      <div class="hs-mobile-menu__footer">
+        <p>Furniture for spaces to stay.</p>
+        <p>© have a seat</p>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- =====================================================
+       SEARCH
+  ====================================================== -->
+
+  <div
+    class="hs-search"
+    aria-hidden="true"
+  >
+    <div class="hs-search__inner">
+
+      <div class="hs-search__head">
+        <p class="hs-search__title">SEARCH</p>
+
+        <button
+          type="button"
+          class="hs-search__close"
+          data-search-close
+        >
+          Close
+        </button>
+      </div>
+
+      <form
+        class="hs-search__form"
+        action="./shop.html"
+        method="get"
+      >
+        <label for="site-search" class="hs-sr-only">
+          검색어
+        </label>
+
+        <input
+          id="site-search"
+          class="hs-search__input"
+          type="search"
+          name="keyword"
+          placeholder="Search products"
+          autocomplete="off"
+        >
+
+        <button
+          type="submit"
+          class="hs-search__submit"
+        >
+          Search
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- =====================================================
+       MAIN
+  ====================================================== -->
+
+  <main
+    id="main-content"
+    class="hs-main hs-main--overlay"
+  >
+
+    <!-- HERO -->
+    <section class="hs-hero">
+
+      <div class="hs-hero__media">
+        <img
+          src="./assets/images/30001500banner1.jpg"
+          alt="해버싯 가구가 배치된 공간"
+          fetchpriority="high"
+        >
+      </div>
+
+      <div class="hs-hero__content">
+
+        <div
+          class="hs-hero__copy"
+          data-reveal
+        >
+          <p class="hs-eyebrow">
+            Furniture for spaces to stay
+          </p>
+
+          <h1 class="hs-title">
+            A Seat for
+            <span class="pc-br"></span>
+            Every Space
+          </h1>
+
+          <p class="hs-hero__description">
+            해버싯은 공간에 머무는 사람을 생각하며
+            <span class="pc-br"></span>
+            더 편안하게 연결되는 가구와 구성을 제안합니다.
+          </p>
+
+          <div class="hs-hero__action">
+            <a
+              href="./shop.html"
+              class="hs-button hs-button--light"
+            >
+              View Collection
+            </a>
+          </div>
+        </div>
+
+        <span class="hs-hero__scroll">
+          Scroll
+        </span>
+
+      </div>
+    </section>
+
+    <!-- CATEGORY -->
+    <section class="hs-section hs-section--no-line">
+      <div class="hs-container--wide">
+
+        <div
+          class="hs-section-head"
+          data-reveal
+        >
+          <div class="hs-section-head__label">
+            <p class="hs-eyebrow">Shop by category</p>
+          </div>
+
+          <div class="hs-section-head__content">
+            <h2 class="hs-section-title">
+              공간에 필요한 가구를
+              <span class="pc-br"></span>
+              카테고리별로 살펴보세요.
+            </h2>
+          </div>
+
+          <div class="hs-section-head__action">
+            <a href="./shop.html" class="hs-line-link">
+              View all
+            </a>
+          </div>
+        </div>
+
+        <div class="hs-category-grid">
+
+          <a
+            href="./shop.html?category=chair"
+            class="hs-category-card"
+            data-reveal
+          >
+            <img
+              src="./assets/images/30001500banner2.jpg"
+              alt="체어 컬렉션"
+              loading="lazy"
+            >
+
+            <div class="hs-category-card__content">
+              <p class="hs-category-card__title">Chair</p>
+              <p class="hs-category-card__meta">
+                View collection
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="./shop.html?category=table"
+            class="hs-category-card"
+            data-reveal
+          >
+            <img
+              src="./assets/images/30001500banner8.jpg"
+              alt="테이블 컬렉션"
+              loading="lazy"
+            >
+
+            <div class="hs-category-card__content">
+              <p class="hs-category-card__title">Table</p>
+              <p class="hs-category-card__meta">
+                View collection
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="./shop.html?category=stool"
+            class="hs-category-card"
+            data-reveal
+          >
+            <img
+              src="./assets/images/30001500banner5.jpg"
+              alt="스툴 컬렉션"
+              loading="lazy"
+            >
+
+            <div class="hs-category-card__content">
+              <p class="hs-category-card__title">Stool</p>
+              <p class="hs-category-card__meta">
+                View collection
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="./shop.html?category=lounge"
+            class="hs-category-card"
+            data-reveal
+          >
+            <img
+              src="./assets/images/30001500banner4.jpg"
+              alt="라운지 컬렉션"
+              loading="lazy"
+            >
+
+            <div class="hs-category-card__content">
+              <p class="hs-category-card__title">Lounge</p>
+              <p class="hs-category-card__meta">
+                View collection
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="./shop.html?category=outdoor"
+            class="hs-category-card"
+            data-reveal
+          >
+            <img
+              src="./assets/images/30001500banner7.jpg"
+              alt="아웃도어 컬렉션"
+              loading="lazy"
+            >
+
+            <div class="hs-category-card__content">
+              <p class="hs-category-card__title">Outdoor</p>
+              <p class="hs-category-card__meta">
+                View collection
+              </p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="hs-section">
+      <div class="hs-container--wide">
+
+        <div
+          class="hs-section-head"
+          data-reveal
+        >
+          <div class="hs-section-head__label">
+            <p class="hs-eyebrow">Featured products</p>
+          </div>
+
+          <div class="hs-section-head__content">
+            <h2 class="hs-section-title">
+              공간의 인상을 완성하는
+              <span class="pc-br"></span>
+              해버싯의 주요 제품입니다.
+            </h2>
+
+            <p class="hs-body-copy hs-section-head__description">
+              형태와 소재, 사용성을 기준으로 선정한 제품을
+              카탈로그 방식으로 소개합니다.
+            </p>
+          </div>
+
+          <div class="hs-section-head__action">
+            <a href="./shop.html" class="hs-line-link">
+              View products
+            </a>
+          </div>
+        </div>
+
+        <div class="hs-product-grid">
+
+          <article
+            class="hs-product-card"
+            data-reveal
+          >
+            <span class="hs-product-card__badge">New</span>
+
+            <a href="./product-01.html">
+              <div class="hs-product-card__image">
+                <img
+                  src="./assets/images/product11.png"
+                  alt="블루 오렌지 사이드 테이블"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="hs-product-card__info">
+                <h3 class="hs-product-card__name">
+                  Color Side Table
+                </h3>
+
+                <p class="hs-product-card__price">
+                  198,000원
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article
+            class="hs-product-card"
+            data-reveal
+          >
+            <span class="hs-product-card__badge">Best</span>
+
+            <a href="./product-02.html">
+              <div class="hs-product-card__image">
+                <img
+                  src="./assets/images/product7.png"
+                  alt="라운드 페데스탈 테이블"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="hs-product-card__info">
+                <h3 class="hs-product-card__name">
+                  Round Pedestal Table
+                </h3>
+
+                <p class="hs-product-card__price">
+                  220,000원
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article
+            class="hs-product-card"
+            data-reveal
+          >
+            <span class="hs-product-card__badge">New</span>
+
+            <a href="./product-03.html">
+              <div class="hs-product-card__image">
+                <img
+                  src="./assets/images/product9.png"
+                  alt="블랙 하이 체어"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="hs-product-card__info">
+                <h3 class="hs-product-card__name">
+                  Black High Chair
+                </h3>
+
+                <p class="hs-product-card__price">
+                  185,000원
+                </p>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COLLECTION STORY -->
+    <section class="hs-split">
+
+      <div
+        class="hs-split__content"
+        data-reveal
+      >
+        <div class="hs-split__copy">
+
+          <p class="hs-eyebrow">
+            New collection
+          </p>
+
+          <h2 class="hs-section-title">
+            Objects that make
+            <span class="pc-br"></span>
+            a space feel complete.
+          </h2>
+
+          <p class="hs-body-copy hs-split__description">
+            공간의 분위기를 해치지 않으면서
+            자연스럽게 기능하는 가구를 제안합니다.
+            형태와 비율, 색감의 균형을 살펴보세요.
+          </p>
+
+          <div class="hs-split__action">
+            <a
+              href="./shop.html"
+              class="hs-line-link"
+            >
+              Explore collection
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="hs-split__media">
+        <img
+          src="./assets/images/30001500banner3.jpg"
+          alt="옐로 체어 컬렉션"
+          loading="lazy"
+        >
+      </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="hs-section hs-section--paper">
+      <div class="hs-container--wide">
+
+        <div
+          class="hs-section-head"
+          data-reveal
+        >
+          <div class="hs-section-head__label">
+            <p class="hs-eyebrow">
+              Selected projects
+            </p>
+          </div>
+
+          <div class="hs-section-head__content">
+            <h2 class="hs-section-title">
+              공간의 성격과 사용 방식에 맞춰
+              <span class="pc-br"></span>
+              완성한 프로젝트입니다.
+            </h2>
+          </div>
+
+          <div class="hs-section-head__action">
+            <a
+              href="./portfolio.html"
+              class="hs-line-link"
+            >
+              View projects
+            </a>
+          </div>
+        </div>
+
+        <div class="hs-project-grid">
+
+          <article
+            class="hs-project-card"
+            data-reveal
+          >
+            <a href="./project-01.html">
+
+              <div class="hs-project-card__image">
+                <img
+                  src="./assets/images/product%20cut10.png"
+                  alt="카페 공간 프로젝트"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="hs-project-card__info">
+                <div>
+                  <h3 class="hs-project-card__title">
+                    Cafe &amp; Restaurant
+                  </h3>
+
+                  <p class="hs-project-card__category">
+                    Commercial Space
+                  </p>
+                </div>
+
+                <span class="hs-caption">01</span>
+              </div>
+
+            </a>
+          </article>
+
+          <article
+            class="hs-project-card"
+            data-reveal
+          >
+            <a href="./project-02.html">
+
+              <div class="hs-project-card__image">
+                <img
+                  src="./assets/images/product%20cut13.png"
+                  alt="라운지 공간 프로젝트"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="hs-project-card__info">
+                <div>
+                  <h3 class="hs-project-card__title">
+                    Lounge Project
+                  </h3>
+
+                  <p class="hs-project-card__category">
+                    Hospitality
+                  </p>
+                </div>
+
+                <span class="hs-caption">02</span>
+              </div>
+
+            </a>
+          </article>
+
+          <article
+            class="hs-project-card"
+            data-reveal
+          >
+            <a href="./project-03.html">
+
+              <div class="hs-project-card__image">
+                <img
+                  src="./assets/images/product%20cut16.png"
+                  alt="주거 공간 프로젝트"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="hs-project-card__info">
+                <div>
+                  <h3 class="hs-project-card__title">
+                    Residential Project
+                  </h3>
+
+                  <p class="hs-project-card__category">
+                    Living Space
+                  </p>
+                </div>
+
+                <span class="hs-caption">03</span>
+              </div>
+
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ORDERMADE -->
+    <section class="hs-split">
+
+      <div
+        class="hs-split__content"
+        data-reveal
+      >
+        <div class="hs-split__copy">
+
+          <p class="hs-eyebrow">
+            Ordermade
+          </p>
+
+          <h2 class="hs-section-title">
+            Furniture for
+            <span class="pc-br"></span>
+            Every Space
+          </h2>
+
+          <p class="hs-body-copy hs-split__description">
+            공간의 목적과 규모, 운영 방식에 맞춰
+            제품 선택부터 맞춤 제작, 납품과 설치까지
+            하나의 과정으로 제안합니다.
+          </p>
+
+          <div class="hs-split__action">
+            <a
+              href="./ordermade.html"
+              class="hs-line-link"
+            >
+              Learn more
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="hs-split__media">
+        <img
+          src="./assets/images/product%20cut12.png"
+          alt="해버싯 오더메이드 공간"
+          loading="lazy"
+        >
+      </div>
+
+    </section>
+
+    <!-- BRAND VALUES -->
+    <section class="hs-section">
+      <div class="hs-container--wide">
+
+        <div
+          class="hs-section-head"
+          data-reveal
+        >
+          <div class="hs-section-head__label">
+            <p class="hs-eyebrow">
+              About have a seat
+            </p>
+          </div>
+
+          <div class="hs-section-head__content">
+            <h2 class="hs-section-title">
+              공간에 머무는 방식을
+              <span class="pc-br"></span>
+              생각합니다.
+            </h2>
+
+            <p class="hs-body-copy hs-section-head__description">
+              좋은 가구는 공간을 채우는 물건을 넘어
+              사람의 움직임과 머무는 경험을 자연스럽게 연결합니다.
+            </p>
+          </div>
+
+          <div class="hs-section-head__action">
+            <a href="./brand.html" class="hs-line-link">
+              View our story
+            </a>
+          </div>
+        </div>
+
+        <div class="hs-info-grid">
+
+          <article class="hs-info-card" data-reveal>
+            <span class="hs-info-card__number">01</span>
+
+            <h3 class="hs-info-card__title">
+              Spatial Balance
+            </h3>
+
+            <p class="hs-info-card__description">
+              공간의 크기와 비례, 동선을 고려하여
+              자연스러운 가구 구성을 제안합니다.
+            </p>
+          </article>
+
+          <article class="hs-info-card" data-reveal>
+            <span class="hs-info-card__number">02</span>
+
+            <h3 class="hs-info-card__title">
+              Quality Material
+            </h3>
+
+            <p class="hs-info-card__description">
+              오래 사용할 수 있는 소재와
+              공간에 어울리는 마감을 선택합니다.
+            </p>
+          </article>
+
+          <article class="hs-info-card" data-reveal>
+            <span class="hs-info-card__number">03</span>
+
+            <h3 class="hs-info-card__title">
+              Made to Order
+            </h3>
+
+            <p class="hs-info-card__description">
+              공간의 목적과 조건에 맞춰
+              크기와 컬러, 사양을 함께 검토합니다.
+            </p>
+          </article>
+
+          <article class="hs-info-card" data-reveal>
+            <span class="hs-info-card__number">04</span>
+
+            <h3 class="hs-info-card__title">
+              Long-lasting Use
+            </h3>
+
+            <p class="hs-info-card__description">
+              유행보다 사용성과 균형을 우선하여
+              오래 머무는 가구를 제안합니다.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWROOM -->
+    <section class="hs-showroom-cta">
+
+      <div class="hs-showroom-cta__media">
+        <img
+          src="./assets/images/product%20cut6.png"
+          alt="해버싯 쇼룸 공간"
+          loading="lazy"
+        >
+      </div>
+
+      <div
+        class="hs-showroom-cta__content"
+        data-reveal
+      >
+        <p class="hs-eyebrow">
+          Visit our showroom
+        </p>
+
+        <h2 class="hs-section-title">
+          해버싯의 가구를
+          <span class="pc-br"></span>
+          직접 경험해보세요.
+        </h2>
+
+        <p class="hs-showroom-cta__description">
+          제품의 크기와 소재, 착석감을
+          쇼룸에서 직접 확인할 수 있습니다.
+        </p>
+
+        <div class="hs-showroom-cta__action">
+          <a
+            href="./showroom.html"
+            class="hs-button hs-button--light"
+          >
+            Find showroom
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer class="hs-footer">
+    <div class="hs-footer__inner">
+
+      <div
+        class="hs-footer__grid"
+        data-reveal
+      >
+
+        <div>
+          <h2 class="hs-footer__title">
+            Company
+          </h2>
+
+          <p class="hs-footer__text">
+            have a seat
+          </p>
+
+          <p class="hs-footer__text">
+            대표자 Lee Kyoung Ha
+          </p>
+
+          <p class="hs-footer__text">
+            사업자등록번호 139-07-63165
+          </p>
+
+          <p class="hs-footer__text">
+            통신판매업신고 2018-서울중구-0699
+          </p>
+
+          <p class="hs-footer__text">
+            haveaseat@naver.com
+          </p>
+        </div>
+
+        <div>
+          <h2 class="hs-footer__title">
+            Customer Center
+          </h2>
+
+          <div class="hs-footer__links">
+
+            <a
+              href="tel:01030058374"
+              class="hs-footer__link"
+            >
+              010-3005-8374
+            </a>
+
+            <span class="hs-footer__text">
+              Mon–Fri 10:00–17:00
+            </span>
+
+            <span class="hs-footer__text">
+              Lunch 12:30–13:30
+            </span>
+
+            <a
+              href="./notice.html"
+              class="hs-footer__link"
+            >
+              Notice
+            </a>
+
+            <a
+              href="./faq.html"
+              class="hs-footer__link"
+            >
+              FAQ
+            </a>
+
+            <a
+              href="./qna.html"
+              class="hs-footer__link"
+            >
+              Q&amp;A
+            </a>
+
+          </div>
+        </div>
+
+        <div>
+          <h2 class="hs-footer__title">
+            Showroom
+          </h2>
+
+          <p class="hs-footer__text">
+            서울시 중구 흥인동 2-10 1층
+          </p>
+
+          <p class="hs-footer__text">
+            Mon–Fri 10:00–18:00
+          </p>
+
+          <p class="hs-footer__text">
+            Sat 11:00–18:00
+          </p>
+
+          <div class="hs-footer__links">
+            <a
+              href="./showroom.html"
+              class="hs-footer__link"
+            >
+              View showroom
+            </a>
+
+            <a
+              href="./showroom.html#map"
+              class="hs-footer__link"
+            >
+              View map
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="hs-footer__title">
+            Service
+          </h2>
+
+          <div class="hs-footer__links">
+
+            <a
+              href="./shop.html"
+              class="hs-footer__link"
+            >
+              Shop
+            </a>
+
+            <a
+              href="./ordermade.html"
+              class="hs-footer__link"
+            >
+              Ordermade
+            </a>
+
+            <a
+              href="./portfolio.html"
+              class="hs-footer__link"
+            >
+              Portfolio
+            </a>
+
+            <a
+              href="./orders.html"
+              class="hs-footer__link"
+            >
+              Order List
+            </a>
+
+            <a
+              href="./mypage.html"
+              class="hs-footer__link"
+            >
+              My Page
+            </a>
+
+            <a
+              href="#"
+              class="hs-footer__link"
+            >
+              Instagram
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hs-footer__bottom">
+
+        <p>
+          © have a seat. All rights reserved.
+        </p>
+
+        <div class="hs-footer__policy">
+          <a href="./terms.html">
+            Terms and Conditions
+          </a>
+
+          <a href="./privacy.html">
+            Privacy Policy
+          </a>
+
+          <a href="./guide.html">
+            Shopping Guide
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
