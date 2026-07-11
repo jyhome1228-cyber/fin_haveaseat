@@ -2775,3 +2775,492 @@ body.is-search-open .hs-search {
     height: 290px;
   }
 }
+
+/* =========================================================
+   28. HOME FINAL REFINEMENT
+   Hero slider / Product balance / Global alignment
+========================================================= */
+
+/* ---------------------------------------------------------
+   GLOBAL ALIGNMENT
+--------------------------------------------------------- */
+
+.hs-container,
+.hs-container--wide {
+  width: calc(100% - 80px);
+  max-width: none;
+  margin-inline: auto;
+}
+
+.hs-container--reading {
+  width: min(calc(100% - 80px), 760px);
+  margin-inline: auto;
+}
+
+.hs-header__inner {
+  padding-inline: 40px;
+}
+
+.hs-logo {
+  width: 168px;
+}
+
+.hs-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hs-nav__link {
+  font-size: 13px;
+}
+
+.hs-dropdown a {
+  font-size: 13px;
+}
+
+.hs-header__text-link {
+  font-size: 12px;
+}
+
+.hs-header__utilities {
+  gap: 20px;
+}
+
+/* ---------------------------------------------------------
+   FOOTER ALIGNMENT
+--------------------------------------------------------- */
+
+.hs-footer {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.hs-footer__inner {
+  width: 100%;
+  max-width: none;
+}
+
+.hs-footer__title {
+  font-size: 12px;
+}
+
+.hs-footer__text,
+.hs-footer__link {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.hs-footer__bottom {
+  font-size: 12px;
+}
+
+/* =========================================================
+   HOME HERO SLIDER
+========================================================= */
+
+.hs-home-slider {
+  position: relative;
+
+  width: 100%;
+  height: calc(100svh - var(--hs-header-height));
+  min-height: 760px;
+  max-height: 1080px;
+
+  overflow: hidden;
+  background: #d8d5cf;
+}
+
+.hs-home-slider__track {
+  position: absolute;
+  inset: 0;
+}
+
+.hs-home-slide {
+  position: absolute;
+  inset: 0;
+
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(1.012);
+
+  transition:
+    opacity 1s var(--hs-ease),
+    transform 1.4s var(--hs-ease),
+    visibility 1s;
+}
+
+.hs-home-slide.is-active {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hs-home-slide__media {
+  position: absolute;
+  inset: 0;
+}
+
+.hs-home-slide__media img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.hs-home-slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: rgba(15, 13, 11, 0.15);
+}
+
+.hs-home-slide__content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+
+  text-align: center;
+  color: #fff;
+}
+
+.hs-home-slide__title {
+  margin: 0;
+
+  color: #fff;
+
+  font-size: clamp(38px, 3.7vw, 68px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.052em;
+
+  text-shadow: 0 1px 18px rgba(0, 0, 0, 0.16);
+}
+
+.hs-home-slider__pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  transform: translateX(-50%);
+}
+
+.hs-home-slider__dot {
+  position: relative;
+
+  width: 42px;
+  height: 22px;
+
+  cursor: pointer;
+}
+
+.hs-home-slider__dot::before {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.42);
+}
+
+.hs-home-slider__dot::after {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: 0;
+
+  width: 0;
+  height: 1px;
+
+  background: #fff;
+
+  transition: width 0.45s var(--hs-ease);
+}
+
+.hs-home-slider__dot.is-active::after {
+  width: 100%;
+}
+
+.hs-home-slider__count {
+  position: absolute;
+  right: 40px;
+  bottom: 31px;
+  z-index: 5;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+
+/* =========================================================
+   HOME SECTION RHYTHM
+========================================================= */
+
+.hs-home-section {
+  padding: 92px 0;
+  border-top: 1px solid var(--hs-line);
+}
+
+.hs-home-section--first {
+  border-top: 0;
+}
+
+.hs-home-section .hs-section-head {
+  margin-bottom: 38px;
+}
+
+/* =========================================================
+   CATEGORY REFINEMENT
+========================================================= */
+
+.hs-category-grid {
+  gap: 10px;
+}
+
+.hs-category-card {
+  min-height: 390px;
+}
+
+.hs-category-card__content {
+  left: 16px;
+  right: 16px;
+  bottom: 15px;
+}
+
+.hs-category-card__title {
+  font-size: 13px;
+}
+
+.hs-category-card__meta {
+  font-size: 10px;
+}
+
+/* =========================================================
+   FEATURED PRODUCT REFINEMENT
+========================================================= */
+
+.hs-product-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.hs-product-card {
+  min-height: 0;
+}
+
+.hs-product-card__image {
+  min-height: 0;
+  height: clamp(430px, 31vw, 610px);
+
+  padding: 36px 42px 14px;
+}
+
+.hs-product-card__image img {
+  width: 94%;
+  height: 92%;
+  max-height: 520px;
+
+  object-fit: contain;
+}
+
+.hs-product-card__info {
+  min-height: 82px;
+  padding: 16px 18px 18px;
+
+  border-top: 1px solid var(--hs-line);
+
+  text-align: left;
+}
+
+.hs-product-card__name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.hs-product-card__price {
+  margin-top: 3px;
+
+  color: var(--hs-sub);
+  font-size: 12px;
+}
+
+.hs-product-card__badge {
+  top: 15px;
+  right: 16px;
+}
+
+/* =========================================================
+   PROJECT IMAGE REFINEMENT
+========================================================= */
+
+.hs-project-card__image {
+  aspect-ratio: 4 / 4.7;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1180px) {
+  .hs-container,
+  .hs-container--wide {
+    width: calc(100% - 48px);
+  }
+
+  .hs-container--reading {
+    width: min(calc(100% - 48px), 760px);
+  }
+
+  .hs-header__inner {
+    padding-inline: 24px;
+  }
+
+  .hs-footer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .hs-home-slider {
+    min-height: 680px;
+  }
+
+  .hs-product-card__image {
+    height: 470px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+  .hs-container,
+  .hs-container--wide,
+  .hs-container--reading {
+    width: calc(100% - 32px);
+  }
+
+  .hs-header__inner {
+    padding-inline: 16px;
+  }
+
+  .hs-logo {
+    width: 145px;
+  }
+
+  .hs-footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hs-footer__text,
+  .hs-footer__link {
+    font-size: 12px;
+  }
+
+  .hs-footer__bottom {
+    font-size: 11px;
+  }
+
+  .hs-home-slider {
+    height: calc(100svh - var(--hs-header-height));
+    min-height: 620px;
+    max-height: none;
+  }
+
+  .hs-home-slide__content {
+    padding: 24px;
+  }
+
+  .hs-home-slide__title {
+    max-width: 320px;
+
+    font-size: 37px;
+    line-height: 1.1;
+  }
+
+  .hs-home-slider__pagination {
+    bottom: 22px;
+    gap: 5px;
+  }
+
+  .hs-home-slider__dot {
+    width: 28px;
+  }
+
+  .hs-home-slider__count {
+    display: none;
+  }
+
+  .hs-home-section {
+    padding: 64px 0;
+  }
+
+  .hs-category-card {
+    min-height: 280px;
+  }
+
+  .hs-product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hs-product-card__image {
+    height: 300px;
+    padding: 30px 14px 10px;
+  }
+
+  .hs-product-card__image img {
+    width: 100%;
+    height: 92%;
+  }
+
+  .hs-product-card__info {
+    min-height: 72px;
+    padding: 13px 12px 15px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+  .hs-product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hs-product-card__image {
+    height: 410px;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .hs-home-slide {
+    transition: none;
+    transform: none;
+  }
+}
