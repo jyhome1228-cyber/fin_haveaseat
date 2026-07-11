@@ -1775,3 +1775,351 @@ body.is-search-open .hs-search {
     font-size: 11px;
   }
 }
+
+/* =========================================================
+   25. BRAND PAGE
+========================================================= */
+
+.hs-brand-hero {
+  padding: 72px 0 0;
+}
+
+.hs-brand-hero__head {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--hs-grid-gap);
+  align-items: start;
+  padding-bottom: 54px;
+}
+
+.hs-brand-hero__label {
+  grid-column: span 3;
+}
+
+.hs-brand-hero__copy {
+  grid-column: 4 / span 7;
+}
+
+.hs-brand-hero__description {
+  max-width: 650px;
+  margin-top: 22px;
+}
+
+.hs-brand-hero__visual {
+  position: relative;
+  min-height: 720px;
+  overflow: hidden;
+  background: var(--hs-soft);
+}
+
+.hs-brand-hero__visual img {
+  width: 100%;
+  height: 720px;
+  object-fit: cover;
+}
+
+/* Brand statement */
+
+.hs-brand-statement {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--hs-grid-gap);
+  align-items: start;
+}
+
+.hs-brand-statement__label {
+  grid-column: span 3;
+}
+
+.hs-brand-statement__content {
+  grid-column: 4 / span 7;
+}
+
+.hs-brand-statement__content p {
+  max-width: 720px;
+  margin-top: 22px;
+}
+
+.hs-brand-statement__media {
+  grid-column: 4 / -1;
+  margin-top: 52px;
+  overflow: hidden;
+  background: var(--hs-soft);
+}
+
+.hs-brand-statement__media img {
+  width: 100%;
+  aspect-ratio: 16 / 8.6;
+  object-fit: cover;
+}
+
+/* Mission / Vision */
+
+.hs-brand-value-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--hs-line-strong);
+  border-left: 1px solid var(--hs-line-strong);
+}
+
+.hs-brand-value-card {
+  min-height: 340px;
+  padding: 32px 30px;
+  border-right: 1px solid var(--hs-line-strong);
+  border-bottom: 1px solid var(--hs-line-strong);
+}
+
+.hs-brand-value-card__label {
+  display: block;
+  margin-bottom: 92px;
+  color: var(--hs-muted);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hs-brand-value-card__title {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -0.035em;
+}
+
+.hs-brand-value-card__description {
+  max-width: 470px;
+  margin-top: 14px;
+  color: var(--hs-sub);
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+/* Brand philosophy */
+
+.hs-brand-philosophy {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--hs-line-strong);
+  border-left: 1px solid var(--hs-line-strong);
+}
+
+.hs-brand-philosophy__item {
+  min-height: 280px;
+  padding: 28px 25px;
+  border-right: 1px solid var(--hs-line-strong);
+  border-bottom: 1px solid var(--hs-line-strong);
+}
+
+.hs-brand-philosophy__number {
+  display: block;
+  margin-bottom: 74px;
+  color: var(--hs-muted);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.hs-brand-philosophy__title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.hs-brand-philosophy__description {
+  max-width: 250px;
+  margin-top: 11px;
+  color: var(--hs-sub);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* Editorial image composition */
+
+.hs-brand-gallery {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: var(--hs-grid-gap);
+  align-items: start;
+}
+
+.hs-brand-gallery__large,
+.hs-brand-gallery__small {
+  overflow: hidden;
+  background: var(--hs-soft);
+}
+
+.hs-brand-gallery__large img {
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  object-fit: cover;
+}
+
+.hs-brand-gallery__stack {
+  display: grid;
+  gap: var(--hs-grid-gap);
+}
+
+.hs-brand-gallery__small img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.hs-brand-gallery__caption {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 20px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--hs-line);
+}
+
+.hs-brand-gallery__caption strong {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.hs-brand-gallery__caption span {
+  color: var(--hs-muted);
+  font-size: 10px;
+}
+
+/* Next link */
+
+.hs-brand-next {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--hs-grid-gap);
+  align-items: center;
+}
+
+.hs-brand-next__label {
+  grid-column: span 3;
+}
+
+.hs-brand-next__content {
+  grid-column: 4 / span 6;
+}
+
+.hs-brand-next__action {
+  grid-column: 11 / span 2;
+  justify-self: end;
+}
+
+/* =========================================================
+   BRAND TABLET
+========================================================= */
+
+@media (max-width: 1180px) {
+  .hs-brand-hero__head,
+  .hs-brand-statement,
+  .hs-brand-next {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .hs-brand-hero__label,
+  .hs-brand-statement__label,
+  .hs-brand-next__label {
+    grid-column: span 2;
+  }
+
+  .hs-brand-hero__copy,
+  .hs-brand-statement__content {
+    grid-column: 3 / -1;
+  }
+
+  .hs-brand-statement__media {
+    grid-column: 1 / -1;
+  }
+
+  .hs-brand-next__content {
+    grid-column: 3 / span 3;
+  }
+
+  .hs-brand-next__action {
+    grid-column: 6;
+  }
+
+  .hs-brand-philosophy {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hs-brand-hero__visual,
+  .hs-brand-hero__visual img {
+    min-height: 620px;
+    height: 620px;
+  }
+}
+
+/* =========================================================
+   BRAND MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+  .hs-brand-hero {
+    padding-top: 46px;
+  }
+
+  .hs-brand-hero__head,
+  .hs-brand-statement,
+  .hs-brand-next {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .hs-brand-hero__label,
+  .hs-brand-hero__copy,
+  .hs-brand-statement__label,
+  .hs-brand-statement__content,
+  .hs-brand-statement__media,
+  .hs-brand-next__label,
+  .hs-brand-next__content,
+  .hs-brand-next__action {
+    grid-column: auto;
+  }
+
+  .hs-brand-hero__head {
+    padding-bottom: 34px;
+  }
+
+  .hs-brand-hero__visual,
+  .hs-brand-hero__visual img {
+    min-height: 480px;
+    height: 480px;
+  }
+
+  .hs-brand-statement__media {
+    margin-top: 30px;
+  }
+
+  .hs-brand-statement__media img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .hs-brand-value-grid,
+  .hs-brand-philosophy {
+    grid-template-columns: 1fr;
+  }
+
+  .hs-brand-value-card {
+    min-height: auto;
+  }
+
+  .hs-brand-value-card__label {
+    margin-bottom: 58px;
+  }
+
+  .hs-brand-philosophy__item {
+    min-height: auto;
+  }
+
+  .hs-brand-philosophy__number {
+    margin-bottom: 46px;
+  }
+
+  .hs-brand-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .hs-brand-next__action {
+    justify-self: start;
+    margin-top: 12px;
+  }
+}
