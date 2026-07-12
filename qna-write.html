@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+
+  <meta
+    name="description"
+    content="해버싯 제품과 주문, 배송 및 프로젝트에 관한 문의를 작성할 수 있습니다."
+  >
+
+  <meta name="theme-color" content="#f5f3ee">
+
+  <title>Q&A Write | have a seat</title>
+
+  <link
+    rel="stylesheet"
+    href="./assets/css/style.css"
+  >
+</head>
+
+<body>
+
+  <a href="#main-content" class="hs-skip-link">
+    본문 바로가기
+  </a>
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <header class="hs-header hs-header--solid">
+    <div class="hs-header__inner">
+
+      <a
+        href="./index.html"
+        class="hs-logo"
+        aria-label="have a seat 홈"
+      >
+        <img
+          src="./assets/images/logo/logo.svg"
+          alt="have a seat"
+        >
+      </a>
+
+      <nav class="hs-nav" aria-label="주요 메뉴">
+
+        <div class="hs-nav__item">
+          <a href="./brand.html" class="hs-nav__link">
+            Brand
+          </a>
+        </div>
+
+        <div class="hs-nav__item">
+          <a href="./shop.html" class="hs-nav__link">
+            Shop
+          </a>
+
+          <div class="hs-dropdown">
+            <a href="./shop.html">All Products</a>
+            <a href="./shop.html?category=chair">Chair</a>
+            <a href="./shop.html?category=table">Table</a>
+            <a href="./shop.html?category=stool">Stool</a>
+            <a href="./shop.html?category=lounge">Lounge</a>
+            <a href="./shop.html?category=outdoor">Outdoor</a>
+          </div>
+        </div>
+
+        <div class="hs-nav__item">
+          <a href="./ordermade.html" class="hs-nav__link">
+            Ordermade
+          </a>
+
+          <div class="hs-dropdown">
+            <a href="./ordermade.html">
+              Ordermade Service
+            </a>
+
+            <a href="./ordermade.html#process">
+              Process
+            </a>
+
+            <a href="./ordermade.html#b2b">
+              B2B Membership
+            </a>
+
+            <a href="./ordermade.html#contact">
+              Contact
+            </a>
+          </div>
+        </div>
+
+        <div class="hs-nav__item">
+          <a href="./portfolio.html" class="hs-nav__link">
+            Portfolio
+          </a>
+
+          <div class="hs-dropdown">
+            <a href="./portfolio.html">
+              All Projects
+            </a>
+
+            <a href="./portfolio.html?category=food">
+              Food &amp; Beverage
+            </a>
+
+            <a href="./portfolio.html?category=office">
+              Work &amp; Study
+            </a>
+
+            <a href="./portfolio.html?category=hospitality">
+              Hospitality
+            </a>
+          </div>
+        </div>
+
+        <div class="hs-nav__item">
+          <a
+            href="./community.html"
+            class="hs-nav__link is-active"
+          >
+            Community
+          </a>
+
+          <div class="hs-dropdown">
+            <a href="./notice.html">Notice</a>
+            <a href="./faq.html">FAQ</a>
+            <a href="./qna.html">Q&amp;A</a>
+          </div>
+        </div>
+
+      </nav>
+
+      <div class="hs-header__utilities">
+
+        <a
+          href="./showroom.html"
+          class="hs-header__text-link"
+        >
+          Showroom
+        </a>
+
+        <a
+          href="./faq.html"
+          class="hs-header__text-link"
+        >
+          FAQ
+        </a>
+
+        <a
+          href="./login.html"
+          class="hs-icon-button hs-account-button"
+          aria-label="회원 메뉴"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="8" r="3.4"></circle>
+            <path d="M5.5 19c.8-4 3-6 6.5-6s5.7 2 6.5 6"></path>
+          </svg>
+        </a>
+
+        <button
+          type="button"
+          class="hs-icon-button"
+          aria-label="검색 열기"
+          aria-expanded="false"
+          data-search-open
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.5" cy="10.5" r="6"></circle>
+            <path d="M15 15l4.5 4.5"></path>
+          </svg>
+        </button>
+
+        <a
+          href="./cart.html"
+          class="hs-icon-button"
+          aria-label="장바구니"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.5 8.5h11l-1 10h-9z"></path>
+            <path d="M9 9V7a3 3 0 016 0v2"></path>
+          </svg>
+
+          <span class="hs-cart-count">
+            <span>0</span>
+          </span>
+        </a>
+
+        <button
+          type="button"
+          class="hs-icon-button hs-menu-button"
+          aria-label="메뉴 열기"
+          aria-expanded="false"
+          data-menu-toggle
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 8h16"></path>
+            <path d="M4 16h16"></path>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- =====================================================
+       MOBILE MENU
+  ====================================================== -->
+
+  <aside
+    class="hs-mobile-menu"
+    aria-hidden="true"
+  >
+    <div class="hs-mobile-menu__inner">
+
+      <div>
+        <nav
+          class="hs-mobile-menu__nav"
+          aria-label="모바일 메뉴"
+        >
+          <a href="./brand.html">
+            <span>Brand</span>
+            <span>01</span>
+          </a>
+
+          <a href="./shop.html">
+            <span>Shop</span>
+            <span>02</span>
+          </a>
+
+          <a href="./ordermade.html">
+            <span>Ordermade</span>
+            <span>03</span>
+          </a>
+
+          <a href="./portfolio.html">
+            <span>Portfolio</span>
+            <span>04</span>
+          </a>
+
+          <a href="./community.html" aria-current="page">
+            <span>Community</span>
+            <span>05</span>
+          </a>
+        </nav>
+
+        <div class="hs-mobile-menu__sub">
+          <a href="./notice.html">Notice</a>
+          <a href="./faq.html">FAQ</a>
+          <a href="./qna.html">Q&amp;A</a>
+          <a href="./showroom.html">Showroom</a>
+          <a href="./login.html">Login</a>
+          <a href="./mypage.html">My Page</a>
+        </div>
+      </div>
+
+      <div class="hs-mobile-menu__footer">
+        <p>Connecting Spaces, People, and Perspectives</p>
+        <p>© have a seat</p>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- =====================================================
+       SEARCH
+  ====================================================== -->
+
+  <div
+    class="hs-search"
+    aria-hidden="true"
+  >
+    <div class="hs-search__inner">
+
+      <div class="hs-search__head">
+        <p class="hs-search__title">
+          SEARCH
+        </p>
+
+        <button
+          type="button"
+          class="hs-search__close"
+          data-search-close
+        >
+          Close
+        </button>
+      </div>
+
+      <form
+        class="hs-search__form"
+        action="./shop.html"
+        method="get"
+      >
+        <label
+          for="site-search"
+          class="hs-sr-only"
+        >
+          검색어
+        </label>
+
+        <input
+          id="site-search"
+          class="hs-search__input"
+          type="search"
+          name="keyword"
+          placeholder="Search products"
+          autocomplete="off"
+        >
+
+        <button
+          type="submit"
+          class="hs-search__submit"
+        >
+          Search
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- =====================================================
+       MAIN
+  ====================================================== -->
+
+  <main
+    id="main-content"
+    class="hs-main"
+  >
+
+    <!-- COMMUNITY NAV -->
+    <nav
+      class="hs-community-nav"
+      aria-label="커뮤니티 메뉴"
+    >
+      <div class="hs-container--wide hs-community-nav__inner">
+
+        <a
+          href="./community.html"
+          class="hs-community-nav__link"
+        >
+          Overview
+        </a>
+
+        <a
+          href="./notice.html"
+          class="hs-community-nav__link"
+        >
+          Notice
+        </a>
+
+        <a
+          href="./faq.html"
+          class="hs-community-nav__link"
+        >
+          FAQ
+        </a>
+
+        <a
+          href="./qna.html"
+          class="hs-community-nav__link is-active"
+          aria-current="page"
+        >
+          Q&amp;A
+        </a>
+
+      </div>
+    </nav>
+
+    <!-- WRITE HEAD -->
+    <section class="hs-community-hero">
+      <div class="hs-container--wide">
+
+        <div
+          class="hs-community-hero__head"
+          data-reveal
+        >
+          <div class="hs-community-hero__label">
+            <p class="hs-eyebrow">
+              Write a Question
+            </p>
+          </div>
+
+          <div class="hs-community-hero__content">
+            <h1 class="hs-title">
+              Tell us what
+              <span class="pc-br"></span>
+              you would like to know.
+            </h1>
+
+            <p class="hs-body-copy hs-community-hero__description">
+              제품과 주문, 배송 및 프로젝트에 관한 내용을 작성해주세요.
+              확인 후 담당자가 답변드리겠습니다.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WRITE FORM -->
+    <section class="hs-board">
+      <div class="hs-container--reading">
+
+        <form
+          class="hs-order-contact__form"
+          action="./qna.html"
+          method="post"
+          enctype="multipart/form-data"
+        >
+
+          <!-- CATEGORY -->
+          <div class="hs-form-field">
+
+            <label
+              for="qna-category"
+              class="hs-form-label"
+            >
+              Category
+            </label>
+
+            <select
+              id="qna-category"
+              class="hs-form-select"
+              name="category"
+              required
+            >
+              <option value="">
+                문의 유형 선택
+              </option>
+
+              <option value="product">
+                Product
+              </option>
+
+              <option value="order">
+                Order
+              </option>
+
+              <option value="delivery">
+                Delivery
+              </option>
+
+              <option value="ordermade">
+                Ordermade
+              </option>
+
+              <option value="b2b">
+                B2B
+              </option>
+
+              <option value="as">
+                A/S
+              </option>
+
+              <option value="other">
+                Other
+              </option>
+            </select>
+
+          </div>
+
+          <!-- NAME -->
+          <div class="hs-form-field">
+
+            <label
+              for="qna-name"
+              class="hs-form-label"
+            >
+              Name
+            </label>
+
+            <input
+              id="qna-name"
+              class="hs-form-input"
+              type="text"
+              name="name"
+              placeholder="작성자명"
+              required
+            >
+
+          </div>
+
+          <!-- EMAIL -->
+          <div class="hs-form-field">
+
+            <label
+              for="qna-email"
+              class="hs-form-label"
+            >
+              Email
+            </label>
+
+            <input
+              id="qna-email"
+              class="hs-form-input"
+              type="email"
+              name="email"
+              placeholder="답변을 받을 이메일"
+              required
+            >
+
+          </div>
+
+          <!-- CONTACT -->
+          <div class="hs-form-field">
+
+            <label
+              for="qna-contact"
+              class="hs-form-label"
+            >
+              Contact
+            </label>
+
+            <input
+              id="qna-contact"
+              class="hs-form-input"
+              type="tel"
+              name="contact"
+              placeholder="연락처"
+            >
+
+          </div>
+
+          <!-- SUBJECT -->
+          <div class="hs-form-field hs-form-field--full">
+
+            <label
+              for="qna-subject"
+              class="hs-form-label"
+            >
+              Subject
+            </label>
+
+            <input
+              id="qna-subject"
+              class="hs-form-input"
+              type="text"
+              name="subject"
+              placeholder="문의 제목을 입력해주세요."
+              required
+            >
+
+          </div>
+
+          <!-- ORDER NUMBER -->
+          <div class="hs-form-field">
+
+            <label
+              for="qna-order-number"
+              class="hs-form-label"
+            >
+              Order Number
+            </label>
+
+            <input
+              id="qna-order-number"
+              class="hs-form-input"
+              type="text"
+              name="order_number"
+              placeholder="주문 관련 문의 시 입력"
+            >
+
+          </div>
+
+          <!-- PASSWORD -->
+          <div class="hs-form-field">
+
+            <label
+              for="qna-password"
+              class="hs-form-label"
+            >
+              Password
+            </label>
+
+            <input
+              id="qna-password"
+              class="hs-form-input"
+              type="password"
+              name="password"
+              placeholder="게시글 확인 비밀번호"
+              minlength="4"
+              autocomplete="new-password"
+              required
+            >
+
+          </div>
+
+          <!-- MESSAGE -->
+          <div class="hs-form-field hs-form-field--full">
+
+            <label
+              for="qna-message"
+              class="hs-form-label"
+            >
+              Question
+            </label>
+
+            <textarea
+              id="qna-message"
+              class="hs-form-textarea"
+              name="message"
+              placeholder="제품명, 주문번호, 희망 일정 등 문의에 필요한 정보를 자세히 작성해주세요."
+              required
+            ></textarea>
+
+          </div>
+
+          <!-- ATTACHMENT -->
+          <div class="hs-form-field hs-form-field--full">
+
+            <label
+              for="qna-file"
+              class="hs-form-label"
+            >
+              Attachment
+            </label>
+
+            <input
+              id="qna-file"
+              class="hs-form-input"
+              type="file"
+              name="attachment"
+              accept=".jpg,.jpeg,.png,.pdf"
+            >
+
+            <p
+              class="hs-caption"
+              style="margin-top: 9px;"
+            >
+              JPG, PNG, PDF 파일을 첨부할 수 있습니다.
+            </p>
+
+          </div>
+
+          <!-- SECRET -->
+          <label class="hs-order-contact__agreement">
+
+            <input
+              type="checkbox"
+              name="secret"
+              value="true"
+              checked
+            >
+
+            <span>
+              비밀글로 작성합니다.
+            </span>
+
+          </label>
+
+          <!-- PRIVACY -->
+          <label class="hs-order-contact__agreement">
+
+            <input
+              type="checkbox"
+              name="privacy"
+              required
+            >
+
+            <span>
+              문의 접수와 답변을 위한 개인정보 수집 및 이용에 동의합니다.
+            </span>
+
+          </label>
+
+          <!-- ACTION -->
+          <div
+            class="hs-form-field hs-form-field--full"
+            style="
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              margin-top: 12px;
+            "
+          >
+            <button
+              type="submit"
+              class="hs-button"
+            >
+              Submit
+            </button>
+
+            <a
+              href="./qna.html"
+              class="hs-button"
+            >
+              Cancel
+            </a>
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+
+    <!-- GUIDE -->
+    <section class="hs-section hs-section--soft">
+      <div class="hs-container">
+
+        <div
+          class="hs-community-contact"
+          data-reveal
+        >
+          <div class="hs-community-contact__label">
+            <p class="hs-eyebrow">
+              Before Writing
+            </p>
+          </div>
+
+          <div class="hs-community-contact__content">
+            <h2 class="hs-section-title">
+              문의 전 FAQ를 확인해주세요.
+            </h2>
+
+            <p class="hs-body-copy hs-community-contact__description">
+              주문과 배송, 교환 및 오더메이드에 관한
+              주요 안내를 FAQ에서 먼저 확인할 수 있습니다.
+            </p>
+          </div>
+
+          <div class="hs-community-contact__action">
+            <a
+              href="./faq.html"
+              class="hs-button"
+            >
+              View FAQ
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer class="hs-footer">
+    <div class="hs-footer__inner">
+
+      <div class="hs-footer__grid">
+
+        <div>
+          <h2 class="hs-footer__title">
+            Company
+          </h2>
+
+          <p class="hs-footer__text">
+            have a seat
+          </p>
+
+          <p class="hs-footer__text">
+            대표자 Lee Kyoung Ha
+          </p>
+
+          <p class="hs-footer__text">
+            사업자등록번호 139-07-63165
+          </p>
+
+          <p class="hs-footer__text">
+            통신판매업신고 2018-서울중구-0699
+          </p>
+
+          <a
+            href="mailto:haveaseat@naver.com"
+            class="hs-footer__link"
+          >
+            haveaseat@naver.com
+          </a>
+        </div>
+
+        <div>
+          <h2 class="hs-footer__title">
+            Customer Center
+          </h2>
+
+          <div class="hs-footer__links">
+
+            <a
+              href="tel:01030058374"
+              class="hs-footer__link"
+            >
+              010-3005-8374
+            </a>
+
+            <span class="hs-footer__text">
+              Mon–Fri 10:00–17:00
+            </span>
+
+            <span class="hs-footer__text">
+              Lunch 12:30–13:30
+            </span>
+
+            <a
+              href="./notice.html"
+              class="hs-footer__link"
+            >
+              Notice
+            </a>
+
+            <a
+              href="./faq.html"
+              class="hs-footer__link"
+            >
+              FAQ
+            </a>
+
+            <a
+              href="./qna.html"
+              class="hs-footer__link"
+            >
+              Q&amp;A
+            </a>
+
+          </div>
+        </div>
+
+        <div>
+          <h2 class="hs-footer__title">
+            Showroom
+          </h2>
+
+          <p class="hs-footer__text">
+            서울시 중구 흥인동 2-10 1층
+          </p>
+
+          <p class="hs-footer__text">
+            Mon–Fri 10:00–18:00
+          </p>
+
+          <p class="hs-footer__text">
+            Sat 11:00–18:00
+          </p>
+
+          <div class="hs-footer__links">
+
+            <a
+              href="./showroom.html"
+              class="hs-footer__link"
+            >
+              View showroom
+            </a>
+
+            <a
+              href="./showroom.html#map"
+              class="hs-footer__link"
+            >
+              View map
+            </a>
+
+          </div>
+        </div>
+
+        <div>
+          <h2 class="hs-footer__title">
+            Service
+          </h2>
+
+          <div class="hs-footer__links">
+
+            <a
+              href="./shop.html"
+              class="hs-footer__link"
+            >
+              Shop
+            </a>
+
+            <a
+              href="./ordermade.html"
+              class="hs-footer__link"
+            >
+              Ordermade
+            </a>
+
+            <a
+              href="./portfolio.html"
+              class="hs-footer__link"
+            >
+              Portfolio
+            </a>
+
+            <a
+              href="./orders.html"
+              class="hs-footer__link"
+            >
+              Order List
+            </a>
+
+            <a
+              href="./mypage.html"
+              class="hs-footer__link"
+            >
+              My Page
+            </a>
+
+            <a href="#" class="hs-footer__link">
+              Instagram
+            </a>
+
+            <a href="#" class="hs-footer__link">
+              Kakao
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hs-footer__bottom">
+
+        <p>
+          © have a seat. All rights reserved.
+        </p>
+
+        <div class="hs-footer__policy">
+
+          <a href="./terms.html">
+            Terms and Conditions
+          </a>
+
+          <a href="./privacy.html">
+            Privacy Policy
+          </a>
+
+          <a href="./guide.html">
+            Shopping Guide
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
