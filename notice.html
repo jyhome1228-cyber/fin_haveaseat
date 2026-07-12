@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+
+  <meta
+    name="description"
+    content="해버싯의 운영 안내, 배송 일정, 쇼룸과 서비스 관련 공지사항을 확인하세요."
+  >
+
+  <meta name="theme-color" content="#f5f3ee">
+
+  <title>Notice | have a seat</title>
+
+  <link
+    rel="stylesheet"
+    href="./assets/css/style.css"
+  >
+</head>
+
+<body>
+
+  <a href="#main-content" class="hs-skip-link">
+    본문 바로가기
+  </a>
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <header class="hs-header hs-header--solid">
+    <div class="hs-header__inner">
+
+      <a
+        href="./index.html"
+        class="hs-logo"
+        aria-label="have a seat 홈"
+      >
+        <img
+          src="./assets/images/logo/logo.svg"
+          alt="have a seat"
+        >
+      </a>
+
+      <nav class="hs-nav" aria-label="주요 메뉴">
+
+        <div class="hs-nav__item">
+          <a href="./brand.html" class="hs-nav__link">
+            Brand
+          </a>
+        </div>
+
+        <div class="hs-nav__item">
+          <a href="./shop.html" class="hs-nav__link">
+            Shop
+          </a>
+
+          <div class="hs-dropdown">
+            <a href="./shop.html">All Products</a>
+            <a href="./shop.html?category=chair">Chair</a>
+            <a href="./shop.html?category=table">Table</a>
+            <a href="./shop.html?category=stool">Stool</a>
+            <a href="./shop.html?category=lounge">Lounge</a>
+            <a href="./shop.html?category=outdoor">Outdoor</a>
+          </div>
+        </div>
+
+        <div class="hs-nav__item">
+          <a href="./ordermade.html" class="hs-nav__link">
+            Ordermade
+          </a>
+
+          <div class="hs-dropdown">
+            <a href="./ordermade.html">
+              Ordermade Service
+            </a>
+
+            <a href="./ordermade.html#process">
+              Process
+            </a>
+
+            <a href="./ordermade.html#b2b">
+              B2B Membership
+            </a>
+
+            <a href="./ordermade.html#contact">
+              Contact
+            </a>
+          </div>
+        </div>
+
+        <div class="hs-nav__item">
+          <a href="./portfolio.html" class="hs-nav__link">
+            Portfolio
+          </a>
+
+          <div class="hs-dropdown">
+            <a href="./portfolio.html">
+              All Projects
+            </a>
+
+            <a href="./portfolio.html?category=food">
+              Food &amp; Beverage
+            </a>
+
+            <a href="./portfolio.html?category=office">
+              Work &amp; Study
+            </a>
+
+            <a href="./portfolio.html?category=hospitality">
+              Hospitality
+            </a>
+          </div>
+        </div>
+
+        <div class="hs-nav__item">
+          <a
+            href="./community.html"
+            class="hs-nav__link is-active"
+          >
+            Community
+          </a>
+
+          <div class="hs-dropdown">
+            <a href="./notice.html">Notice</a>
+            <a href="./faq.html">FAQ</a>
+            <a href="./qna.html">Q&amp;A</a>
+          </div>
+        </div>
+
+      </nav>
+
+      <div class="hs-header__utilities">
+
+        <a
+          href="./showroom.html"
+          class="hs-header__text-link"
+        >
+          Showroom
+        </a>
+
+        <a
+          href="./faq.html"
+          class="hs-header__text-link"
+        >
+          FAQ
+        </a>
+
+        <a
+          href="./login.html"
+          class="hs-icon-button hs-account-button"
+          aria-label="회원 메뉴"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="8" r="3.4"></circle>
+            <path d="M5.5 19c.8-4 3-6 6.5-6s5.7 2 6.5 6"></path>
+          </svg>
+        </a>
+
+        <button
+          type="button"
+          class="hs-icon-button"
+          aria-label="검색 열기"
+          aria-expanded="false"
+          data-search-open
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.5" cy="10.5" r="6"></circle>
+            <path d="M15 15l4.5 4.5"></path>
+          </svg>
+        </button>
+
+        <a
+          href="./cart.html"
+          class="hs-icon-button"
+          aria-label="장바구니"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.5 8.5h11l-1 10h-9z"></path>
+            <path d="M9 9V7a3 3 0 016 0v2"></path>
+          </svg>
+
+          <span class="hs-cart-count">
+            <span>0</span>
+          </span>
+        </a>
+
+        <button
+          type="button"
+          class="hs-icon-button hs-menu-button"
+          aria-label="메뉴 열기"
+          aria-expanded="false"
+          data-menu-toggle
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 8h16"></path>
+            <path d="M4 16h16"></path>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- =====================================================
+       MOBILE MENU
+  ====================================================== -->
+
+  <aside
+    class="hs-mobile-menu"
+    aria-hidden="true"
+  >
+    <div class="hs-mobile-menu__inner">
+
+      <div>
+        <nav
+          class="hs-mobile-menu__nav"
+          aria-label="모바일 메뉴"
+        >
+          <a href="./brand.html">
+            <span>Brand</span>
+            <span>01</span>
+          </a>
+
+          <a href="./shop.html">
+            <span>Shop</span>
+            <span>02</span>
+          </a>
+
+          <a href="./ordermade.html">
+            <span>Ordermade</span>
+            <span>03</span>
+          </a>
+
+          <a href="./portfolio.html">
+            <span>Portfolio</span>
+            <span>04</span>
+          </a>
+
+          <a href="./community.html" aria-current="page">
+            <span>Community</span>
+            <span>05</span>
+          </a>
+        </nav>
+
+        <div class="hs-mobile-menu__sub">
+          <a href="./notice.html">Notice</a>
+          <a href="./faq.html">FAQ</a>
+          <a href="./qna.html">Q&amp;A</a>
+          <a href="./showroom.html">Showroom</a>
+          <a href="./login.html">Login</a>
+          <a href="./mypage.html">My Page</a>
+        </div>
+      </div>
+
+      <div class="hs-mobile-menu__footer">
+        <p>Connecting Spaces, People, and Perspectives</p>
+        <p>© have a seat</p>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- =====================================================
+       SEARCH
+  ====================================================== -->
+
+  <div
+    class="hs-search"
+    aria-hidden="true"
+  >
+    <div class="hs-search__inner">
+
+      <div class="hs-search__head">
+        <p class="hs-search__title">
+          SEARCH
+        </p>
+
+        <button
+          type="button"
+          class="hs-search__close"
+          data-search-close
+        >
+          Close
+        </button>
+      </div>
+
+      <form
+        class="hs-search__form"
+        action="./shop.html"
+        method="get"
+      >
+        <label for="site-search" class="hs-sr-only">
+          검색어
+        </label>
+
+        <input
+          id="site-search"
+          class="hs-search__input"
+          type="search"
+          name="keyword"
+          placeholder="Search products"
+          autocomplete="off"
+        >
+
+        <button
+          type="submit"
+          class="hs-search__submit"
+        >
+          Search
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- =====================================================
+       MAIN
+  ====================================================== -->
+
+  <main
+    id="main-content"
+    class="hs-main"
+  >
+
+    <!-- COMMUNITY HERO -->
+    <section class="hs-community-hero">
+      <div class="hs-container--wide">
+
+        <div
+          class="hs-community-hero__head"
+          data-reveal
+        >
+          <div class="hs-community-hero__label">
+            <p class="hs-eyebrow">
+              Notice
+            </p>
+          </div>
+
+          <div class="hs-community-hero__content">
+            <h1 class="hs-title">
+              News and information
+              <span class="pc-br"></span>
+              from have a seat.
+            </h1>
+
+            <p class="hs-body-copy hs-community-hero__description">
+              해버싯의 운영 안내와 배송 일정,
+              쇼룸 및 서비스에 관한 새로운 소식을 전합니다.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COMMUNITY NAVIGATION -->
+    <nav
+      class="hs-community-nav"
+      aria-label="커뮤니티 메뉴"
+    >
+      <div class="hs-container--wide hs-community-nav__inner">
+
+        <a
+          href="./community.html"
+          class="hs-community-nav__link"
+        >
+          Overview
+        </a>
+
+        <a
+          href="./notice.html"
+          class="hs-community-nav__link is-active"
+          aria-current="page"
+        >
+          Notice
+        </a>
+
+        <a
+          href="./faq.html"
+          class="hs-community-nav__link"
+        >
+          FAQ
+        </a>
+
+        <a
+          href="./qna.html"
+          class="hs-community-nav__link"
+        >
+          Q&amp;A
+        </a>
+
+      </div>
+    </nav>
+
+    <!-- NOTICE BOARD -->
+    <section class="hs-board">
+      <div class="hs-container--wide">
+
+        <div
+          class="hs-board__head"
+          data-reveal
+        >
+          <div class="hs-board__label">
+            <p class="hs-eyebrow">
+              Notice
+            </p>
+          </div>
+
+          <div class="hs-board__title">
+            <h2 class="hs-section-title">
+              해버싯의 새로운 소식입니다.
+            </h2>
+          </div>
+
+          <p class="hs-board__meta">
+            Total 12
+          </p>
+        </div>
+
+        <!-- TOOLBAR -->
+        <div class="hs-board-toolbar">
+
+          <p class="hs-board-toolbar__count">
+            12 Posts
+          </p>
+
+          <div class="hs-board-toolbar__right">
+
+            <form
+              class="hs-board-search"
+              action="./notice.html"
+              method="get"
+            >
+              <label
+                for="notice-search"
+                class="hs-sr-only"
+              >
+                공지사항 검색
+              </label>
+
+              <input
+                id="notice-search"
+                class="hs-board-search__input"
+                type="search"
+                name="keyword"
+                placeholder="Search notice"
+              >
+
+              <button
+                type="submit"
+                class="hs-board-search__button"
+              >
+                Search
+              </button>
+            </form>
+
+          </div>
+        </div>
+
+        <!-- NOTICE LIST -->
+        <div class="hs-notice-list">
+
+          <a
+            href="./notice-detail.html"
+            class="hs-notice-row is-fixed"
+          >
+            <span class="hs-notice-row__number">
+              Notice
+            </span>
+
+            <h3 class="hs-notice-row__title">
+              B2B 회원 가입 안내
+            </h3>
+
+            <time
+              class="hs-notice-row__date"
+              datetime="2025-03-10"
+            >
+              2025.03.10
+            </time>
+
+            <span class="hs-notice-row__view">
+              1052
+            </span>
+          </a>
+
+          <a
+            href="./notice-detail.html"
+            class="hs-notice-row is-fixed"
+          >
+            <span class="hs-notice-row__number">
+              Notice
+            </span>
+
+            <h3 class="hs-notice-row__title">
+              온라인 입점 취소 안내
+            </h3>
+
+            <time
+              class="hs-notice-row__date"
+              datetime="2024-12-04"
+            >
+              2024.12.04
+            </time>
+
+            <span class="hs-notice-row__view">
+              842
+            </span>
+          </a>
+
+          <a
+            href="./notice-detail.html"
+            class="hs-notice-row"
+          >
+            <span class="hs-notice-row__number">
+              10
+            </span>
+
+            <h3 class="hs-notice-row__title">
+              해버싯 쇼룸 방문 및 상담 안내
+            </h3>
+
+            <time
+              class="hs-notice-row__date"
+              datetime="2026-07-12"
+            >
+              2026.07.12
+            </time>
+
+            <span class="hs-notice-row__view">
+              124
+            </span>
+          </a>
+
+          <a
+            href="./notice-detail.html"
+            class="hs-notice-row"
+          >
+            <span class="hs-notice-row__number">
+              09
+            </span>
+
+            <h3 class="hs-notice-row__title">
+              오더메이드 및 기업 프로젝트 상담 안내
+            </h3>
+
+            <time
+              class="hs-notice-row__date"
+              datetime="2026-07-08"
+            >
+              2026.07.08
+            </time>
+
+            <span class="hs-notice-row__view">
+              98
+            </span>
+          </a>
+
+          <a
+            href="./notice-detail.html"
+            class="hs-notice-row"
+          >
+            <span class="hs-notice-row__number">
+              08
+            </span>
+
+            <h3 class="hs-notice-row__title">
+              제품 배송 및 설치 일정 안내
+            </h3>
+
+            <time
+              class="hs-notice-row__date"
+              datetime="2026-07-02"
+            >
+              2026.07.02
+            </time>
+
+            <span class="hs-notice-row__view">
+              76
+            </span>
+          </a>
+
+          <a
+            href="./notice-detail.html"
+            class="hs-notice-row"
+          >
+            <span class="hs-notice-row__number">
+              07
+            </span>
+
+            <h3 class="hs-notice-row__title">
+              해버싯 홈페이지 리뉴얼 안내
+            </h3>
+
+            <time
+              class="hs-notice-row__date"
+              datetime="2026-06-28"
+            >
+              2026.06.28
+            </time>
+
+            <span class="hs-notice-row__view">
+              143
+            </span>
+          </a>
+
+          <a
+            href="./notice-detail.html"
+            class="hs-notice-row"
+          >
+            <span class="hs-notice-row__number">
+              06
+            </span>
+
+            <h3 class="hs-notice-row__title">
+              2026 여름 시즌 배송 안내
+            </h3>
+
+            <time
+              class="hs-notice-row__date"
+              datetime="2026-06-20"
+            >
+              2026.06.20
+            </time>
+
+            <span class="hs-notice-row__view">
+              91
+            </span>
+          </a>
+
+          <a
+            href="./notice-detail.html"
+            class="hs-notice-row"
+          >
+            <span class="hs-notice-row__number">
+              05
+            </span>
+
+            <h3 class="hs-notice-row__title">
+              B2B 회원 서비스 이용 안내
+            </h3>
+
+            <time
+              class="hs-notice-row__date"
+              datetime="2026-05-16"
+            >
+              2026.05.16
+            </time>
+
+            <span class="hs-notice-row__view">
+              182
+            </span>
+          </a>
+
+          <a
+            href="./notice-detail.html"
+            class="hs-notice-row"
+          >
+            <span class="hs-notice-row__number">
+              04
+            </span>
+
+            <h3 class="hs-notice-row__title">
+              주문 제작 제품 교환 및 반품 안내
+            </h3>
+
+            <time
+              class="hs-notice-row__date"
+              datetime="2026-04-08"
+            >
+              2026.04.08
+            </time>
+
+            <span class="hs-notice-row__view">
+              204
+            </span>
+          </a>
+
+          <a
+            href="./notice-detail.html"
+            class="hs-notice-row"
+          >
+            <span class="hs-notice-row__number">
+              03
+            </span>
+
+            <h3 class="hs-notice-row__title">
+              설 연휴 쇼룸 운영 및 배송 안내
+            </h3>
+
+            <time
+              class="hs-notice-row__date"
+              datetime="2026-02-03"
+            >
+              2026.02.03
+            </time>
+
+            <span class="hs-notice-row__view">
+              173
+            </span>
+          </a>
+
+          <a
+            href="./notice-detail.html"
+            class="hs-notice-row"
+          >
+            <span class="hs-notice-row__number">
+              02
+            </span>
+
+            <h3 class="hs-notice-row__title">
+              이용약관 및 개인정보처리방침 개정 안내
+            </h3>
+
+            <time
+              class="hs-notice-row__date"
+              datetime="2026-01-12"
+            >
+              2026.01.12
+            </time>
+
+            <span class="hs-notice-row__view">
+              88
+            </span>
+          </a>
+
+          <a
+            href="./notice-detail.html"
+            class="hs-notice-row"
+          >
+            <span class="hs-notice-row__number">
+              01
+            </span>
+
+            <h3 class="hs-notice-row__title">
+              2026년 해버싯 쇼룸 운영 안내
+            </h3>
+
+            <time
+              class="hs-notice-row__date"
+              datetime="2026-01-02"
+            >
+              2026.01.02
+            </time>
+
+            <span class="hs-notice-row__view">
+              112
+            </span>
+          </a>
+
+        </div>
+
+        <!-- PAGINATION -->
+        <nav
+          class="hs-board-pagination"
+          aria-label="공지사항 페이지 이동"
+        >
+          <a href="#" aria-label="이전 페이지">
+            ←
+          </a>
+
+          <span class="is-current">
+            1
+          </span>
+
+          <a href="#">
+            2
+          </a>
+
+          <a href="#" aria-label="다음 페이지">
+            →
+          </a>
+        </nav>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="hs-section hs-section--soft">
+      <div class="hs-container">
+
+        <div
+          class="hs-community-contact"
+          data-reveal
+        >
+          <div class="hs-community-contact__label">
+            <p class="hs-eyebrow">
+              Support
+            </p>
+          </div>
+
+          <div class="hs-community-contact__content">
+            <h2 class="hs-section-title">
+              공지에서 찾지 못한 내용이 있으신가요?
+            </h2>
+
+            <p class="hs-body-copy hs-community-contact__description">
+              제품과 주문, 배송 및 프로젝트 관련 문의는
+              Q&amp;A 게시판을 통해 남겨주세요.
+            </p>
+          </div>
+
+          <div class="hs-community-contact__action">
+            <a
+              href="./qna.html"
+              class="hs-button"
+            >
+              Write a question
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer class="hs-footer">
+    <div class="hs-footer__inner">
+
+      <div class="hs-footer__grid">
+
+        <div>
+          <h2 class="hs-footer__title">
+            Company
+          </h2>
+
+          <p class="hs-footer__text">
+            have a seat
+          </p>
+
+          <p class="hs-footer__text">
+            대표자 Lee Kyoung Ha
+          </p>
+
+          <p class="hs-footer__text">
+            사업자등록번호 139-07-63165
+          </p>
+
+          <p class="hs-footer__text">
+            통신판매업신고 2018-서울중구-0699
+          </p>
+
+          <a
+            href="mailto:haveaseat@naver.com"
+            class="hs-footer__link"
+          >
+            haveaseat@naver.com
+          </a>
+        </div>
+
+        <div>
+          <h2 class="hs-footer__title">
+            Customer Center
+          </h2>
+
+          <div class="hs-footer__links">
+
+            <a
+              href="tel:01030058374"
+              class="hs-footer__link"
+            >
+              010-3005-8374
+            </a>
+
+            <span class="hs-footer__text">
+              Mon–Fri 10:00–17:00
+            </span>
+
+            <span class="hs-footer__text">
+              Lunch 12:30–13:30
+            </span>
+
+            <a href="./notice.html" class="hs-footer__link">
+              Notice
+            </a>
+
+            <a href="./faq.html" class="hs-footer__link">
+              FAQ
+            </a>
+
+            <a href="./qna.html" class="hs-footer__link">
+              Q&amp;A
+            </a>
+
+          </div>
+        </div>
+
+        <div>
+          <h2 class="hs-footer__title">
+            Showroom
+          </h2>
+
+          <p class="hs-footer__text">
+            서울시 중구 흥인동 2-10 1층
+          </p>
+
+          <p class="hs-footer__text">
+            Mon–Fri 10:00–18:00
+          </p>
+
+          <p class="hs-footer__text">
+            Sat 11:00–18:00
+          </p>
+
+          <div class="hs-footer__links">
+            <a
+              href="./showroom.html"
+              class="hs-footer__link"
+            >
+              View showroom
+            </a>
+
+            <a
+              href="./showroom.html#map"
+              class="hs-footer__link"
+            >
+              View map
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="hs-footer__title">
+            Service
+          </h2>
+
+          <div class="hs-footer__links">
+            <a href="./shop.html" class="hs-footer__link">
+              Shop
+            </a>
+
+            <a href="./ordermade.html" class="hs-footer__link">
+              Ordermade
+            </a>
+
+            <a href="./portfolio.html" class="hs-footer__link">
+              Portfolio
+            </a>
+
+            <a href="./orders.html" class="hs-footer__link">
+              Order List
+            </a>
+
+            <a href="./mypage.html" class="hs-footer__link">
+              My Page
+            </a>
+
+            <a href="#" class="hs-footer__link">
+              Instagram
+            </a>
+
+            <a href="#" class="hs-footer__link">
+              Kakao
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hs-footer__bottom">
+
+        <p>
+          © have a seat. All rights reserved.
+        </p>
+
+        <div class="hs-footer__policy">
+          <a href="./terms.html">
+            Terms and Conditions
+          </a>
+
+          <a href="./privacy.html">
+            Privacy Policy
+          </a>
+
+          <a href="./guide.html">
+            Shopping Guide
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
