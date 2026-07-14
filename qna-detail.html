@@ -13,7 +13,7 @@
     content="해버싯 제품과 주문, 배송, 오더메이드 및 공간 프로젝트 문의에 대한 답변을 확인하세요."
   >
 
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#f5f3ee">
 
   <title>Q&amp;A Detail | have a seat</title>
 
@@ -56,12 +56,14 @@
       >
 
         <div class="hs-nav__item">
+
           <a
             href="./brand.html"
             class="hs-nav__link"
           >
             Brand
           </a>
+
         </div>
 
         <div class="hs-nav__item">
@@ -112,30 +114,6 @@
             Ordermade
           </a>
 
-          <div class="hs-dropdown">
-
-            <a href="./ordermade.html">
-              Ordermade Service
-            </a>
-
-            <a href="./ordermade.html#consider">
-              What We Consider
-            </a>
-
-            <a href="./ordermade.html#proposal">
-              Proposal
-            </a>
-
-            <a href="./ordermade.html#projects">
-              Projects
-            </a>
-
-            <a href="./qna-write.html">
-              Contact
-            </a>
-
-          </div>
-
         </div>
 
         <div class="hs-nav__item">
@@ -146,34 +124,6 @@
           >
             Portfolio
           </a>
-
-          <div class="hs-dropdown">
-
-            <a href="./portfolio.html">
-              All Projects
-            </a>
-
-            <a href="./portfolio.html?category=showroom">
-              Brand Showroom
-            </a>
-
-            <a href="./portfolio.html?category=food">
-              Food &amp; Beverage
-            </a>
-
-            <a href="./portfolio.html?category=work">
-              Work &amp; Study
-            </a>
-
-            <a href="./portfolio.html?category=customer">
-              Customer Experience
-            </a>
-
-            <a href="./portfolio.html?category=hospitality">
-              Hospitality
-            </a>
-
-          </div>
 
         </div>
 
@@ -369,6 +319,22 @@
 
         <div class="hs-mobile-menu__sub">
 
+          <a href="./shop.html">
+            All Products
+          </a>
+
+          <a href="./portfolio.html">
+            Projects
+          </a>
+
+          <a href="./showroom.html">
+            Showroom
+          </a>
+
+          <a href="./membership.html">
+            Membership
+          </a>
+
           <a href="./notice.html">
             Notice
           </a>
@@ -382,14 +348,6 @@
             aria-current="page"
           >
             Q&amp;A
-          </a>
-
-          <a href="./showroom.html">
-            Showroom
-          </a>
-
-          <a href="./membership.html">
-            Membership
           </a>
 
           <a href="./login.html">
@@ -507,6 +465,7 @@
 
             <h1 class="hs-title">
               문의 내용과 답변을
+              <span class="pc-br"></span>
               확인하세요.
             </h1>
 
@@ -598,6 +557,7 @@
           <dl class="hs-board-detail__meta">
 
             <div>
+
               <dt>
                 Writer
               </dt>
@@ -605,9 +565,11 @@
               <dd>
                 이**
               </dd>
+
             </div>
 
             <div>
+
               <dt>
                 Date
               </dt>
@@ -617,9 +579,11 @@
                   2026.07.12
                 </time>
               </dd>
+
             </div>
 
             <div>
+
               <dt>
                 Status
               </dt>
@@ -627,9 +591,11 @@
               <dd>
                 Answered
               </dd>
+
             </div>
 
             <div>
+
               <dt>
                 Privacy
               </dt>
@@ -637,6 +603,7 @@
               <dd>
                 Secret Post
               </dd>
+
             </div>
 
           </dl>
@@ -773,7 +740,7 @@
 
         </article>
 
-        <!-- ADMIN ACTIONS -->
+        <!-- ACTIONS -->
 
         <div
           class="hs-board-detail__actions"
@@ -864,7 +831,7 @@
     </section>
 
     <!-- ===================================================
-         INQUIRY GUIDE
+         NEW INQUIRY
     ==================================================== -->
 
     <section class="hs-section hs-section--soft">
@@ -916,7 +883,7 @@
   </main>
 
   <!-- =====================================================
-       DELETE CONFIRM
+       DELETE CONFIRM MODAL
   ====================================================== -->
 
   <div
@@ -1212,10 +1179,7 @@
         "[data-delete-confirm]"
       );
 
-      if (
-        !deleteButton ||
-        !modal
-      ) {
+      if (!deleteButton || !modal) {
         return;
       }
 
