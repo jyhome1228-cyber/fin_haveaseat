@@ -10,10 +10,10 @@
 
   <meta
     name="description"
-    content="해버싯 제품과 주문, 배송, 오더메이드, 기업 회원 및 공간 프로젝트에 관한 문의를 작성할 수 있습니다."
+    content="해버싯 제품과 주문, 배송, 오더메이드 및 공간 프로젝트에 관한 문의를 작성할 수 있습니다."
   >
 
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#f5f3ee">
 
   <title>Write Inquiry | have a seat</title>
 
@@ -105,6 +105,8 @@
 
         </div>
 
+        <!-- 단일 메뉴 -->
+
         <div class="hs-nav__item">
 
           <a
@@ -114,31 +116,9 @@
             Ordermade
           </a>
 
-          <div class="hs-dropdown">
-
-            <a href="./ordermade.html">
-              Ordermade Service
-            </a>
-
-            <a href="./ordermade.html#consider">
-              What We Consider
-            </a>
-
-            <a href="./ordermade.html#proposal">
-              Proposal
-            </a>
-
-            <a href="./ordermade.html#projects">
-              Projects
-            </a>
-
-            <a href="./qna-write.html">
-              Contact
-            </a>
-
-          </div>
-
         </div>
+
+        <!-- 단일 메뉴 -->
 
         <div class="hs-nav__item">
 
@@ -148,34 +128,6 @@
           >
             Portfolio
           </a>
-
-          <div class="hs-dropdown">
-
-            <a href="./portfolio.html">
-              All Projects
-            </a>
-
-            <a href="./portfolio.html?category=showroom">
-              Brand Showroom
-            </a>
-
-            <a href="./portfolio.html?category=food">
-              Food &amp; Beverage
-            </a>
-
-            <a href="./portfolio.html?category=work">
-              Work &amp; Study
-            </a>
-
-            <a href="./portfolio.html?category=customer">
-              Customer Experience
-            </a>
-
-            <a href="./portfolio.html?category=hospitality">
-              Hospitality
-            </a>
-
-          </div>
 
         </div>
 
@@ -371,6 +323,22 @@
 
         <div class="hs-mobile-menu__sub">
 
+          <a href="./shop.html">
+            All Products
+          </a>
+
+          <a href="./portfolio.html">
+            Projects
+          </a>
+
+          <a href="./showroom.html">
+            Showroom
+          </a>
+
+          <a href="./membership.html">
+            Membership
+          </a>
+
           <a href="./notice.html">
             Notice
           </a>
@@ -384,14 +352,6 @@
             aria-current="page"
           >
             Q&amp;A
-          </a>
-
-          <a href="./showroom.html">
-            Showroom
-          </a>
-
-          <a href="./membership.html">
-            Membership
           </a>
 
           <a href="./login.html">
@@ -507,15 +467,17 @@
             data-reveal
           >
 
-            <h1 class="hs-title">
-              문의 내용을
-              작성해주세요.
+            <h1
+              class="hs-title"
+              data-write-page-title
+            >
+              문의 내용을 작성해주세요.
             </h1>
 
             <p class="hs-body-copy hs-community-hero__description">
               제품과 주문, 배송과 설치,
-              오더메이드와 기업 회원,
-              공간 프로젝트에 관한 문의를 남길 수 있습니다.
+              오더메이드 및 공간 프로젝트에 필요한 정보를
+              구체적으로 작성해주시면 확인 후 안내드립니다.
             </p>
 
           </div>
@@ -568,667 +530,748 @@
     </nav>
 
     <!-- ===================================================
-         WRITE FORM
+         INQUIRY FORM
     ==================================================== -->
 
-    <section class="hs-board">
-      <div class="hs-container--wide">
+    <section class="hs-board-form">
+      <div class="hs-container--reading">
 
         <div
-          class="hs-board__head"
+          class="hs-board-form__head"
           data-reveal
         >
 
-          <p class="hs-board__label hs-eyebrow">
-            Write Inquiry
-          </p>
+          <div>
 
-          <h2
-            class="hs-board__title hs-section-title"
-            data-form-title
-          >
-            문의 내용을 작성해주세요.
-          </h2>
+            <p class="hs-eyebrow">
+              Write Inquiry
+            </p>
 
-          <p class="hs-board__meta">
-            Community / Q&amp;A / Write
+            <h2
+              class="hs-section-title"
+              data-write-form-title
+            >
+              문의하기
+            </h2>
+
+          </div>
+
+          <p class="hs-board-form__required">
+            <span aria-hidden="true">*</span>
+            Required
           </p>
 
         </div>
 
-        <div class="hs-order-contact">
+        <form
+          class="hs-inquiry-form"
+          enctype="multipart/form-data"
+          data-inquiry-form
+          novalidate
+        >
 
-          <!-- GUIDE -->
+          <!-- 문의 유형 -->
 
-          <aside
-            class="hs-order-contact__information"
+          <div
+            class="hs-form-field"
             data-reveal
           >
 
-            <div class="hs-order-contact__information-head">
+            <label
+              for="inquiry-category"
+              class="hs-form-label"
+            >
+              문의 유형
+              <span aria-hidden="true">*</span>
+            </label>
 
-              <p class="hs-eyebrow">
-                Inquiry Guide
+            <div class="hs-form-control">
+
+              <select
+                id="inquiry-category"
+                name="category"
+                class="hs-form-select"
+                required
+                data-category-select
+              >
+                <option value="">
+                  문의 유형을 선택해주세요.
+                </option>
+
+                <option value="product">
+                  Product / 제품 문의
+                </option>
+
+                <option value="order">
+                  Order / 주문 및 결제
+                </option>
+
+                <option value="delivery">
+                  Delivery / 배송 및 설치
+                </option>
+
+                <option value="ordermade">
+                  Ordermade / 주문 제작
+                </option>
+
+                <option value="project">
+                  Project / 공간 프로젝트
+                </option>
+
+                <option value="membership">
+                  Membership / 기업 회원
+                </option>
+
+                <option value="showroom">
+                  Showroom / 쇼룸 방문
+                </option>
+
+                <option value="etc">
+                  Etc / 기타 문의
+                </option>
+              </select>
+
+              <p
+                class="hs-form-error"
+                data-error-for="category"
+                hidden
+              >
+                문의 유형을 선택해주세요.
               </p>
-
-              <h2 class="hs-section-title">
-                정확한 안내를 위해
-                필요한 정보를 함께 작성해주세요.
-              </h2>
 
             </div>
 
-            <div class="hs-order-contact__information-list">
+          </div>
 
-              <div class="hs-order-contact__information-row">
+          <!-- 제목 -->
+
+          <div
+            class="hs-form-field"
+            data-reveal
+          >
+
+            <label
+              for="inquiry-title"
+              class="hs-form-label"
+            >
+              제목
+              <span aria-hidden="true">*</span>
+            </label>
+
+            <div class="hs-form-control">
+
+              <input
+                id="inquiry-title"
+                name="title"
+                class="hs-form-input"
+                type="text"
+                maxlength="100"
+                placeholder="문의 제목을 입력해주세요."
+                required
+                data-title-input
+              >
+
+              <p
+                class="hs-form-error"
+                data-error-for="title"
+                hidden
+              >
+                문의 제목을 입력해주세요.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- 작성자 -->
+
+          <div
+            class="hs-form-field"
+            data-reveal
+          >
+
+            <label
+              for="inquiry-name"
+              class="hs-form-label"
+            >
+              작성자
+              <span aria-hidden="true">*</span>
+            </label>
+
+            <div class="hs-form-control">
+
+              <input
+                id="inquiry-name"
+                name="name"
+                class="hs-form-input"
+                type="text"
+                maxlength="30"
+                placeholder="이름 또는 상호명을 입력해주세요."
+                required
+                autocomplete="name"
+                data-name-input
+              >
+
+              <p
+                class="hs-form-error"
+                data-error-for="name"
+                hidden
+              >
+                작성자 정보를 입력해주세요.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- 연락처 -->
+
+          <div
+            class="hs-form-field"
+            data-reveal
+          >
+
+            <label
+              for="inquiry-phone"
+              class="hs-form-label"
+            >
+              연락처
+              <span aria-hidden="true">*</span>
+            </label>
+
+            <div class="hs-form-control">
+
+              <input
+                id="inquiry-phone"
+                name="phone"
+                class="hs-form-input"
+                type="tel"
+                maxlength="20"
+                placeholder="010-0000-0000"
+                required
+                autocomplete="tel"
+                inputmode="tel"
+                data-phone-input
+              >
+
+              <p class="hs-form-help">
+                상담이 필요한 경우 연락 가능한 번호를 입력해주세요.
+              </p>
+
+              <p
+                class="hs-form-error"
+                data-error-for="phone"
+                hidden
+              >
+                연락처를 입력해주세요.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- 이메일 -->
+
+          <div
+            class="hs-form-field"
+            data-reveal
+          >
+
+            <label
+              for="inquiry-email"
+              class="hs-form-label"
+            >
+              이메일
+            </label>
+
+            <div class="hs-form-control">
+
+              <input
+                id="inquiry-email"
+                name="email"
+                class="hs-form-input"
+                type="email"
+                maxlength="100"
+                placeholder="example@email.com"
+                autocomplete="email"
+                data-email-input
+              >
+
+              <p
+                class="hs-form-error"
+                data-error-for="email"
+                hidden
+              >
+                이메일 형식을 확인해주세요.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- 주문번호 -->
+
+          <div
+            class="hs-form-field"
+            data-reveal
+          >
+
+            <label
+              for="inquiry-order"
+              class="hs-form-label"
+            >
+              주문번호
+            </label>
+
+            <div class="hs-form-control">
+
+              <input
+                id="inquiry-order"
+                name="order_number"
+                class="hs-form-input"
+                type="text"
+                maxlength="50"
+                placeholder="주문 관련 문의인 경우 입력해주세요."
+              >
+
+            </div>
+
+          </div>
+
+          <!-- 공간 유형 -->
+
+          <div
+            class="hs-form-field"
+            data-project-field
+            data-reveal
+          >
+
+            <label
+              for="inquiry-space"
+              class="hs-form-label"
+            >
+              공간 유형
+            </label>
+
+            <div class="hs-form-control">
+
+              <select
+                id="inquiry-space"
+                name="space_type"
+                class="hs-form-select"
+              >
+                <option value="">
+                  공간 유형을 선택해주세요.
+                </option>
+
+                <option value="cafe">
+                  Cafe &amp; Restaurant
+                </option>
+
+                <option value="showroom">
+                  Brand Showroom
+                </option>
+
+                <option value="office">
+                  Office &amp; Workspace
+                </option>
+
+                <option value="education">
+                  Education &amp; Study
+                </option>
+
+                <option value="hospitality">
+                  Hospitality
+                </option>
+
+                <option value="medical">
+                  Medical &amp; Customer Space
+                </option>
+
+                <option value="popup">
+                  Popup &amp; Exhibition
+                </option>
+
+                <option value="etc">
+                  Etc
+                </option>
+              </select>
+
+            </div>
+
+          </div>
+
+          <!-- 제품명 및 수량 -->
+
+          <div
+            class="hs-form-field"
+            data-reveal
+          >
+
+            <label
+              for="inquiry-products"
+              class="hs-form-label"
+            >
+              제품명 및 수량
+            </label>
+
+            <div class="hs-form-control">
+
+              <input
+                id="inquiry-products"
+                name="products"
+                class="hs-form-input"
+                type="text"
+                maxlength="200"
+                placeholder="제품명, 컬러, 필요한 수량을 입력해주세요."
+              >
+
+              <p class="hs-form-help">
+                대량 구매와 프로젝트 문의는 제품별 수량을 함께 적어주세요.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- 희망 일정 -->
+
+          <div
+            class="hs-form-field"
+            data-reveal
+          >
+
+            <label
+              for="inquiry-schedule"
+              class="hs-form-label"
+            >
+              희망 일정
+            </label>
+
+            <div class="hs-form-control">
+
+              <input
+                id="inquiry-schedule"
+                name="schedule"
+                class="hs-form-input"
+                type="text"
+                maxlength="100"
+                placeholder="예: 2026년 8월 말 납품 희망"
+              >
+
+            </div>
+
+          </div>
+
+          <!-- 문의 내용 -->
+
+          <div
+            class="hs-form-field hs-form-field--textarea"
+            data-reveal
+          >
+
+            <label
+              for="inquiry-content"
+              class="hs-form-label"
+            >
+              문의 내용
+              <span aria-hidden="true">*</span>
+            </label>
+
+            <div class="hs-form-control">
+
+              <textarea
+                id="inquiry-content"
+                name="content"
+                class="hs-form-textarea"
+                rows="14"
+                maxlength="3000"
+                placeholder="문의 내용을 구체적으로 입력해주세요."
+                required
+                data-content-input
+              ></textarea>
+
+              <div class="hs-form-textarea-meta">
+
+                <p class="hs-form-help">
+                  규격, 컬러, 수량, 납품 지역과 일정 등 필요한 정보를 함께 작성해주세요.
+                </p>
+
+                <p
+                  class="hs-form-count"
+                  aria-live="polite"
+                >
+                  <span data-content-count>
+                    0
+                  </span>
+                  / 3000
+                </p>
+
+              </div>
+
+              <p
+                class="hs-form-error"
+                data-error-for="content"
+                hidden
+              >
+                문의 내용을 입력해주세요.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- 첨부파일 -->
+
+          <div
+            class="hs-form-field"
+            data-reveal
+          >
+
+            <span class="hs-form-label">
+              첨부파일
+            </span>
+
+            <div class="hs-form-control">
+
+              <div class="hs-file-upload">
+
+                <label
+                  for="inquiry-file"
+                  class="hs-file-upload__button"
+                >
+                  Select File
+                </label>
+
+                <input
+                  id="inquiry-file"
+                  name="attachment"
+                  class="hs-file-upload__input"
+                  type="file"
+                  accept=".jpg,.jpeg,.png,.pdf,.zip,.dwg,.ai"
+                  data-file-input
+                >
+
+                <p
+                  class="hs-file-upload__name"
+                  data-file-name
+                >
+                  No file selected
+                </p>
+
+              </div>
+
+              <p class="hs-form-help">
+                이미지, 도면, 배치도 및 관련 자료를 첨부할 수 있습니다.
+                파일당 최대 용량은 실제 쇼핑몰 설정에 따라 달라질 수 있습니다.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- 비밀글 -->
+
+          <div
+            class="hs-form-field"
+            data-reveal
+          >
+
+            <span class="hs-form-label">
+              공개 설정
+            </span>
+
+            <div class="hs-form-control">
+
+              <label class="hs-form-check">
+
+                <input
+                  type="checkbox"
+                  name="secret"
+                  value="true"
+                  checked
+                >
+
+                <span class="hs-form-check__box"></span>
+
+                <span class="hs-form-check__text">
+                  비밀글로 작성합니다.
+                </span>
+
+              </label>
+
+              <p class="hs-form-help">
+                비밀글은 작성자와 관리자만 확인할 수 있습니다.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- 개인정보 동의 -->
+
+          <div
+            class="hs-form-field"
+            data-reveal
+          >
+
+            <span class="hs-form-label">
+              개인정보 수집 동의
+              <span aria-hidden="true">*</span>
+            </span>
+
+            <div class="hs-form-control">
+
+              <div class="hs-form-agreement">
+
+                <div class="hs-form-agreement__content">
+
+                  <p>
+                    문의 답변과 상담 진행을 위해 이름,
+                    연락처 및 이메일 정보를 수집합니다.
+                  </p>
+
+                  <p>
+                    수집된 정보는 문의 처리와 상담 안내 목적으로만 이용되며,
+                    관련 업무 종료 후 내부 운영 기준에 따라 보관 또는 파기됩니다.
+                  </p>
+
+                </div>
+
+                <label class="hs-form-check">
+
+                  <input
+                    type="checkbox"
+                    name="privacy_agreement"
+                    value="true"
+                    required
+                    data-privacy-input
+                  >
+
+                  <span class="hs-form-check__box"></span>
+
+                  <span class="hs-form-check__text">
+                    개인정보 수집 및 이용에 동의합니다.
+                  </span>
+
+                </label>
+
+              </div>
+
+              <p
+                class="hs-form-error"
+                data-error-for="privacy"
+                hidden
+              >
+                개인정보 수집 및 이용에 동의해주세요.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- ACTIONS -->
+
+          <div
+            class="hs-board-form__actions"
+            data-reveal
+          >
+
+            <a
+              href="./qna.html"
+              class="hs-button"
+            >
+              Cancel
+            </a>
+
+            <button
+              type="submit"
+              class="hs-button"
+              data-submit-button
+            >
+              Submit Inquiry
+            </button>
+
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         GUIDE
+    ==================================================== -->
+
+    <section class="hs-section hs-section--soft">
+      <div class="hs-container--wide">
+
+        <div
+          class="hs-community-contact"
+          data-reveal
+        >
+
+          <div class="hs-community-contact__label">
+
+            <p class="hs-eyebrow">
+              Inquiry Guide
+            </p>
+
+          </div>
+
+          <div class="hs-community-contact__content">
+
+            <h2 class="hs-section-title">
+              상담에 필요한 정보를 함께 보내주세요.
+            </h2>
+
+            <p class="hs-body-copy hs-community-contact__description">
+              프로젝트 문의는 공간의 종류와 규모,
+              도면과 현장 이미지, 희망 일정,
+              필요한 제품과 수량을 함께 보내주시면 좋습니다.
+            </p>
+
+            <div class="hs-community-contact__information">
+
+              <div class="hs-community-contact__row">
 
                 <span>
                   Product
                 </span>
 
                 <p>
-                  제품명, 컬러, 수량과
-                  확인이 필요한 내용을 작성해주세요.
+                  제품명, 컬러, 수량
                 </p>
 
               </div>
 
-              <div class="hs-order-contact__information-row">
-
-                <span>
-                  Order
-                </span>
-
-                <p>
-                  주문자명과 주문번호,
-                  배송 및 교환 관련 내용을 작성해주세요.
-                </p>
-
-              </div>
-
-              <div class="hs-order-contact__information-row">
-
-                <span>
-                  Ordermade
-                </span>
-
-                <p>
-                  필요한 규격과 소재,
-                  제품 수량과 희망 일정을 작성해주세요.
-                </p>
-
-              </div>
-
-              <div class="hs-order-contact__information-row">
+              <div class="hs-community-contact__row">
 
                 <span>
                   Project
                 </span>
 
                 <p>
-                  공간 유형과 규모, 도면,
-                  납품 일정과 필요한 제품을 전달해주세요.
+                  공간 유형, 도면, 납품 일정
                 </p>
 
               </div>
 
-              <div class="hs-order-contact__information-row">
+              <div class="hs-community-contact__row">
 
                 <span>
-                  Membership
+                  Delivery
                 </span>
 
                 <p>
-                  사업자명과 가입한 회원 정보,
-                  사업자등록증 관련 내용을 작성해주세요.
+                  납품 지역, 반입 조건, 설치 여부
                 </p>
 
               </div>
 
             </div>
 
-            <div class="hs-order-contact__notice">
-
-              <p>
-                영업시간 내 접수된 문의는
-                순차적으로 확인 후 안내드립니다.
-              </p>
-
-              <p>
-                Mon–Fri 10:00–17:00
-              </p>
-
-            </div>
-
-          </aside>
-
-          <!-- FORM -->
-
-          <form
-            class="hs-order-contact__form"
-            action="./qna.html"
-            method="get"
-            enctype="multipart/form-data"
-            data-inquiry-form
-            data-reveal
-          >
-
-            <input
-              type="hidden"
-              name="submitted"
-              value="true"
-            >
-
-            <fieldset class="hs-form-fieldset">
-
-              <legend class="hs-form-legend">
-                문의 기본 정보
-              </legend>
-
-              <!-- TYPE -->
-
-              <div class="hs-form-group">
-
-                <label
-                  for="inquiry-category"
-                  class="hs-form-label"
-                >
-                  문의 유형
-                  <span aria-hidden="true">*</span>
-                </label>
-
-                <select
-                  id="inquiry-category"
-                  name="category"
-                  class="hs-form-select"
-                  required
-                  data-inquiry-category
-                >
-                  <option value="">
-                    문의 유형을 선택해주세요.
-                  </option>
-
-                  <option value="product">
-                    제품 문의
-                  </option>
-
-                  <option value="order">
-                    주문 및 결제
-                  </option>
-
-                  <option value="delivery">
-                    배송 및 설치
-                  </option>
-
-                  <option value="exchange">
-                    교환 및 반품
-                  </option>
-
-                  <option value="showroom">
-                    쇼룸 문의
-                  </option>
-
-                  <option value="ordermade">
-                    오더메이드
-                  </option>
-
-                  <option value="project">
-                    공간 프로젝트
-                  </option>
-
-                  <option value="membership">
-                    기업 회원
-                  </option>
-
-                  <option value="other">
-                    기타 문의
-                  </option>
-                </select>
-
-              </div>
-
-              <!-- TITLE -->
-
-              <div class="hs-form-group">
-
-                <label
-                  for="inquiry-title"
-                  class="hs-form-label"
-                >
-                  제목
-                  <span aria-hidden="true">*</span>
-                </label>
-
-                <input
-                  id="inquiry-title"
-                  name="title"
-                  class="hs-form-input"
-                  type="text"
-                  placeholder="문의 제목을 입력해주세요."
-                  maxlength="100"
-                  required
-                  data-inquiry-title
-                >
-
-              </div>
-
-              <!-- NAME / PHONE -->
-
-              <div class="hs-form-row">
-
-                <div class="hs-form-group">
-
-                  <label
-                    for="inquiry-name"
-                    class="hs-form-label"
-                  >
-                    이름
-                    <span aria-hidden="true">*</span>
-                  </label>
-
-                  <input
-                    id="inquiry-name"
-                    name="name"
-                    class="hs-form-input"
-                    type="text"
-                    placeholder="이름을 입력해주세요."
-                    autocomplete="name"
-                    required
-                  >
-
-                </div>
-
-                <div class="hs-form-group">
-
-                  <label
-                    for="inquiry-phone"
-                    class="hs-form-label"
-                  >
-                    연락처
-                    <span aria-hidden="true">*</span>
-                  </label>
-
-                  <input
-                    id="inquiry-phone"
-                    name="phone"
-                    class="hs-form-input"
-                    type="tel"
-                    placeholder="010-0000-0000"
-                    autocomplete="tel"
-                    inputmode="tel"
-                    required
-                  >
-
-                </div>
-
-              </div>
-
-              <!-- EMAIL / ORDER NUMBER -->
-
-              <div class="hs-form-row">
-
-                <div class="hs-form-group">
-
-                  <label
-                    for="inquiry-email"
-                    class="hs-form-label"
-                  >
-                    이메일
-                    <span aria-hidden="true">*</span>
-                  </label>
-
-                  <input
-                    id="inquiry-email"
-                    name="email"
-                    class="hs-form-input"
-                    type="email"
-                    placeholder="example@email.com"
-                    autocomplete="email"
-                    required
-                  >
-
-                </div>
-
-                <div class="hs-form-group">
-
-                  <label
-                    for="inquiry-order"
-                    class="hs-form-label"
-                  >
-                    주문번호
-                  </label>
-
-                  <input
-                    id="inquiry-order"
-                    name="orderNumber"
-                    class="hs-form-input"
-                    type="text"
-                    placeholder="주문 문의 시 입력해주세요."
-                  >
-
-                </div>
-
-              </div>
-
-            </fieldset>
-
-            <!-- PROJECT DETAIL -->
-
-            <fieldset
-              class="hs-form-fieldset"
-              data-project-fields
-            >
-
-              <legend class="hs-form-legend">
-                프로젝트 정보
-              </legend>
-
-              <div class="hs-form-row">
-
-                <div class="hs-form-group">
-
-                  <label
-                    for="project-type"
-                    class="hs-form-label"
-                  >
-                    공간 유형
-                  </label>
-
-                  <select
-                    id="project-type"
-                    name="projectType"
-                    class="hs-form-select"
-                  >
-                    <option value="">
-                      공간 유형을 선택해주세요.
-                    </option>
-
-                    <option value="showroom">
-                      브랜드 쇼룸
-                    </option>
-
-                    <option value="food">
-                      카페 및 레스토랑
-                    </option>
-
-                    <option value="office">
-                      오피스 및 업무 공간
-                    </option>
-
-                    <option value="study">
-                      학습 및 스터디 공간
-                    </option>
-
-                    <option value="hospitality">
-                      호텔 및 숙박 공간
-                    </option>
-
-                    <option value="customer">
-                      고객 응대 공간
-                    </option>
-
-                    <option value="popup">
-                      팝업 및 전시 공간
-                    </option>
-
-                    <option value="other">
-                      기타 공간
-                    </option>
-                  </select>
-
-                </div>
-
-                <div class="hs-form-group">
-
-                  <label
-                    for="project-area"
-                    class="hs-form-label"
-                  >
-                    공간 규모
-                  </label>
-
-                  <input
-                    id="project-area"
-                    name="projectArea"
-                    class="hs-form-input"
-                    type="text"
-                    placeholder="예: 약 80평"
-                  >
-
-                </div>
-
-              </div>
-
-              <div class="hs-form-row">
-
-                <div class="hs-form-group">
-
-                  <label
-                    for="project-quantity"
-                    class="hs-form-label"
-                  >
-                    예상 수량
-                  </label>
-
-                  <input
-                    id="project-quantity"
-                    name="quantity"
-                    class="hs-form-input"
-                    type="text"
-                    placeholder="예: 체어 40개, 테이블 12개"
-                  >
-
-                </div>
-
-                <div class="hs-form-group">
-
-                  <label
-                    for="project-date"
-                    class="hs-form-label"
-                  >
-                    희망 납품일
-                  </label>
-
-                  <input
-                    id="project-date"
-                    name="deliveryDate"
-                    class="hs-form-input"
-                    type="date"
-                  >
-
-                </div>
-
-              </div>
-
-              <div class="hs-form-group">
-
-                <label
-                  for="project-region"
-                  class="hs-form-label"
-                >
-                  납품 지역
-                </label>
-
-                <input
-                  id="project-region"
-                  name="region"
-                  class="hs-form-input"
-                  type="text"
-                  placeholder="예: 서울특별시 성동구"
-                >
-
-              </div>
-
-            </fieldset>
-
-            <!-- CONTENT -->
-
-            <fieldset class="hs-form-fieldset">
-
-              <legend class="hs-form-legend">
-                문의 내용
-              </legend>
-
-              <div class="hs-form-group">
-
-                <label
-                  for="inquiry-content"
-                  class="hs-form-label"
-                >
-                  내용
-                  <span aria-hidden="true">*</span>
-                </label>
-
-                <textarea
-                  id="inquiry-content"
-                  name="content"
-                  class="hs-form-textarea"
-                  rows="12"
-                  placeholder="문의 내용을 구체적으로 작성해주세요."
-                  required
-                  data-inquiry-content
-                ></textarea>
-
-                <p class="hs-form-help">
-                  제품명, 컬러, 수량과 일정 등
-                  확인에 필요한 정보를 함께 작성해주세요.
-                </p>
-
-              </div>
-
-              <!-- FILE -->
-
-              <div class="hs-form-group">
-
-                <label
-                  for="inquiry-file"
-                  class="hs-form-label"
-                >
-                  첨부파일
-                </label>
-
-                <input
-                  id="inquiry-file"
-                  name="attachment"
-                  class="hs-form-file"
-                  type="file"
-                  accept=".jpg,.jpeg,.png,.pdf,.doc,.docx,.xls,.xlsx"
-                  data-file-input
-                >
-
-                <div
-                  class="hs-form-file-information"
-                  data-file-information
-                >
-                  <span data-file-name>
-                    선택된 파일이 없습니다.
-                  </span>
-
-                  <button
-                    type="button"
-                    hidden
-                    data-file-remove
-                  >
-                    Remove
-                  </button>
-                </div>
-
-                <p class="hs-form-help">
-                  JPG, PNG, PDF, DOC, XLS 파일을 첨부할 수 있습니다.
-                  도면과 공간 사진을 함께 첨부하면 상담에 도움이 됩니다.
-                </p>
-
-              </div>
-
-              <!-- SECRET -->
-
-              <div class="hs-form-group">
-
-                <label class="hs-form-check">
-
-                  <input
-                    type="checkbox"
-                    name="secret"
-                    value="true"
-                    checked
-                  >
-
-                  <span>
-                    비밀글로 작성합니다.
-                  </span>
-
-                </label>
-
-                <p class="hs-form-help">
-                  비밀글은 작성자와 관리자만 확인할 수 있습니다.
-                </p>
-
-              </div>
-
-            </fieldset>
-
-            <!-- PRIVACY -->
-
-            <fieldset class="hs-form-fieldset">
-
-              <legend class="hs-form-legend">
-                개인정보 수집 및 이용 동의
-              </legend>
-
-              <div class="hs-form-policy">
-
-                <p>
-                  해버싯은 문의 확인과 답변을 위해
-                  이름, 연락처, 이메일과 문의 내용을 수집합니다.
-                </p>
-
-                <p>
-                  수집한 정보는 문의 답변 및 상담 목적으로만 사용되며,
-                  관련 업무 종료 후 관계 법령과 내부 기준에 따라 보관 또는 파기됩니다.
-                </p>
-
-              </div>
-
-              <label class="hs-form-check">
-
-                <input
-                  type="checkbox"
-                  name="privacy"
-                  value="agree"
-                  required
-                >
-
-                <span>
-                  개인정보 수집 및 이용에 동의합니다.
-                  <strong aria-hidden="true">*</strong>
-                </span>
-
-              </label>
-
-            </fieldset>
-
-            <!-- ACTIONS -->
-
-            <div class="hs-form-actions">
-
-              <a
-                href="./qna.html"
-                class="hs-button"
-              >
-                Cancel
-              </a>
-
-              <button
-                type="submit"
-                class="hs-button"
-                data-submit-button
-              >
-                Submit Inquiry
-              </button>
-
-            </div>
-
-          </form>
+          </div>
 
         </div>
 
@@ -1236,62 +1279,6 @@
     </section>
 
   </main>
-
-  <!-- =====================================================
-       SUBMIT CONFIRM MODAL
-  ====================================================== -->
-
-  <div
-    class="hs-confirm-modal"
-    hidden
-    aria-hidden="true"
-    data-submit-modal
-  >
-
-    <div
-      class="hs-confirm-modal__dialog"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="submit-modal-title"
-    >
-
-      <p class="hs-eyebrow">
-        Submit Inquiry
-      </p>
-
-      <h2
-        id="submit-modal-title"
-        class="hs-confirm-modal__title"
-      >
-        문의를 등록하시겠습니까?
-      </h2>
-
-      <p class="hs-confirm-modal__description">
-        등록된 문의는 Q&amp;A 목록에서 확인할 수 있습니다.
-      </p>
-
-      <div class="hs-confirm-modal__actions">
-
-        <button
-          type="button"
-          class="hs-button"
-          data-submit-cancel
-        >
-          Cancel
-        </button>
-
-        <button
-          type="button"
-          class="hs-button"
-          data-submit-confirm
-        >
-          Submit
-        </button>
-
-      </div>
-
-    </div>
-  </div>
 
   <!-- =====================================================
        FOOTER
@@ -1512,7 +1499,7 @@
   <script src="./assets/js/main.js"></script>
 
   <!-- =====================================================
-       FORM INTERACTION
+       WRITE FORM SCRIPT
   ====================================================== -->
 
   <script>
@@ -1522,23 +1509,35 @@
       );
 
       const categorySelect = document.querySelector(
-        "[data-inquiry-category]"
+        "[data-category-select]"
       );
 
       const titleInput = document.querySelector(
-        "[data-inquiry-title]"
+        "[data-title-input]"
+      );
+
+      const nameInput = document.querySelector(
+        "[data-name-input]"
+      );
+
+      const phoneInput = document.querySelector(
+        "[data-phone-input]"
+      );
+
+      const emailInput = document.querySelector(
+        "[data-email-input]"
       );
 
       const contentInput = document.querySelector(
-        "[data-inquiry-content]"
+        "[data-content-input]"
       );
 
-      const projectFields = document.querySelector(
-        "[data-project-fields]"
+      const contentCount = document.querySelector(
+        "[data-content-count]"
       );
 
-      const pageTitle = document.querySelector(
-        "[data-form-title]"
+      const privacyInput = document.querySelector(
+        "[data-privacy-input]"
       );
 
       const fileInput = document.querySelector(
@@ -1549,139 +1548,96 @@
         "[data-file-name]"
       );
 
-      const fileRemove = document.querySelector(
-        "[data-file-remove]"
+      const pageTitle = document.querySelector(
+        "[data-write-page-title]"
       );
 
-      const modal = document.querySelector(
-        "[data-submit-modal]"
+      const formTitle = document.querySelector(
+        "[data-write-form-title]"
       );
 
-      const modalCancel = document.querySelector(
-        "[data-submit-cancel]"
+      const submitButton = document.querySelector(
+        "[data-submit-button]"
       );
 
-      const modalConfirm = document.querySelector(
-        "[data-submit-confirm]"
+      const params = new URLSearchParams(
+        window.location.search
       );
 
-      const projectCategories = [
-        "ordermade",
-        "project"
-      ];
+      const requestedCategory =
+        params.get("category");
 
-      let formIsConfirmed = false;
+      const mode =
+        params.get("mode");
 
-      function updateProjectFields() {
+      function showError(name, show) {
+        const error = document.querySelector(
+          '[data-error-for="' + name + '"]'
+        );
+
+        if (error) {
+          error.hidden = !show;
+        }
+      }
+
+      function updateContentCount() {
         if (
-          !categorySelect ||
-          !projectFields
+          !contentInput ||
+          !contentCount
         ) {
           return;
         }
 
-        const isProject =
-          projectCategories.includes(
-            categorySelect.value
-          );
-
-        projectFields.hidden = !isProject;
-
-        projectFields
-          .querySelectorAll(
-            "input, select, textarea"
-          )
-          .forEach(function (field) {
-            field.disabled = !isProject;
-          });
+        contentCount.textContent =
+          String(contentInput.value.length);
       }
 
-      function setCategoryFromUrl() {
-        if (!categorySelect) return;
+      function applyRequestedCategory() {
+        if (
+          !categorySelect ||
+          !requestedCategory
+        ) {
+          return;
+        }
 
-        const params = new URLSearchParams(
-          window.location.search
-        );
-
-        const category =
-          params.get("category");
-
-        const categoryMap = {
-          b2b: "membership",
-          membership: "membership",
-          business: "membership",
-          ordermade: "ordermade",
-          project: "project",
-          product: "product",
-          delivery: "delivery",
-          showroom: "showroom"
-        };
-
-        const selectedCategory =
-          categoryMap[category] || category;
-
-        const optionExists = Array.from(
+        const validValues = Array.from(
           categorySelect.options
-        ).some(function (option) {
-          return (
-            option.value ===
-            selectedCategory
-          );
+        ).map(function (option) {
+          return option.value;
         });
 
-        if (optionExists) {
+        if (
+          validValues.includes(
+            requestedCategory
+          )
+        ) {
           categorySelect.value =
-            selectedCategory;
+            requestedCategory;
         }
-
-        if (
-          selectedCategory === "membership" &&
-          titleInput &&
-          !titleInput.value
-        ) {
-          titleInput.value =
-            "기업 회원 신청 및 승인 문의";
-        }
-
-        if (
-          selectedCategory === "project" &&
-          titleInput &&
-          !titleInput.value
-        ) {
-          titleInput.value =
-            "공간 프로젝트 상담 요청";
-        }
-
-        if (
-          selectedCategory === "ordermade" &&
-          titleInput &&
-          !titleInput.value
-        ) {
-          titleInput.value =
-            "오더메이드 제작 문의";
-        }
-
-        updateProjectFields();
       }
 
-      function setEditMode() {
-        const params = new URLSearchParams(
-          window.location.search
-        );
-
-        const mode = params.get("mode");
-
+      function applyEditMode() {
         if (mode !== "edit") {
           return;
         }
+
+        document.title =
+          "Edit Inquiry | have a seat";
 
         if (pageTitle) {
           pageTitle.textContent =
             "문의 내용을 수정해주세요.";
         }
 
-        document.title =
-          "Edit Inquiry | have a seat";
+        if (formTitle) {
+          formTitle.textContent =
+            "문의 수정";
+        }
+
+        if (submitButton) {
+          submitButton.textContent =
+            "Save Changes";
+        }
 
         if (categorySelect) {
           categorySelect.value =
@@ -1693,96 +1649,174 @@
             "테이블 규격 변경이 가능한가요?";
         }
 
+        if (nameInput) {
+          nameInput.value =
+            "이**";
+        }
+
+        if (phoneInput) {
+          phoneInput.value =
+            "010-0000-0000";
+        }
+
+        if (emailInput) {
+          emailInput.value =
+            "example@email.com";
+        }
+
         if (contentInput) {
           contentInput.value =
-            "현재 카페 공간을 준비하고 있으며 해버싯의 화이트 페데스탈 테이블을 검토하고 있습니다. 기존 제품의 상판 지름과 컬러 변경 가능 여부를 확인 부탁드립니다.";
+            "현재 카페 공간을 준비하고 있으며 해버싯의 테이블을 검토하고 있습니다.\n\n기존 제품의 상판 지름과 컬러 변경이 가능한지 확인 부탁드립니다.\n필요한 수량은 총 12개이며 납품 희망 시기는 8월 말입니다.";
         }
 
-        updateProjectFields();
+        updateContentCount();
       }
 
-      function updateFileInformation() {
-        if (
-          !fileInput ||
-          !fileName ||
-          !fileRemove
-        ) {
-          return;
+      function validateEmail(value) {
+        if (!value) {
+          return true;
         }
 
-        const selectedFile =
-          fileInput.files &&
-          fileInput.files[0];
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(
+          value
+        );
+      }
 
-        if (selectedFile) {
-          fileName.textContent =
-            selectedFile.name;
+      function validateForm() {
+        let isValid = true;
 
-          fileRemove.hidden = false;
-        } else {
-          fileName.textContent =
-            "선택된 파일이 없습니다.";
+        const categoryValid =
+          categorySelect &&
+          categorySelect.value;
 
-          fileRemove.hidden = true;
+        showError(
+          "category",
+          !categoryValid
+        );
+
+        if (!categoryValid) {
+          isValid = false;
         }
-      }
 
-      function openModal() {
-        if (!modal) return;
+        const titleValid =
+          titleInput &&
+          titleInput.value.trim();
 
-        modal.hidden = false;
-
-        modal.setAttribute(
-          "aria-hidden",
-          "false"
+        showError(
+          "title",
+          !titleValid
         );
 
-        document.body.classList.add(
-          "is-modal-open"
-        );
-
-        if (modalCancel) {
-          modalCancel.focus();
+        if (!titleValid) {
+          isValid = false;
         }
-      }
 
-      function closeModal() {
-        if (!modal) return;
+        const nameValid =
+          nameInput &&
+          nameInput.value.trim();
 
-        modal.hidden = true;
-
-        modal.setAttribute(
-          "aria-hidden",
-          "true"
+        showError(
+          "name",
+          !nameValid
         );
 
-        document.body.classList.remove(
-          "is-modal-open"
+        if (!nameValid) {
+          isValid = false;
+        }
+
+        const phoneValid =
+          phoneInput &&
+          phoneInput.value.trim();
+
+        showError(
+          "phone",
+          !phoneValid
+        );
+
+        if (!phoneValid) {
+          isValid = false;
+        }
+
+        const emailValid =
+          emailInput
+            ? validateEmail(
+                emailInput.value.trim()
+              )
+            : true;
+
+        showError(
+          "email",
+          !emailValid
+        );
+
+        if (!emailValid) {
+          isValid = false;
+        }
+
+        const contentValid =
+          contentInput &&
+          contentInput.value.trim();
+
+        showError(
+          "content",
+          !contentValid
+        );
+
+        if (!contentValid) {
+          isValid = false;
+        }
+
+        const privacyValid =
+          privacyInput &&
+          privacyInput.checked;
+
+        showError(
+          "privacy",
+          !privacyValid
+        );
+
+        if (!privacyValid) {
+          isValid = false;
+        }
+
+        return isValid;
+      }
+
+      if (contentInput) {
+        contentInput.addEventListener(
+          "input",
+          updateContentCount
         );
       }
 
-      if (categorySelect) {
-        categorySelect.addEventListener(
-          "change",
-          updateProjectFields
-        );
-      }
-
-      if (fileInput) {
+      if (
+        fileInput &&
+        fileName
+      ) {
         fileInput.addEventListener(
           "change",
-          updateFileInformation
+          function () {
+            const selectedFile =
+              fileInput.files &&
+              fileInput.files[0];
+
+            fileName.textContent =
+              selectedFile
+                ? selectedFile.name
+                : "No file selected";
+          }
         );
       }
 
-      if (fileRemove) {
-        fileRemove.addEventListener(
-          "click",
+      if (phoneInput) {
+        phoneInput.addEventListener(
+          "input",
           function () {
-            if (!fileInput) return;
-
-            fileInput.value = "";
-            updateFileInformation();
+            phoneInput.value =
+              phoneInput.value.replace(
+                /[^0-9-]/g,
+                ""
+              );
           }
         );
       }
@@ -1791,68 +1825,52 @@
         form.addEventListener(
           "submit",
           function (event) {
-            if (formIsConfirmed) {
-              return;
-            }
-
             event.preventDefault();
 
-            if (!form.checkValidity()) {
-              form.reportValidity();
+            const isValid =
+              validateForm();
+
+            if (!isValid) {
+              const firstError =
+                form.querySelector(
+                  ".hs-form-error:not([hidden])"
+                );
+
+              if (firstError) {
+                const field =
+                  firstError.closest(
+                    ".hs-form-field"
+                  );
+
+                const input =
+                  field
+                    ? field.querySelector(
+                        "input, select, textarea"
+                      )
+                    : null;
+
+                if (input) {
+                  input.focus();
+                }
+              }
+
               return;
             }
 
-            openModal();
-          }
-        );
-      }
-
-      if (modalCancel) {
-        modalCancel.addEventListener(
-          "click",
-          closeModal
-        );
-      }
-
-      if (modalConfirm) {
-        modalConfirm.addEventListener(
-          "click",
-          function () {
-            formIsConfirmed = true;
-
-            window.location.href =
-              "./qna.html?submitted=true";
-          }
-        );
-      }
-
-      if (modal) {
-        modal.addEventListener(
-          "click",
-          function (event) {
-            if (event.target === modal) {
-              closeModal();
+            if (mode === "edit") {
+              window.location.href =
+                "./qna-detail.html?post=9&updated=true";
+            } else {
+              window.location.href =
+                "./qna.html?submitted=true";
             }
           }
         );
       }
 
-      document.addEventListener(
-        "keydown",
-        function (event) {
-          if (
-            event.key === "Escape" &&
-            modal &&
-            !modal.hidden
-          ) {
-            closeModal();
-          }
-        }
-      );
-
-      setCategoryFromUrl();
-      setEditMode();
-      updateFileInformation();
+      applyRequestedCategory();
+      applyEditMode();
+      updateContentCount();
     });
   </script>
 
