@@ -62,14 +62,12 @@
       >
 
         <div class="hs-nav__item">
-
           <a
             href="./brand.html"
             class="hs-nav__link"
           >
             Brand
           </a>
-
         </div>
 
         <div class="hs-nav__item">
@@ -112,39 +110,15 @@
 
         </div>
 
-        <div class="hs-nav__item">
+        <!-- Ordermade 단일 메뉴 -->
 
+        <div class="hs-nav__item">
           <a
             href="./ordermade.html"
             class="hs-nav__link"
           >
             Ordermade
           </a>
-
-          <div class="hs-dropdown">
-
-            <a href="./ordermade.html">
-              Ordermade Service
-            </a>
-
-            <a href="./ordermade.html#consider">
-              What We Consider
-            </a>
-
-            <a href="./ordermade.html#proposal">
-              Proposal
-            </a>
-
-            <a href="./ordermade.html#projects">
-              Projects
-            </a>
-
-            <a href="./qna-write.html">
-              Contact
-            </a>
-
-          </div>
-
         </div>
 
         <div class="hs-nav__item">
@@ -243,19 +217,9 @@
           class="hs-icon-button hs-account-button"
           aria-label="회원 메뉴"
         >
-          <svg
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <circle
-              cx="12"
-              cy="8"
-              r="3.4"
-            ></circle>
-
-            <path
-              d="M5.5 19c.8-4 3-6 6.5-6s5.7 2 6.5 6"
-            ></path>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="8" r="3.4"></circle>
+            <path d="M5.5 19c.8-4 3-6 6.5-6s5.7 2 6.5 6"></path>
           </svg>
         </a>
 
@@ -266,19 +230,9 @@
           aria-expanded="false"
           data-search-open
         >
-          <svg
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <circle
-              cx="10.5"
-              cy="10.5"
-              r="6"
-            ></circle>
-
-            <path
-              d="M15 15l4.5 4.5"
-            ></path>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.5" cy="10.5" r="6"></circle>
+            <path d="M15 15l4.5 4.5"></path>
           </svg>
         </button>
 
@@ -287,17 +241,9 @@
           class="hs-icon-button"
           aria-label="장바구니"
         >
-          <svg
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path
-              d="M6.5 8.5h11l-1 10h-9z"
-            ></path>
-
-            <path
-              d="M9 9V7a3 3 0 016 0v2"
-            ></path>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.5 8.5h11l-1 10h-9z"></path>
+            <path d="M9 9V7a3 3 0 016 0v2"></path>
           </svg>
 
           <span class="hs-cart-count">
@@ -312,10 +258,7 @@
           aria-expanded="false"
           data-menu-toggle
         >
-          <svg
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M4 8h16"></path>
             <path d="M4 16h16"></path>
           </svg>
@@ -391,6 +334,14 @@
             Stool
           </a>
 
+          <a href="./shop.html?category=lounge">
+            Lounge
+          </a>
+
+          <a href="./shop.html?category=outdoor">
+            Outdoor
+          </a>
+
           <a href="./showroom.html">
             Showroom
           </a>
@@ -408,7 +359,6 @@
       </div>
 
       <div class="hs-mobile-menu__footer">
-
         <p>
           Connecting Spaces, People, and Perspectives
         </p>
@@ -416,7 +366,6 @@
         <p>
           © have a seat
         </p>
-
       </div>
 
     </div>
@@ -492,42 +441,7 @@
   >
 
     <!-- ===================================================
-         HERO
-    ==================================================== -->
-
-    <section class="hs-shop-hero">
-      <div class="hs-container--wide">
-
-        <div
-          class="hs-shop-hero__head"
-          data-reveal
-        >
-
-          <p class="hs-shop-hero__label hs-eyebrow">
-            Shop
-          </p>
-
-          <div class="hs-shop-hero__content">
-
-            <h1 class="hs-title">
-              공간에 맞는 가구를
-              살펴보세요.
-            </h1>
-
-            <p class="hs-body-copy hs-shop-hero__description">
-              공간의 목적과 분위기, 사용 방식에 맞는
-              체어와 테이블, 스툴과 라운지 가구를 확인할 수 있습니다.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ===================================================
-         CATEGORY
+         SHOP CATEGORY
     ==================================================== -->
 
     <nav
@@ -667,7 +581,7 @@
     </div>
 
     <!-- ===================================================
-         PRODUCT LIST
+         PRODUCT GRID
     ==================================================== -->
 
     <section class="hs-shop-products">
@@ -697,18 +611,12 @@
 
             <a href="./product-01.html">
 
-              <div class="hs-shop-product__image hs-shop-product__image--swap">
+              <div class="hs-shop-product__image">
 
                 <img
                   src="./assets/images/products/product1.png"
                   alt="컬러 사이드 테이블"
                   fetchpriority="high"
-                >
-
-                <img
-                  src="./assets/images/products/closeup1.png"
-                  alt="컬러 사이드 테이블 디테일"
-                  loading="lazy"
                 >
 
               </div>
@@ -750,19 +658,13 @@
               02
             </span>
 
-            <a href="./product-03.html">
+            <a href="./product-02.html">
 
-              <div class="hs-shop-product__image hs-shop-product__image--swap">
+              <div class="hs-shop-product__image">
 
                 <img
                   src="./assets/images/products/product2.png"
                   alt="소프트 다이닝 체어"
-                  loading="lazy"
-                >
-
-                <img
-                  src="./assets/images/products/closeup2.png"
-                  alt="소프트 다이닝 체어 디테일"
                   loading="lazy"
                 >
 
@@ -807,17 +709,11 @@
 
             <a href="./product-03.html">
 
-              <div class="hs-shop-product__image hs-shop-product__image--swap">
+              <div class="hs-shop-product__image">
 
                 <img
                   src="./assets/images/products/product3.png"
                   alt="프레임 다이닝 체어"
-                  loading="lazy"
-                >
-
-                <img
-                  src="./assets/images/products/closeup3.png"
-                  alt="프레임 다이닝 체어 디테일"
                   loading="lazy"
                 >
 
@@ -866,17 +762,11 @@
 
             <a href="./product-04.html">
 
-              <div class="hs-shop-product__image hs-shop-product__image--swap">
+              <div class="hs-shop-product__image">
 
                 <img
                   src="./assets/images/products/product4.png"
                   alt="내추럴 우드 체어"
-                  loading="lazy"
-                >
-
-                <img
-                  src="./assets/images/products/closeup4.png"
-                  alt="내추럴 우드 체어 디테일"
                   loading="lazy"
                 >
 
@@ -921,17 +811,11 @@
 
             <a href="./product-05.html">
 
-              <div class="hs-shop-product__image hs-shop-product__image--swap">
+              <div class="hs-shop-product__image">
 
                 <img
                   src="./assets/images/products/product5.png"
                   alt="아웃도어 암 체어"
-                  loading="lazy"
-                >
-
-                <img
-                  src="./assets/images/products/closeup5.png"
-                  alt="아웃도어 암 체어 디테일"
                   loading="lazy"
                 >
 
@@ -980,17 +864,11 @@
 
             <a href="./product-06.html">
 
-              <div class="hs-shop-product__image hs-shop-product__image--swap">
+              <div class="hs-shop-product__image">
 
                 <img
                   src="./assets/images/products/product6.png"
                   alt="브라운 라운지 체어"
-                  loading="lazy"
-                >
-
-                <img
-                  src="./assets/images/products/closeup6.png"
-                  alt="브라운 라운지 체어 디테일"
                   loading="lazy"
                 >
 
@@ -1035,17 +913,11 @@
 
             <a href="./product-07.html">
 
-              <div class="hs-shop-product__image hs-shop-product__image--swap">
+              <div class="hs-shop-product__image">
 
                 <img
                   src="./assets/images/products/product7.png"
                   alt="커브 암 체어"
-                  loading="lazy"
-                >
-
-                <img
-                  src="./assets/images/products/closeup7.png"
-                  alt="커브 암 체어 디테일"
                   loading="lazy"
                 >
 
@@ -1090,17 +962,11 @@
 
             <a href="./product-08.html">
 
-              <div class="hs-shop-product__image hs-shop-product__image--swap">
+              <div class="hs-shop-product__image">
 
                 <img
                   src="./assets/images/products/product8.png"
                   alt="벤트우드 체어"
-                  loading="lazy"
-                >
-
-                <img
-                  src="./assets/images/products/closeup8.png"
-                  alt="벤트우드 체어 디테일"
                   loading="lazy"
                 >
 
@@ -1145,17 +1011,11 @@
 
             <a href="./product-09.html">
 
-              <div class="hs-shop-product__image hs-shop-product__image--swap">
+              <div class="hs-shop-product__image">
 
                 <img
                   src="./assets/images/products/product9.png"
                   alt="블랙 하이 스툴"
-                  loading="lazy"
-                >
-
-                <img
-                  src="./assets/images/products/closeup9.png"
-                  alt="블랙 하이 스툴 디테일"
                   loading="lazy"
                 >
 
@@ -1202,19 +1062,13 @@
               Essential
             </span>
 
-            <a href="./product-02.html">
+            <a href="./product-10.html">
 
-              <div class="hs-shop-product__image hs-shop-product__image--swap">
+              <div class="hs-shop-product__image">
 
                 <img
                   src="./assets/images/products/product10.png"
                   alt="화이트 페데스탈 테이블"
-                  loading="lazy"
-                >
-
-                <img
-                  src="./assets/images/products/closeup10.png"
-                  alt="화이트 페데스탈 테이블 디테일"
                   loading="lazy"
                 >
 
@@ -1259,17 +1113,11 @@
 
             <a href="./product-11.html">
 
-              <div class="hs-shop-product__image hs-shop-product__image--swap">
+              <div class="hs-shop-product__image">
 
                 <img
                   src="./assets/images/products/product11.png"
                   alt="모노 사이드 테이블"
-                  loading="lazy"
-                >
-
-                <img
-                  src="./assets/images/products/closeup11.png"
-                  alt="모노 사이드 테이블 디테일"
                   loading="lazy"
                 >
 
@@ -1327,7 +1175,7 @@
     </section>
 
     <!-- ===================================================
-         ORDERMADE BANNER
+         ORDERMADE
     ==================================================== -->
 
     <section class="hs-shop-banner">
@@ -1336,6 +1184,7 @@
         class="hs-shop-banner__content"
         data-reveal
       >
+
         <div class="hs-shop-banner__copy">
 
           <p class="hs-eyebrow">
@@ -1364,6 +1213,7 @@
           </div>
 
         </div>
+
       </div>
 
       <div class="hs-shop-banner__media">
@@ -1649,8 +1499,8 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const filterButtons = document.querySelectorAll(
-        "[data-shop-filter]"
+      const filterButtons = Array.from(
+        document.querySelectorAll("[data-shop-filter]")
       );
 
       const productGrid = document.querySelector(
@@ -1658,9 +1508,7 @@
       );
 
       const products = Array.from(
-        document.querySelectorAll(
-          "[data-product-category]"
-        )
+        document.querySelectorAll("[data-product-category]")
       );
 
       const productCount = document.querySelector(
@@ -1679,6 +1527,8 @@
         "[data-shop-empty]"
       );
 
+      const originalOrder = products.slice();
+
       let activeCategory = "all";
 
       const categoryLabels = {
@@ -1691,7 +1541,9 @@
       };
 
       function updateCount(count) {
-        if (!productCount) return;
+        if (!productCount) {
+          return;
+        }
 
         productCount.textContent =
           String(count).padStart(2, "0") +
@@ -1751,24 +1603,34 @@
       }
 
       function sortProducts(sortType) {
-        if (!productGrid) return;
+        if (!productGrid) {
+          return;
+        }
 
         const sortedProducts = products.slice();
 
         sortedProducts.sort(function (a, b) {
           const priceA = Number(
-            a.getAttribute("data-product-price")
+            a.getAttribute(
+              "data-product-price"
+            )
           );
 
           const priceB = Number(
-            b.getAttribute("data-product-price")
+            b.getAttribute(
+              "data-product-price"
+            )
           );
 
           const nameA =
-            a.getAttribute("data-product-name") || "";
+            a.getAttribute(
+              "data-product-name"
+            ) || "";
 
           const nameB =
-            b.getAttribute("data-product-name") || "";
+            b.getAttribute(
+              "data-product-name"
+            ) || "";
 
           if (sortType === "low") {
             return priceA - priceB;
@@ -1779,12 +1641,15 @@
           }
 
           if (sortType === "name") {
-            return nameA.localeCompare(nameB);
+            return nameA.localeCompare(
+              nameB,
+              "en"
+            );
           }
 
           return (
-            products.indexOf(a) -
-            products.indexOf(b)
+            originalOrder.indexOf(a) -
+            originalOrder.indexOf(b)
           );
         });
 
@@ -1823,7 +1688,7 @@
             const category =
               button.getAttribute(
                 "data-shop-filter"
-              );
+              ) || "all";
 
             setActiveButton(button);
             filterProducts(category);
@@ -1836,7 +1701,9 @@
         sortSelect.addEventListener(
           "change",
           function () {
-            sortProducts(sortSelect.value);
+            sortProducts(
+              sortSelect.value
+            );
           }
         );
       }
@@ -1866,8 +1733,9 @@
 
         if (allButton) {
           setActiveButton(allButton);
-          filterProducts("all");
         }
+
+        filterProducts("all");
       }
     });
   </script>
