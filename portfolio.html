@@ -13,7 +13,7 @@
     content="가구를 통해 공간의 목적과 분위기를 완성한 해버싯의 다양한 프로젝트를 소개합니다."
   >
 
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#f5f3ee">
 
   <title>Portfolio | have a seat</title>
 
@@ -109,39 +109,15 @@
 
         </div>
 
-        <div class="hs-nav__item">
+        <!-- Ordermade 단일 메뉴 -->
 
+        <div class="hs-nav__item">
           <a
             href="./ordermade.html"
             class="hs-nav__link"
           >
             Ordermade
           </a>
-
-          <div class="hs-dropdown">
-
-            <a href="./ordermade.html">
-              Ordermade Service
-            </a>
-
-            <a href="./ordermade.html#consider">
-              What We Consider
-            </a>
-
-            <a href="./ordermade.html#proposal">
-              Proposal
-            </a>
-
-            <a href="./ordermade.html#projects">
-              Projects
-            </a>
-
-            <a href="./qna-write.html">
-              Contact
-            </a>
-
-          </div>
-
         </div>
 
         <div class="hs-nav__item">
@@ -389,6 +365,14 @@
             Work &amp; Study
           </a>
 
+          <a href="./portfolio.html?category=customer">
+            Customer Experience
+          </a>
+
+          <a href="./portfolio.html?category=hospitality">
+            Hospitality
+          </a>
+
           <a href="./showroom.html">
             Showroom
           </a>
@@ -491,6 +475,7 @@
 
     <!-- ===================================================
          HERO
+         대형 이미지 없이 제목과 설명만 사용
     ==================================================== -->
 
     <section class="hs-portfolio-hero">
@@ -514,20 +499,9 @@
           <p class="hs-portfolio-hero__description">
             공간의 목적과 분위기,
             운영 방식과 사용자의 흐름을 고려해
-            가구를 제안하고 완성한 프로젝트를 소개합니다.
+            가구를 제안하고 완성한 해버싯의 프로젝트입니다.
           </p>
 
-        </div>
-
-        <div
-          class="hs-portfolio-hero__visual"
-          data-reveal
-        >
-          <img
-            src="./assets/images/products/product%20cut13.png"
-            alt="해버싯 브랜드 쇼룸 프로젝트"
-            fetchpriority="high"
-          >
         </div>
 
       </div>
@@ -606,14 +580,15 @@
           aria-live="polite"
           data-portfolio-count
         >
-          09 Projects
+          10 Projects
         </p>
 
       </div>
     </nav>
 
     <!-- ===================================================
-         PROJECT LIST
+         PROJECT GRID
+         데스크톱 2단 / 모바일 1단
     ==================================================== -->
 
     <section class="hs-portfolio-list">
@@ -632,14 +607,14 @@
             data-reveal
           >
 
-            <a href="./portfolio-detail.html?project=brand-showroom">
+            <a href="./portfolio-detail.html?project=have-a-seat-showroom">
 
               <div class="hs-portfolio-card__image">
 
                 <img
                   src="./assets/images/products/product%20cut13.png"
-                  alt="브랜드 쇼룸 프로젝트"
-                  loading="lazy"
+                  alt="해버싯 브랜드 쇼룸 프로젝트"
+                  fetchpriority="high"
                 >
 
               </div>
@@ -676,7 +651,7 @@
             data-reveal
           >
 
-            <a href="./portfolio-detail.html?project=port-town">
+            <a href="./portfolio-detail.html?project=cafe-port-town">
 
               <div class="hs-portfolio-card__image">
 
@@ -720,13 +695,13 @@
             data-reveal
           >
 
-            <a href="./portfolio-detail.html?project=citadines">
+            <a href="./portfolio-detail.html?project=citadines-connect">
 
               <div class="hs-portfolio-card__image">
 
                 <img
                   src="./assets/images/products/product%20cut10.png"
-                  alt="호텔 시타딘 커넥트 부산 프로젝트"
+                  alt="호텔 시타딘커넥트 부산 프로젝트"
                   loading="lazy"
                 >
 
@@ -764,7 +739,7 @@
             data-reveal
           >
 
-            <a href="./portfolio-detail.html?project=de-natali">
+            <a href="./portfolio-detail.html?project=cafe-de-natali">
 
               <div class="hs-portfolio-card__image">
 
@@ -814,7 +789,7 @@
 
                 <img
                   src="./assets/images/products/product%20cut15.png"
-                  alt="공유 오피스 프로젝트"
+                  alt="공유 오피스 라운지 프로젝트"
                   loading="lazy"
                 >
 
@@ -858,7 +833,7 @@
 
                 <img
                   src="./assets/images/products/product%20cut12.png"
-                  alt="클리닉 라운지 프로젝트"
+                  alt="클리닉 대기 라운지 프로젝트"
                   loading="lazy"
                 >
 
@@ -946,7 +921,7 @@
 
                 <img
                   src="./assets/images/products/product%20cut7.png"
-                  alt="뷰티 살롱 프로젝트"
+                  alt="뷰티 살롱 라운지 프로젝트"
                   loading="lazy"
                 >
 
@@ -984,13 +959,13 @@
             data-reveal
           >
 
-            <a href="./portfolio-detail.html?project=popup-showroom">
+            <a href="./portfolio-detail.html?project=temporary-brand-space">
 
               <div class="hs-portfolio-card__image">
 
                 <img
                   src="./assets/images/products/product%20cut1.png"
-                  alt="팝업 쇼룸 프로젝트"
+                  alt="브랜드 팝업 쇼룸 프로젝트"
                   loading="lazy"
                 >
 
@@ -1020,7 +995,53 @@
 
           </article>
 
+          <!-- PROJECT 10 -->
+
+          <article
+            class="hs-portfolio-card"
+            data-portfolio-category="hospitality"
+            data-reveal
+          >
+
+            <a href="./portfolio-detail.html?project=hotel-lounge">
+
+              <div class="hs-portfolio-card__image">
+
+                <img
+                  src="./assets/images/products/product%20cut6.png"
+                  alt="호텔 라운지 프로젝트"
+                  loading="lazy"
+                >
+
+              </div>
+
+              <div class="hs-portfolio-card__info">
+
+                <div>
+
+                  <p class="hs-portfolio-card__category">
+                    Hospitality
+                  </p>
+
+                  <h2 class="hs-portfolio-card__title">
+                    Hotel Lounge Collection
+                  </h2>
+
+                </div>
+
+                <p class="hs-portfolio-card__meta">
+                  Jeju · 2024
+                </p>
+
+              </div>
+
+            </a>
+
+          </article>
+
         </div>
+
+        <!-- EMPTY RESULT -->
 
         <div
           class="hs-portfolio-empty"
@@ -1042,7 +1063,7 @@
     </section>
 
     <!-- ===================================================
-         PROCESS
+         PROJECT APPROACH
     ==================================================== -->
 
     <section class="hs-section hs-section--soft">
@@ -1189,7 +1210,7 @@
         <div data-reveal>
 
           <a
-            href="./qna-write.html"
+            href="./qna-write.html?category=project"
             class="hs-button"
           >
             Contact Us
@@ -1426,8 +1447,10 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const filterButtons = document.querySelectorAll(
-        "[data-portfolio-filter]"
+      const filterButtons = Array.from(
+        document.querySelectorAll(
+          "[data-portfolio-filter]"
+        )
       );
 
       const projects = Array.from(
@@ -1444,7 +1467,7 @@
         "[data-portfolio-empty]"
       );
 
-      const categoryList = [
+      const allowedCategories = [
         "all",
         "showroom",
         "food",
@@ -1462,7 +1485,8 @@
 
       function setActiveButton(activeButton) {
         filterButtons.forEach(function (button) {
-          const isActive = button === activeButton;
+          const isActive =
+            button === activeButton;
 
           button.classList.toggle(
             "is-active",
@@ -1535,7 +1559,7 @@
             const category =
               button.getAttribute(
                 "data-portfolio-filter"
-              );
+              ) || "all";
 
             setActiveButton(button);
             filterProjects(category);
@@ -1552,7 +1576,7 @@
         params.get("category") || "all";
 
       const initialCategory =
-        categoryList.includes(
+        allowedCategories.includes(
           requestedCategory
         )
           ? requestedCategory
