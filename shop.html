@@ -10,17 +10,17 @@
 
   <meta
     name="description"
-    content="공간의 목적과 분위기에 맞는 해버싯의 체어, 테이블, 스툴과 라운지 가구를 살펴보세요."
+    content="가구를 통해 공간의 목적과 분위기를 완성한 해버싯의 다양한 프로젝트를 소개합니다."
   >
 
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#f5f3ee">
 
-  <title>Shop | have a seat</title>
+  <title>Portfolio | have a seat</title>
 
   <link
     rel="preload"
     as="image"
-    href="./assets/images/products/product1.png"
+    href="./assets/images/products/product%20cut13.png"
   >
 
   <link
@@ -74,8 +74,7 @@
 
           <a
             href="./shop.html"
-            class="hs-nav__link is-active"
-            aria-current="page"
+            class="hs-nav__link"
           >
             Shop
           </a>
@@ -125,7 +124,8 @@
 
           <a
             href="./portfolio.html"
-            class="hs-nav__link"
+            class="hs-nav__link is-active"
+            aria-current="page"
           >
             Portfolio
           </a>
@@ -217,9 +217,19 @@
           class="hs-icon-button hs-account-button"
           aria-label="회원 메뉴"
         >
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="8" r="3.4"></circle>
-            <path d="M5.5 19c.8-4 3-6 6.5-6s5.7 2 6.5 6"></path>
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <circle
+              cx="12"
+              cy="8"
+              r="3.4"
+            ></circle>
+
+            <path
+              d="M5.5 19c.8-4 3-6 6.5-6s5.7 2 6.5 6"
+            ></path>
           </svg>
         </a>
 
@@ -230,9 +240,19 @@
           aria-expanded="false"
           data-search-open
         >
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="10.5" cy="10.5" r="6"></circle>
-            <path d="M15 15l4.5 4.5"></path>
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <circle
+              cx="10.5"
+              cy="10.5"
+              r="6"
+            ></circle>
+
+            <path
+              d="M15 15l4.5 4.5"
+            ></path>
           </svg>
         </button>
 
@@ -241,9 +261,17 @@
           class="hs-icon-button"
           aria-label="장바구니"
         >
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M6.5 8.5h11l-1 10h-9z"></path>
-            <path d="M9 9V7a3 3 0 016 0v2"></path>
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              d="M6.5 8.5h11l-1 10h-9z"
+            ></path>
+
+            <path
+              d="M9 9V7a3 3 0 016 0v2"
+            ></path>
           </svg>
 
           <span class="hs-cart-count">
@@ -258,7 +286,10 @@
           aria-expanded="false"
           data-menu-toggle
         >
-          <svg viewBox="0 0 24 24" aria-hidden="true">
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
             <path d="M4 8h16"></path>
             <path d="M4 16h16"></path>
           </svg>
@@ -291,10 +322,7 @@
             <span>01</span>
           </a>
 
-          <a
-            href="./shop.html"
-            aria-current="page"
-          >
+          <a href="./shop.html">
             <span>Shop</span>
             <span>02</span>
           </a>
@@ -304,7 +332,10 @@
             <span>03</span>
           </a>
 
-          <a href="./portfolio.html">
+          <a
+            href="./portfolio.html"
+            aria-current="page"
+          >
             <span>Portfolio</span>
             <span>04</span>
           </a>
@@ -318,28 +349,28 @@
 
         <div class="hs-mobile-menu__sub">
 
-          <a href="./shop.html">
-            All Products
+          <a href="./portfolio.html">
+            All Projects
           </a>
 
-          <a href="./shop.html?category=chair">
-            Chair
+          <a href="./portfolio.html?category=showroom">
+            Brand Showroom
           </a>
 
-          <a href="./shop.html?category=table">
-            Table
+          <a href="./portfolio.html?category=food">
+            Food &amp; Beverage
           </a>
 
-          <a href="./shop.html?category=stool">
-            Stool
+          <a href="./portfolio.html?category=work">
+            Work &amp; Study
           </a>
 
-          <a href="./shop.html?category=lounge">
-            Lounge
+          <a href="./portfolio.html?category=customer">
+            Customer Experience
           </a>
 
-          <a href="./shop.html?category=outdoor">
-            Outdoor
+          <a href="./portfolio.html?category=hospitality">
+            Hospitality
           </a>
 
           <a href="./showroom.html">
@@ -359,6 +390,7 @@
       </div>
 
       <div class="hs-mobile-menu__footer">
+
         <p>
           Connecting Spaces, People, and Perspectives
         </p>
@@ -366,6 +398,7 @@
         <p>
           © have a seat
         </p>
+
       </div>
 
     </div>
@@ -437,206 +470,171 @@
 
   <main
     id="main-content"
-    class="hs-main hs-shop-page"
+    class="hs-main hs-portfolio-page"
   >
 
     <!-- ===================================================
-         SHOP CATEGORY
+         HERO
+         대형 이미지 없이 제목과 설명만 사용
+    ==================================================== -->
+
+    <section class="hs-portfolio-hero">
+      <div class="hs-container--wide">
+
+        <div
+          class="hs-portfolio-hero__head"
+          data-reveal
+        >
+
+          <p class="hs-portfolio-hero__label">
+            Portfolio
+          </p>
+
+          <h1 class="hs-portfolio-hero__title">
+            Spaces completed
+            <span class="pc-br"></span>
+            with furniture.
+          </h1>
+
+          <p class="hs-portfolio-hero__description">
+            공간의 목적과 분위기,
+            운영 방식과 사용자의 흐름을 고려해
+            가구를 제안하고 완성한 해버싯의 프로젝트입니다.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         FILTER
     ==================================================== -->
 
     <nav
-      class="hs-shop-category"
-      aria-label="상품 카테고리"
+      class="hs-portfolio-filter"
+      aria-label="포트폴리오 카테고리"
     >
-      <div class="hs-container--wide hs-shop-category__inner">
+      <div class="hs-container--wide hs-portfolio-filter__inner">
 
-        <div class="hs-shop-category__tabs">
+        <div class="hs-portfolio-filter__tabs">
 
           <button
             type="button"
-            class="hs-shop-category__link is-active"
+            class="hs-portfolio-filter__button is-active"
             aria-pressed="true"
-            data-shop-filter="all"
+            data-portfolio-filter="all"
           >
-            All Products
+            All Projects
           </button>
 
           <button
             type="button"
-            class="hs-shop-category__link"
+            class="hs-portfolio-filter__button"
             aria-pressed="false"
-            data-shop-filter="chair"
+            data-portfolio-filter="showroom"
           >
-            Chair
+            Brand Showroom
           </button>
 
           <button
             type="button"
-            class="hs-shop-category__link"
+            class="hs-portfolio-filter__button"
             aria-pressed="false"
-            data-shop-filter="table"
+            data-portfolio-filter="food"
           >
-            Table
+            Food &amp; Beverage
           </button>
 
           <button
             type="button"
-            class="hs-shop-category__link"
+            class="hs-portfolio-filter__button"
             aria-pressed="false"
-            data-shop-filter="stool"
+            data-portfolio-filter="work"
           >
-            Stool
+            Work &amp; Study
           </button>
 
           <button
             type="button"
-            class="hs-shop-category__link"
+            class="hs-portfolio-filter__button"
             aria-pressed="false"
-            data-shop-filter="lounge"
+            data-portfolio-filter="customer"
           >
-            Lounge
+            Customer Experience
           </button>
 
           <button
             type="button"
-            class="hs-shop-category__link"
+            class="hs-portfolio-filter__button"
             aria-pressed="false"
-            data-shop-filter="outdoor"
+            data-portfolio-filter="hospitality"
           >
-            Outdoor
+            Hospitality
           </button>
 
         </div>
 
         <p
-          class="hs-shop-category__count"
+          class="hs-portfolio-filter__count"
           aria-live="polite"
-          data-product-count
+          data-portfolio-count
         >
-          11 Products
+          10 Projects
         </p>
 
       </div>
     </nav>
 
     <!-- ===================================================
-         TOOLBAR
+         PROJECT GRID
+         데스크톱 2단 / 모바일 1단
     ==================================================== -->
 
-    <div class="hs-shop-toolbar">
-      <div class="hs-container--wide hs-shop-toolbar__inner">
-
-        <div class="hs-shop-toolbar__meta">
-
-          <span>
-            Collection
-          </span>
-
-          <span aria-hidden="true">
-            /
-          </span>
-
-          <span data-category-name>
-            All Products
-          </span>
-
-        </div>
-
-        <div class="hs-shop-toolbar__controls">
-
-          <label
-            for="shop-sort"
-            class="hs-sr-only"
-          >
-            상품 정렬
-          </label>
-
-          <select
-            id="shop-sort"
-            class="hs-shop-sort"
-            data-shop-sort
-          >
-
-            <option value="recommended">
-              Recommended
-            </option>
-
-            <option value="low">
-              Price Low
-            </option>
-
-            <option value="high">
-              Price High
-            </option>
-
-            <option value="name">
-              Product Name
-            </option>
-
-          </select>
-
-        </div>
-
-      </div>
-    </div>
-
-    <!-- ===================================================
-         PRODUCT GRID
-    ==================================================== -->
-
-    <section class="hs-shop-products">
+    <section class="hs-portfolio-list">
       <div class="hs-container--wide">
 
         <div
-          class="hs-shop-product-grid"
-          data-product-grid
+          class="hs-portfolio-grid"
+          data-portfolio-grid
         >
 
-          <!-- PRODUCT 01 -->
+          <!-- PROJECT 01 -->
 
           <article
-            class="hs-shop-product"
-            data-product-category="table"
-            data-product-name="Color Side Table"
-            data-product-price="198000"
+            class="hs-portfolio-card"
+            data-portfolio-category="showroom"
+            data-reveal
           >
 
-            <span class="hs-shop-product__number">
-              01
-            </span>
+            <a href="./portfolio-detail.html?project=have-a-seat-showroom">
 
-            <span class="hs-shop-product__badge">
-              New
-            </span>
-
-            <a href="./product-01.html">
-
-              <div class="hs-shop-product__image">
+              <div class="hs-portfolio-card__image">
 
                 <img
-                  src="./assets/images/products/product1.png"
-                  alt="컬러 사이드 테이블"
+                  src="./assets/images/products/product%20cut13.png"
+                  alt="해버싯 브랜드 쇼룸 프로젝트"
                   fetchpriority="high"
                 >
 
               </div>
 
-              <div class="hs-shop-product__info">
+              <div class="hs-portfolio-card__info">
 
                 <div>
 
-                  <h2 class="hs-shop-product__name">
-                    Color Side Table
-                  </h2>
-
-                  <p class="hs-shop-product__type">
-                    Side Table
+                  <p class="hs-portfolio-card__category">
+                    Brand Showroom
                   </p>
+
+                  <h2 class="hs-portfolio-card__title">
+                    Have a Seat Showroom
+                  </h2>
 
                 </div>
 
-                <p class="hs-shop-product__price">
-                  198,000원
+                <p class="hs-portfolio-card__meta">
+                  Seoul · 2026
                 </p>
 
               </div>
@@ -645,47 +643,42 @@
 
           </article>
 
-          <!-- PRODUCT 02 -->
+          <!-- PROJECT 02 -->
 
           <article
-            class="hs-shop-product"
-            data-product-category="chair"
-            data-product-name="Soft Dining Chair"
-            data-product-price="248000"
+            class="hs-portfolio-card"
+            data-portfolio-category="food"
+            data-reveal
           >
 
-            <span class="hs-shop-product__number">
-              02
-            </span>
+            <a href="./portfolio-detail.html?project=cafe-port-town">
 
-            <a href="./product-02.html">
-
-              <div class="hs-shop-product__image">
+              <div class="hs-portfolio-card__image">
 
                 <img
-                  src="./assets/images/products/product2.png"
-                  alt="소프트 다이닝 체어"
+                  src="./assets/images/products/product%20cut14.png"
+                  alt="카페 포트타운 프로젝트"
                   loading="lazy"
                 >
 
               </div>
 
-              <div class="hs-shop-product__info">
+              <div class="hs-portfolio-card__info">
 
                 <div>
 
-                  <h2 class="hs-shop-product__name">
-                    Soft Dining Chair
-                  </h2>
-
-                  <p class="hs-shop-product__type">
-                    Dining Chair
+                  <p class="hs-portfolio-card__category">
+                    Food &amp; Beverage
                   </p>
+
+                  <h2 class="hs-portfolio-card__title">
+                    Cafe Port Town
+                  </h2>
 
                 </div>
 
-                <p class="hs-shop-product__price">
-                  248,000원
+                <p class="hs-portfolio-card__meta">
+                  Busan · 2026
                 </p>
 
               </div>
@@ -694,47 +687,42 @@
 
           </article>
 
-          <!-- PRODUCT 03 -->
+          <!-- PROJECT 03 -->
 
           <article
-            class="hs-shop-product"
-            data-product-category="chair"
-            data-product-name="Frame Dining Chair"
-            data-product-price="278000"
+            class="hs-portfolio-card"
+            data-portfolio-category="hospitality"
+            data-reveal
           >
 
-            <span class="hs-shop-product__number">
-              03
-            </span>
+            <a href="./portfolio-detail.html?project=citadines-connect">
 
-            <a href="./product-03.html">
-
-              <div class="hs-shop-product__image">
+              <div class="hs-portfolio-card__image">
 
                 <img
-                  src="./assets/images/products/product3.png"
-                  alt="프레임 다이닝 체어"
+                  src="./assets/images/products/product%20cut10.png"
+                  alt="호텔 시타딘커넥트 부산 프로젝트"
                   loading="lazy"
                 >
 
               </div>
 
-              <div class="hs-shop-product__info">
+              <div class="hs-portfolio-card__info">
 
                 <div>
 
-                  <h2 class="hs-shop-product__name">
-                    Frame Dining Chair
-                  </h2>
-
-                  <p class="hs-shop-product__type">
-                    Dining Chair
+                  <p class="hs-portfolio-card__category">
+                    Hospitality
                   </p>
+
+                  <h2 class="hs-portfolio-card__title">
+                    Citadines Connect Busan
+                  </h2>
 
                 </div>
 
-                <p class="hs-shop-product__price">
-                  278,000원
+                <p class="hs-portfolio-card__meta">
+                  Busan · 2026
                 </p>
 
               </div>
@@ -743,51 +731,42 @@
 
           </article>
 
-          <!-- PRODUCT 04 -->
+          <!-- PROJECT 04 -->
 
           <article
-            class="hs-shop-product"
-            data-product-category="chair"
-            data-product-name="Natural Wood Chair"
-            data-product-price="324000"
+            class="hs-portfolio-card"
+            data-portfolio-category="food"
+            data-reveal
           >
 
-            <span class="hs-shop-product__number">
-              04
-            </span>
+            <a href="./portfolio-detail.html?project=cafe-de-natali">
 
-            <span class="hs-shop-product__badge">
-              Best
-            </span>
-
-            <a href="./product-04.html">
-
-              <div class="hs-shop-product__image">
+              <div class="hs-portfolio-card__image">
 
                 <img
-                  src="./assets/images/products/product4.png"
-                  alt="내추럴 우드 체어"
+                  src="./assets/images/products/product%20cut16.png"
+                  alt="카페 드나탈리 프로젝트"
                   loading="lazy"
                 >
 
               </div>
 
-              <div class="hs-shop-product__info">
+              <div class="hs-portfolio-card__info">
 
                 <div>
 
-                  <h2 class="hs-shop-product__name">
-                    Natural Wood Chair
-                  </h2>
-
-                  <p class="hs-shop-product__type">
-                    Wood Chair
+                  <p class="hs-portfolio-card__category">
+                    Food &amp; Beverage
                   </p>
+
+                  <h2 class="hs-portfolio-card__title">
+                    Cafe De Natali
+                  </h2>
 
                 </div>
 
-                <p class="hs-shop-product__price">
-                  324,000원
+                <p class="hs-portfolio-card__meta">
+                  Seoul · 2025
                 </p>
 
               </div>
@@ -796,47 +775,42 @@
 
           </article>
 
-          <!-- PRODUCT 05 -->
+          <!-- PROJECT 05 -->
 
           <article
-            class="hs-shop-product"
-            data-product-category="outdoor"
-            data-product-name="Outdoor Arm Chair"
-            data-product-price="286000"
+            class="hs-portfolio-card"
+            data-portfolio-category="work"
+            data-reveal
           >
 
-            <span class="hs-shop-product__number">
-              05
-            </span>
+            <a href="./portfolio-detail.html?project=shared-office">
 
-            <a href="./product-05.html">
-
-              <div class="hs-shop-product__image">
+              <div class="hs-portfolio-card__image">
 
                 <img
-                  src="./assets/images/products/product5.png"
-                  alt="아웃도어 암 체어"
+                  src="./assets/images/products/product%20cut15.png"
+                  alt="공유 오피스 라운지 프로젝트"
                   loading="lazy"
                 >
 
               </div>
 
-              <div class="hs-shop-product__info">
+              <div class="hs-portfolio-card__info">
 
                 <div>
 
-                  <h2 class="hs-shop-product__name">
-                    Outdoor Arm Chair
-                  </h2>
-
-                  <p class="hs-shop-product__type">
-                    Outdoor Chair
+                  <p class="hs-portfolio-card__category">
+                    Work &amp; Study
                   </p>
+
+                  <h2 class="hs-portfolio-card__title">
+                    Shared Office Lounge
+                  </h2>
 
                 </div>
 
-                <p class="hs-shop-product__price">
-                  286,000원
+                <p class="hs-portfolio-card__meta">
+                  Seoul · 2025
                 </p>
 
               </div>
@@ -845,51 +819,42 @@
 
           </article>
 
-          <!-- PRODUCT 06 -->
+          <!-- PROJECT 06 -->
 
           <article
-            class="hs-shop-product"
-            data-product-category="lounge"
-            data-product-name="Brown Lounge Chair"
-            data-product-price="973000"
+            class="hs-portfolio-card"
+            data-portfolio-category="customer"
+            data-reveal
           >
 
-            <span class="hs-shop-product__number">
-              06
-            </span>
+            <a href="./portfolio-detail.html?project=clinic-lounge">
 
-            <span class="hs-shop-product__badge">
-              Signature
-            </span>
-
-            <a href="./product-06.html">
-
-              <div class="hs-shop-product__image">
+              <div class="hs-portfolio-card__image">
 
                 <img
-                  src="./assets/images/products/product6.png"
-                  alt="브라운 라운지 체어"
+                  src="./assets/images/products/product%20cut12.png"
+                  alt="클리닉 대기 라운지 프로젝트"
                   loading="lazy"
                 >
 
               </div>
 
-              <div class="hs-shop-product__info">
+              <div class="hs-portfolio-card__info">
 
                 <div>
 
-                  <h2 class="hs-shop-product__name">
-                    Brown Lounge Chair
-                  </h2>
-
-                  <p class="hs-shop-product__type">
-                    Lounge Chair
+                  <p class="hs-portfolio-card__category">
+                    Customer Experience
                   </p>
+
+                  <h2 class="hs-portfolio-card__title">
+                    Clinic Waiting Lounge
+                  </h2>
 
                 </div>
 
-                <p class="hs-shop-product__price">
-                  973,000원
+                <p class="hs-portfolio-card__meta">
+                  Seoul · 2025
                 </p>
 
               </div>
@@ -898,47 +863,42 @@
 
           </article>
 
-          <!-- PRODUCT 07 -->
+          <!-- PROJECT 07 -->
 
           <article
-            class="hs-shop-product"
-            data-product-category="chair"
-            data-product-name="Curve Arm Chair"
-            data-product-price="318000"
+            class="hs-portfolio-card"
+            data-portfolio-category="work"
+            data-reveal
           >
 
-            <span class="hs-shop-product__number">
-              07
-            </span>
+            <a href="./portfolio-detail.html?project=study-lounge">
 
-            <a href="./product-07.html">
-
-              <div class="hs-shop-product__image">
+              <div class="hs-portfolio-card__image">
 
                 <img
-                  src="./assets/images/products/product7.png"
-                  alt="커브 암 체어"
+                  src="./assets/images/products/product%20cut11.png"
+                  alt="스터디 라운지 프로젝트"
                   loading="lazy"
                 >
 
               </div>
 
-              <div class="hs-shop-product__info">
+              <div class="hs-portfolio-card__info">
 
                 <div>
 
-                  <h2 class="hs-shop-product__name">
-                    Curve Arm Chair
-                  </h2>
-
-                  <p class="hs-shop-product__type">
-                    Arm Chair
+                  <p class="hs-portfolio-card__category">
+                    Work &amp; Study
                   </p>
+
+                  <h2 class="hs-portfolio-card__title">
+                    Study Lounge
+                  </h2>
 
                 </div>
 
-                <p class="hs-shop-product__price">
-                  318,000원
+                <p class="hs-portfolio-card__meta">
+                  Incheon · 2025
                 </p>
 
               </div>
@@ -947,47 +907,42 @@
 
           </article>
 
-          <!-- PRODUCT 08 -->
+          <!-- PROJECT 08 -->
 
           <article
-            class="hs-shop-product"
-            data-product-category="chair"
-            data-product-name="Bentwood Chair"
-            data-product-price="268000"
+            class="hs-portfolio-card"
+            data-portfolio-category="customer"
+            data-reveal
           >
 
-            <span class="hs-shop-product__number">
-              08
-            </span>
+            <a href="./portfolio-detail.html?project=beauty-salon">
 
-            <a href="./product-08.html">
-
-              <div class="hs-shop-product__image">
+              <div class="hs-portfolio-card__image">
 
                 <img
-                  src="./assets/images/products/product8.png"
-                  alt="벤트우드 체어"
+                  src="./assets/images/products/product%20cut7.png"
+                  alt="뷰티 살롱 라운지 프로젝트"
                   loading="lazy"
                 >
 
               </div>
 
-              <div class="hs-shop-product__info">
+              <div class="hs-portfolio-card__info">
 
                 <div>
 
-                  <h2 class="hs-shop-product__name">
-                    Bentwood Chair
-                  </h2>
-
-                  <p class="hs-shop-product__type">
-                    Wood Chair
+                  <p class="hs-portfolio-card__category">
+                    Customer Experience
                   </p>
+
+                  <h2 class="hs-portfolio-card__title">
+                    Beauty Salon Lounge
+                  </h2>
 
                 </div>
 
-                <p class="hs-shop-product__price">
-                  268,000원
+                <p class="hs-portfolio-card__meta">
+                  Seoul · 2024
                 </p>
 
               </div>
@@ -996,47 +951,42 @@
 
           </article>
 
-          <!-- PRODUCT 09 -->
+          <!-- PROJECT 09 -->
 
           <article
-            class="hs-shop-product"
-            data-product-category="stool"
-            data-product-name="Black High Stool"
-            data-product-price="185000"
+            class="hs-portfolio-card"
+            data-portfolio-category="showroom"
+            data-reveal
           >
 
-            <span class="hs-shop-product__number">
-              09
-            </span>
+            <a href="./portfolio-detail.html?project=temporary-brand-space">
 
-            <a href="./product-09.html">
-
-              <div class="hs-shop-product__image">
+              <div class="hs-portfolio-card__image">
 
                 <img
-                  src="./assets/images/products/product9.png"
-                  alt="블랙 하이 스툴"
+                  src="./assets/images/products/product%20cut1.png"
+                  alt="브랜드 팝업 쇼룸 프로젝트"
                   loading="lazy"
                 >
 
               </div>
 
-              <div class="hs-shop-product__info">
+              <div class="hs-portfolio-card__info">
 
                 <div>
 
-                  <h2 class="hs-shop-product__name">
-                    Black High Stool
-                  </h2>
-
-                  <p class="hs-shop-product__type">
-                    High Stool
+                  <p class="hs-portfolio-card__category">
+                    Brand Showroom
                   </p>
+
+                  <h2 class="hs-portfolio-card__title">
+                    Temporary Brand Space
+                  </h2>
 
                 </div>
 
-                <p class="hs-shop-product__price">
-                  185,000원
+                <p class="hs-portfolio-card__meta">
+                  Seoul · 2024
                 </p>
 
               </div>
@@ -1045,100 +995,42 @@
 
           </article>
 
-          <!-- PRODUCT 10 -->
+          <!-- PROJECT 10 -->
 
           <article
-            class="hs-shop-product"
-            data-product-category="table"
-            data-product-name="White Pedestal Table"
-            data-product-price="220000"
+            class="hs-portfolio-card"
+            data-portfolio-category="hospitality"
+            data-reveal
           >
 
-            <span class="hs-shop-product__number">
-              10
-            </span>
+            <a href="./portfolio-detail.html?project=hotel-lounge">
 
-            <span class="hs-shop-product__badge">
-              Essential
-            </span>
-
-            <a href="./product-10.html">
-
-              <div class="hs-shop-product__image">
+              <div class="hs-portfolio-card__image">
 
                 <img
-                  src="./assets/images/products/product10.png"
-                  alt="화이트 페데스탈 테이블"
+                  src="./assets/images/products/product%20cut6.png"
+                  alt="호텔 라운지 프로젝트"
                   loading="lazy"
                 >
 
               </div>
 
-              <div class="hs-shop-product__info">
+              <div class="hs-portfolio-card__info">
 
                 <div>
 
-                  <h2 class="hs-shop-product__name">
-                    White Pedestal Table
-                  </h2>
-
-                  <p class="hs-shop-product__type">
-                    Round Table
+                  <p class="hs-portfolio-card__category">
+                    Hospitality
                   </p>
+
+                  <h2 class="hs-portfolio-card__title">
+                    Hotel Lounge Collection
+                  </h2>
 
                 </div>
 
-                <p class="hs-shop-product__price">
-                  220,000원
-                </p>
-
-              </div>
-
-            </a>
-
-          </article>
-
-          <!-- PRODUCT 11 -->
-
-          <article
-            class="hs-shop-product"
-            data-product-category="table"
-            data-product-name="Mono Side Table"
-            data-product-price="176000"
-          >
-
-            <span class="hs-shop-product__number">
-              11
-            </span>
-
-            <a href="./product-11.html">
-
-              <div class="hs-shop-product__image">
-
-                <img
-                  src="./assets/images/products/product11.png"
-                  alt="모노 사이드 테이블"
-                  loading="lazy"
-                >
-
-              </div>
-
-              <div class="hs-shop-product__info">
-
-                <div>
-
-                  <h2 class="hs-shop-product__name">
-                    Mono Side Table
-                  </h2>
-
-                  <p class="hs-shop-product__type">
-                    Side Table
-                  </p>
-
-                </div>
-
-                <p class="hs-shop-product__price">
-                  176,000원
+                <p class="hs-portfolio-card__meta">
+                  Jeju · 2024
                 </p>
 
               </div>
@@ -1152,121 +1044,177 @@
         <!-- EMPTY RESULT -->
 
         <div
-          class="hs-shop-empty"
+          class="hs-portfolio-empty"
           hidden
-          data-shop-empty
+          data-portfolio-empty
         >
 
-          <div class="hs-shop-empty__content">
-
-            <h2 class="hs-shop-empty__title">
-              해당 카테고리의 제품이 없습니다.
-            </h2>
-
-            <p class="hs-shop-empty__description">
-              다른 카테고리를 선택해 제품을 확인해주세요.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ===================================================
-         ORDERMADE
-    ==================================================== -->
-
-    <section class="hs-shop-banner">
-
-      <div
-        class="hs-shop-banner__content"
-        data-reveal
-      >
-
-        <div class="hs-shop-banner__copy">
-
-          <p class="hs-eyebrow">
-            Ordermade
-          </p>
-
-          <h2 class="hs-section-title">
-            공간에 맞는 규격과 소재가
-            필요하신가요?
+          <h2 class="hs-portfolio-empty__title">
+            해당 카테고리의 프로젝트가 없습니다.
           </h2>
 
-          <p class="hs-body-copy hs-shop-banner__description">
-            프로젝트의 공간 조건과 제품 수량에 따라
-            컬러와 규격, 소재와 마감 변경 가능 범위를 검토합니다.
+          <p class="hs-portfolio-empty__description">
+            다른 카테고리를 선택해 프로젝트를 확인해주세요.
           </p>
-
-          <div class="hs-shop-banner__action">
-
-            <a
-              href="./ordermade.html"
-              class="hs-line-link"
-            >
-              View Ordermade
-            </a>
-
-          </div>
 
         </div>
 
       </div>
-
-      <div class="hs-shop-banner__media">
-
-        <img
-          src="./assets/images/products/product%20cut10.png"
-          alt="밝고 정돈된 공간에 배치된 테이블과 체어"
-          loading="lazy"
-        >
-
-      </div>
-
     </section>
 
     <!-- ===================================================
-         SHOWROOM GUIDE
+         PROJECT APPROACH
     ==================================================== -->
 
-    <section class="hs-section">
+    <section class="hs-section hs-section--soft">
       <div class="hs-container--wide">
 
         <div
-          class="hs-shop-guide"
+          class="hs-section-head"
           data-reveal
         >
 
-          <div class="hs-shop-guide__content">
+          <div class="hs-section-head__content">
 
             <p class="hs-eyebrow">
-              Product Guide
+              Project Approach
             </p>
 
             <h2 class="hs-section-title">
-              제품을 직접 확인하고 싶으신가요?
+              공간의 조건을 이해하고
+              <span class="pc-br"></span>
+              가구의 기준을 정리합니다.
             </h2>
 
-            <p class="hs-body-copy hs-shop-guide__description">
-              쇼룸에서 주요 제품의 크기와 소재,
-              색감과 착석감을 직접 확인할 수 있습니다.
+            <p class="hs-body-copy hs-section-head__description">
+              공간의 목적과 규모, 운영 방식과 사용자의 흐름을 살펴본 뒤
+              제품과 배치, 규격과 소재의 방향을 함께 검토합니다.
             </p>
 
           </div>
 
-          <div class="hs-shop-guide__action">
+        </div>
 
-            <a
-              href="./showroom.html"
-              class="hs-button"
-            >
-              Visit Showroom
-            </a>
+        <div class="hs-info-grid">
 
-          </div>
+          <article
+            class="hs-info-card"
+            data-reveal
+          >
+
+            <span class="hs-info-card__number">
+              01
+            </span>
+
+            <h3 class="hs-info-card__title">
+              Understanding
+            </h3>
+
+            <p class="hs-info-card__description">
+              공간의 목적과 운영 방식,
+              필요한 제품과 일정을 확인합니다.
+            </p>
+
+          </article>
+
+          <article
+            class="hs-info-card"
+            data-reveal
+          >
+
+            <span class="hs-info-card__number">
+              02
+            </span>
+
+            <h3 class="hs-info-card__title">
+              Proposal
+            </h3>
+
+            <p class="hs-info-card__description">
+              배치와 규격, 제품과 소재의 방향을
+              공간에 맞게 제안합니다.
+            </p>
+
+          </article>
+
+          <article
+            class="hs-info-card"
+            data-reveal
+          >
+
+            <span class="hs-info-card__number">
+              03
+            </span>
+
+            <h3 class="hs-info-card__title">
+              Production
+            </h3>
+
+            <p class="hs-info-card__description">
+              확정된 사양과 일정에 따라
+              제품을 제작하고 품질을 확인합니다.
+            </p>
+
+          </article>
+
+          <article
+            class="hs-info-card"
+            data-reveal
+          >
+
+            <span class="hs-info-card__number">
+              04
+            </span>
+
+            <h3 class="hs-info-card__title">
+              Delivery
+            </h3>
+
+            <p class="hs-info-card__description">
+              현장의 조건과 일정에 맞춰
+              배송과 설치를 진행합니다.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         CONTACT
+    ==================================================== -->
+
+    <section class="hs-portfolio-contact">
+      <div class="hs-container--wide hs-portfolio-contact__inner">
+
+        <div data-reveal>
+
+          <p class="hs-portfolio-contact__label">
+            Project Inquiry
+          </p>
+
+          <h2 class="hs-portfolio-contact__title">
+            함께 진행할 공간 프로젝트가 있으신가요?
+          </h2>
+
+          <p class="hs-portfolio-contact__description">
+            공간의 유형과 규모, 도면과 일정,
+            필요한 제품과 수량을 보내주시면
+            내용을 검토한 뒤 상담을 안내드립니다.
+          </p>
+
+        </div>
+
+        <div data-reveal>
+
+          <a
+            href="./qna-write.html?category=project"
+            class="hs-button"
+          >
+            Contact Us
+          </a>
 
         </div>
 
@@ -1494,65 +1442,51 @@
   <script src="./assets/js/main.js"></script>
 
   <!-- =====================================================
-       FILTER & SORT
+       PORTFOLIO FILTER
   ====================================================== -->
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const filterButtons = Array.from(
-        document.querySelectorAll("[data-shop-filter]")
+        document.querySelectorAll(
+          "[data-portfolio-filter]"
+        )
       );
 
-      const productGrid = document.querySelector(
-        "[data-product-grid]"
+      const projects = Array.from(
+        document.querySelectorAll(
+          "[data-portfolio-category]"
+        )
       );
 
-      const products = Array.from(
-        document.querySelectorAll("[data-product-category]")
+      const countElement = document.querySelector(
+        "[data-portfolio-count]"
       );
 
-      const productCount = document.querySelector(
-        "[data-product-count]"
+      const emptyElement = document.querySelector(
+        "[data-portfolio-empty]"
       );
 
-      const categoryName = document.querySelector(
-        "[data-category-name]"
-      );
+      const allowedCategories = [
+        "all",
+        "showroom",
+        "food",
+        "work",
+        "customer",
+        "hospitality"
+      ];
 
-      const sortSelect = document.querySelector(
-        "[data-shop-sort]"
-      );
-
-      const emptyResult = document.querySelector(
-        "[data-shop-empty]"
-      );
-
-      const originalOrder = products.slice();
-
-      let activeCategory = "all";
-
-      const categoryLabels = {
-        all: "All Products",
-        chair: "Chair",
-        table: "Table",
-        stool: "Stool",
-        lounge: "Lounge",
-        outdoor: "Outdoor"
-      };
-
-      function updateCount(count) {
-        if (!productCount) {
-          return;
-        }
-
-        productCount.textContent =
+      function formatCount(count) {
+        return (
           String(count).padStart(2, "0") +
-          (count === 1 ? " Product" : " Products");
+          (count === 1 ? " Project" : " Projects")
+        );
       }
 
       function setActiveButton(activeButton) {
         filterButtons.forEach(function (button) {
-          const isActive = button === activeButton;
+          const isActive =
+            button === activeButton;
 
           button.classList.toggle(
             "is-active",
@@ -1566,98 +1500,35 @@
         });
       }
 
-      function filterProducts(category) {
-        activeCategory = category;
-
+      function filterProjects(category) {
         let visibleCount = 0;
 
-        products.forEach(function (product) {
-          const productCategory =
-            product.getAttribute(
-              "data-product-category"
+        projects.forEach(function (project) {
+          const projectCategory =
+            project.getAttribute(
+              "data-portfolio-category"
             );
 
           const isVisible =
             category === "all" ||
-            productCategory === category;
+            projectCategory === category;
 
-          product.hidden = !isVisible;
+          project.hidden = !isVisible;
 
           if (isVisible) {
             visibleCount += 1;
           }
         });
 
-        updateCount(visibleCount);
-
-        if (categoryName) {
-          categoryName.textContent =
-            categoryLabels[category] ||
-            "All Products";
+        if (countElement) {
+          countElement.textContent =
+            formatCount(visibleCount);
         }
 
-        if (emptyResult) {
-          emptyResult.hidden =
+        if (emptyElement) {
+          emptyElement.hidden =
             visibleCount !== 0;
         }
-      }
-
-      function sortProducts(sortType) {
-        if (!productGrid) {
-          return;
-        }
-
-        const sortedProducts = products.slice();
-
-        sortedProducts.sort(function (a, b) {
-          const priceA = Number(
-            a.getAttribute(
-              "data-product-price"
-            )
-          );
-
-          const priceB = Number(
-            b.getAttribute(
-              "data-product-price"
-            )
-          );
-
-          const nameA =
-            a.getAttribute(
-              "data-product-name"
-            ) || "";
-
-          const nameB =
-            b.getAttribute(
-              "data-product-name"
-            ) || "";
-
-          if (sortType === "low") {
-            return priceA - priceB;
-          }
-
-          if (sortType === "high") {
-            return priceB - priceA;
-          }
-
-          if (sortType === "name") {
-            return nameA.localeCompare(
-              nameB,
-              "en"
-            );
-          }
-
-          return (
-            originalOrder.indexOf(a) -
-            originalOrder.indexOf(b)
-          );
-        });
-
-        sortedProducts.forEach(function (product) {
-          productGrid.appendChild(product);
-        });
-
-        filterProducts(activeCategory);
       }
 
       function updateUrl(category) {
@@ -1687,56 +1558,42 @@
           function () {
             const category =
               button.getAttribute(
-                "data-shop-filter"
+                "data-portfolio-filter"
               ) || "all";
 
             setActiveButton(button);
-            filterProducts(category);
+            filterProjects(category);
             updateUrl(category);
           }
         );
       });
 
-      if (sortSelect) {
-        sortSelect.addEventListener(
-          "change",
-          function () {
-            sortProducts(
-              sortSelect.value
-            );
-          }
-        );
-      }
-
       const params = new URLSearchParams(
         window.location.search
       );
 
-      const initialCategory =
+      const requestedCategory =
         params.get("category") || "all";
+
+      const initialCategory =
+        allowedCategories.includes(
+          requestedCategory
+        )
+          ? requestedCategory
+          : "all";
 
       const initialButton =
         document.querySelector(
-          '[data-shop-filter="' +
+          '[data-portfolio-filter="' +
           initialCategory +
           '"]'
         );
 
       if (initialButton) {
         setActiveButton(initialButton);
-        filterProducts(initialCategory);
-      } else {
-        const allButton =
-          document.querySelector(
-            '[data-shop-filter="all"]'
-          );
-
-        if (allButton) {
-          setActiveButton(allButton);
-        }
-
-        filterProducts("all");
       }
+
+      filterProjects(initialCategory);
     });
   </script>
 
