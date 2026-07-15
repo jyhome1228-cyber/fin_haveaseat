@@ -1,256 +1,831 @@
+"use strict";
+
 /* =========================================================
    HAVE A SEAT
    Common Interaction Script
+
+   01. Header scroll state
+   02. Mobile navigation
+   03. Search panel
+   04. Reveal animation
+   05. Homepage hero slider
 ========================================================= */
 
-document.addEventListener("DOMContentLoaded", () => {
-  const body = document.body;
+document.addEventListener("DOMContentLoaded", function () {
+  initHeader();
+  initMobileMenu();
+  initSearchPanel();
+  initReveal();
+  initHomeSlider();
+});
+
+
+/* =========================================================
+   01. HEADER
+========================================================= */
+
+function initHeader() {
   const header = document.querySelector(".hs-header");
 
-  const menuButton = document.querySelector("[data-menu-toggle]");
-  const mobileMenu = document.querySelector(".hs-mobile-menu");
-  const mobileMenuLinks = document.querySelectorAll(
-    ".hs-mobile-menu a"
-  );
-
-  const searchOpenButtons = document.querySelectorAll(
-    "[data-search-open]"
-  );
-  const searchCloseButtons = document.querySelectorAll(
-    "[data-search-close]"
-  );
-  const searchLayer = document.querySelector(".hs-search");
-  const searchInput = document.querySelector(".hs-search__input");
-
-  /* =======================================================
-     01. HEADER SCROLL STATE
-  ======================================================= */
-
-  const updateHeaderState = () => {
-    if (!header) return;
-
-    if (window.scrollY > 16) {
-      header.classList.add("is-scrolled");
-    } else {
-      header.classList.remove("is-scrolled");
-    }
-  };
-
-  updateHeaderState();
-
-  window.addEventListener("scroll", updateHeaderState, {
-    passive: true
-  });
-
-  /* =======================================================
-     02. MOBILE MENU
-  ======================================================= */
-
-  const openMenu = () => {
-    body.classList.add("is-menu-open");
-
-    if (menuButton) {
-      menuButton.setAttribute("aria-expanded", "true");
-      menuButton.setAttribute("aria-label", "메뉴 닫기");
-    }
-
-    if (mobileMenu) {
-      mobileMenu.setAttribute("aria-hidden", "false");
-    }
-  };
-
-  const closeMenu = () => {
-    body.classList.remove("is-menu-open");
-
-    if (menuButton) {
-      menuButton.setAttribute("aria-expanded", "false");
-      menuButton.setAttribute("aria-label", "메뉴 열기");
-    }
-
-    if (mobileMenu) {
-      mobileMenu.setAttribute("aria-hidden", "true");
-    }
-  };
-
-  const toggleMenu = () => {
-    if (body.classList.contains("is-menu-open")) {
-      closeMenu();
-    } else {
-      closeSearch();
-      openMenu();
-    }
-  };
-
-  if (menuButton) {
-    menuButton.addEventListener("click", toggleMenu);
+  if (!header) {
+    return;
   }
 
-  mobileMenuLinks.forEach((link) => {
-    link.addEventListener("click", closeMenu);
-  });
+  let ticking = false;
 
-  /* =======================================================
-     03. SEARCH LAYER
-  ======================================================= */
+  function updateHeader() {
+    const isScrolled = window.scrollY > 8;
 
-  function openSearch() {
-    closeMenu();
-
-    body.classList.add("is-search-open");
-
-    searchOpenButtons.forEach((button) => {
-      button.setAttribute("aria-expanded", "true");
-    });
-
-    if (searchLayer) {
-      searchLayer.setAttribute("aria-hidden", "false");
-    }
-
-    window.setTimeout(() => {
-      if (searchInput) {
-        searchInput.focus();
-      }
-    }, 150);
-  }
-
-  function closeSearch() {
-    body.classList.remove("is-search-open");
-
-    searchOpenButtons.forEach((button) => {
-      button.setAttribute("aria-expanded", "false");
-    });
-
-    if (searchLayer) {
-      searchLayer.setAttribute("aria-hidden", "true");
-    }
-  }
-
-  searchOpenButtons.forEach((button) => {
-    button.addEventListener("click", openSearch);
-  });
-
-  searchCloseButtons.forEach((button) => {
-    button.addEventListener("click", closeSearch);
-  });
-
-  if (searchLayer) {
-    searchLayer.addEventListener("click", (event) => {
-      if (event.target === searchLayer) {
-        closeSearch();
-      }
-    });
-  }
-
-  /* =======================================================
-     04. ESCAPE KEY
-  ======================================================= */
-
-  document.addEventListener("keydown", (event) => {
-    if (event.key !== "Escape") return;
-
-    closeMenu();
-    closeSearch();
-  });
-
-  /* =======================================================
-     05. REVEAL MOTION
-  ======================================================= */
-
-  const revealElements = document.querySelectorAll(
-    "[data-reveal]"
-  );
-
-  if (
-    "IntersectionObserver" in window &&
-    revealElements.length > 0
-  ) {
-    const revealObserver = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-
-          entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target);
-        });
-      },
-      {
-        threshold: 0.08,
-        rootMargin: "0px 0px -50px 0px"
-      }
+    header.classList.toggle(
+      "is-scrolled",
+      isScrolled
     );
 
-    revealElements.forEach((element) => {
-      element.classList.add("js-reveal");
-      revealObserver.observe(element);
-    });
-  } else {
-    revealElements.forEach((element) => {
-      element.classList.add("is-visible");
-    });
+    ticking = false;
   }
 
-  /* =======================================================
-     06. CURRENT MENU
-  ======================================================= */
-
-  const currentPath = window.location.pathname;
-  const navigationLinks = document.querySelectorAll(
-    ".hs-nav__link, .hs-mobile-menu__nav a"
-  );
-
-  navigationLinks.forEach((link) => {
-    const linkPath = new URL(
-      link.href,
-      window.location.origin
-    ).pathname;
-
-    if (
-      linkPath !== "/" &&
-      currentPath.startsWith(linkPath)
-    ) {
-      link.classList.add("is-active");
-      link.setAttribute("aria-current", "page");
-    }
-
-    if (
-      currentPath === "/" &&
-      (linkPath === "/" || linkPath.endsWith("index.html"))
-    ) {
-      link.classList.add("is-active");
-      link.setAttribute("aria-current", "page");
-    }
-  });
-
-  /* =======================================================
-     07. EMPTY LINKS
-  ======================================================= */
-
-  const emptyLinks = document.querySelectorAll('a[href="#"]');
-
-  emptyLinks.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      event.preventDefault();
-    });
-  });
-
-  /* =======================================================
-     08. IMAGE LOAD STATE
-  ======================================================= */
-
-  const images = document.querySelectorAll("img");
-
-  images.forEach((image) => {
-    if (image.complete) {
-      image.classList.add("is-loaded");
+  function requestHeaderUpdate() {
+    if (ticking) {
       return;
     }
 
-    image.addEventListener(
-      "load",
-      () => {
-        image.classList.add("is-loaded");
-      },
-      { once: true }
+    ticking = true;
+
+    window.requestAnimationFrame(
+      updateHeader
+    );
+  }
+
+  updateHeader();
+
+  window.addEventListener(
+    "scroll",
+    requestHeaderUpdate,
+    {
+      passive: true
+    }
+  );
+}
+
+
+/* =========================================================
+   02. MOBILE MENU
+========================================================= */
+
+function initMobileMenu() {
+  const menu = document.querySelector(
+    ".hs-mobile-menu"
+  );
+
+  const menuButtons = Array.from(
+    document.querySelectorAll(
+      "[data-menu-toggle]"
+    )
+  );
+
+  if (
+    !menu ||
+    menuButtons.length === 0
+  ) {
+    return;
+  }
+
+  const menuLinks = Array.from(
+    menu.querySelectorAll("a")
+  );
+
+  function openMenu() {
+    document.dispatchEvent(
+      new CustomEvent(
+        "hs:close-search"
+      )
+    );
+
+    menu.classList.add(
+      "is-open"
+    );
+
+    menu.setAttribute(
+      "aria-hidden",
+      "false"
+    );
+
+    document.body.classList.add(
+      "is-menu-open"
+    );
+
+    menuButtons.forEach(function (
+      button
+    ) {
+      button.setAttribute(
+        "aria-expanded",
+        "true"
+      );
+
+      button.setAttribute(
+        "aria-label",
+        "메뉴 닫기"
+      );
+    });
+  }
+
+  function closeMenu() {
+    menu.classList.remove(
+      "is-open"
+    );
+
+    menu.setAttribute(
+      "aria-hidden",
+      "true"
+    );
+
+    document.body.classList.remove(
+      "is-menu-open"
+    );
+
+    menuButtons.forEach(function (
+      button
+    ) {
+      button.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+      button.setAttribute(
+        "aria-label",
+        "메뉴 열기"
+      );
+    });
+  }
+
+  function toggleMenu() {
+    const isOpen =
+      menu.classList.contains(
+        "is-open"
+      );
+
+    if (isOpen) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  }
+
+  menuButtons.forEach(function (
+    button
+  ) {
+    button.addEventListener(
+      "click",
+      toggleMenu
     );
   });
-});
+
+  menuLinks.forEach(function (link) {
+    link.addEventListener(
+      "click",
+      closeMenu
+    );
+  });
+
+  menu.addEventListener(
+    "click",
+    function (event) {
+      if (event.target === menu) {
+        closeMenu();
+      }
+    }
+  );
+
+  document.addEventListener(
+    "keydown",
+    function (event) {
+      if (
+        event.key === "Escape" &&
+        menu.classList.contains(
+          "is-open"
+        )
+      ) {
+        closeMenu();
+
+        const firstMenuButton =
+          menuButtons[0];
+
+        if (firstMenuButton) {
+          firstMenuButton.focus();
+        }
+      }
+    }
+  );
+
+  document.addEventListener(
+    "hs:close-menu",
+    closeMenu
+  );
+
+  window.addEventListener(
+    "resize",
+    function () {
+      if (window.innerWidth > 1024) {
+        closeMenu();
+      }
+    }
+  );
+}
+
+
+/* =========================================================
+   03. SEARCH PANEL
+========================================================= */
+
+function initSearchPanel() {
+  const searchPanel =
+    document.querySelector(
+      ".hs-search"
+    );
+
+  const openButtons = Array.from(
+    document.querySelectorAll(
+      "[data-search-open]"
+    )
+  );
+
+  const closeButtons = Array.from(
+    document.querySelectorAll(
+      "[data-search-close]"
+    )
+  );
+
+  if (
+    !searchPanel ||
+    openButtons.length === 0
+  ) {
+    return;
+  }
+
+  const searchInput =
+    searchPanel.querySelector(
+      'input[type="search"]'
+    );
+
+  function openSearch() {
+    document.dispatchEvent(
+      new CustomEvent(
+        "hs:close-menu"
+      )
+    );
+
+    searchPanel.classList.add(
+      "is-open"
+    );
+
+    searchPanel.setAttribute(
+      "aria-hidden",
+      "false"
+    );
+
+    document.body.classList.add(
+      "is-search-open"
+    );
+
+    openButtons.forEach(function (
+      button
+    ) {
+      button.setAttribute(
+        "aria-expanded",
+        "true"
+      );
+    });
+
+    window.setTimeout(
+      function () {
+        if (searchInput) {
+          searchInput.focus();
+        }
+      },
+      80
+    );
+  }
+
+  function closeSearch() {
+    searchPanel.classList.remove(
+      "is-open"
+    );
+
+    searchPanel.setAttribute(
+      "aria-hidden",
+      "true"
+    );
+
+    document.body.classList.remove(
+      "is-search-open"
+    );
+
+    openButtons.forEach(function (
+      button
+    ) {
+      button.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+    });
+  }
+
+  openButtons.forEach(function (
+    button
+  ) {
+    button.addEventListener(
+      "click",
+      openSearch
+    );
+  });
+
+  closeButtons.forEach(function (
+    button
+  ) {
+    button.addEventListener(
+      "click",
+      closeSearch
+    );
+  });
+
+  searchPanel.addEventListener(
+    "click",
+    function (event) {
+      if (
+        event.target === searchPanel
+      ) {
+        closeSearch();
+      }
+    }
+  );
+
+  document.addEventListener(
+    "keydown",
+    function (event) {
+      if (
+        event.key === "Escape" &&
+        searchPanel.classList.contains(
+          "is-open"
+        )
+      ) {
+        closeSearch();
+
+        const firstOpenButton =
+          openButtons[0];
+
+        if (firstOpenButton) {
+          firstOpenButton.focus();
+        }
+      }
+    }
+  );
+
+  document.addEventListener(
+    "hs:close-search",
+    closeSearch
+  );
+}
+
+
+/* =========================================================
+   04. REVEAL ANIMATION
+========================================================= */
+
+function initReveal() {
+  const revealElements = Array.from(
+    document.querySelectorAll(
+      "[data-reveal]"
+    )
+  );
+
+  if (revealElements.length === 0) {
+    return;
+  }
+
+  const reduceMotion =
+    window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+  function revealElement(element) {
+    element.classList.add(
+      "is-visible"
+    );
+
+    element.classList.add(
+      "is-revealed"
+    );
+  }
+
+  if (
+    reduceMotion ||
+    !("IntersectionObserver" in window)
+  ) {
+    revealElements.forEach(
+      revealElement
+    );
+
+    return;
+  }
+
+  const observer =
+    new IntersectionObserver(
+      function (
+        entries,
+        currentObserver
+      ) {
+        entries.forEach(
+          function (entry) {
+            if (!entry.isIntersecting) {
+              return;
+            }
+
+            revealElement(
+              entry.target
+            );
+
+            currentObserver.unobserve(
+              entry.target
+            );
+          }
+        );
+      },
+      {
+        threshold: 0.08,
+        rootMargin:
+          "0px 0px -8% 0px"
+      }
+    );
+
+  revealElements.forEach(
+    function (element) {
+      observer.observe(element);
+    }
+  );
+}
+
+
+/* =========================================================
+   05. HOMEPAGE HERO SLIDER
+========================================================= */
+
+function initHomeSlider() {
+  const slider = document.querySelector(
+    "[data-home-slider]"
+  );
+
+  if (!slider) {
+    return;
+  }
+
+  const slides = Array.from(
+    slider.querySelectorAll(
+      "[data-home-slide]"
+    )
+  );
+
+  const dots = Array.from(
+    slider.querySelectorAll(
+      "[data-home-slider-dot]"
+    )
+  );
+
+  const currentNumber =
+    slider.querySelector(
+      "[data-home-slider-current]"
+    );
+
+  if (slides.length === 0) {
+    return;
+  }
+
+  const reduceMotion =
+    window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+  const autoplayDelay = 5200;
+
+  let currentIndex = slides.findIndex(
+    function (slide) {
+      return slide.classList.contains(
+        "is-active"
+      );
+    }
+  );
+
+  let autoplayTimer = null;
+  let pointerStartX = null;
+  let pointerStartY = null;
+
+  if (currentIndex < 0) {
+    currentIndex = 0;
+  }
+
+  function normalizeIndex(index) {
+    if (index < 0) {
+      return slides.length - 1;
+    }
+
+    if (index >= slides.length) {
+      return 0;
+    }
+
+    return index;
+  }
+
+  function formatNumber(number) {
+    return String(number).padStart(
+      2,
+      "0"
+    );
+  }
+
+  function preloadNextSlide(index) {
+    const nextIndex =
+      normalizeIndex(index + 1);
+
+    const nextImage =
+      slides[nextIndex].querySelector(
+        "img"
+      );
+
+    if (!nextImage) {
+      return;
+    }
+
+    nextImage.loading = "eager";
+  }
+
+  function updateSlider(index) {
+    const normalizedIndex =
+      normalizeIndex(index);
+
+    currentIndex =
+      normalizedIndex;
+
+    slides.forEach(function (
+      slide,
+      slideIndex
+    ) {
+      const isActive =
+        slideIndex === currentIndex;
+
+      slide.classList.toggle(
+        "is-active",
+        isActive
+      );
+
+      slide.setAttribute(
+        "aria-hidden",
+        isActive
+          ? "false"
+          : "true"
+      );
+
+      if ("inert" in slide) {
+        slide.inert = !isActive;
+      }
+    });
+
+    dots.forEach(function (
+      dot,
+      dotIndex
+    ) {
+      const isActive =
+        dotIndex === currentIndex;
+
+      dot.classList.toggle(
+        "is-active",
+        isActive
+      );
+
+      dot.setAttribute(
+        "aria-current",
+        isActive
+          ? "true"
+          : "false"
+      );
+    });
+
+    if (currentNumber) {
+      currentNumber.textContent =
+        formatNumber(
+          currentIndex + 1
+        );
+    }
+
+    preloadNextSlide(
+      currentIndex
+    );
+  }
+
+  function nextSlide() {
+    updateSlider(
+      currentIndex + 1
+    );
+  }
+
+  function previousSlide() {
+    updateSlider(
+      currentIndex - 1
+    );
+  }
+
+  function stopAutoplay() {
+    if (!autoplayTimer) {
+      return;
+    }
+
+    window.clearInterval(
+      autoplayTimer
+    );
+
+    autoplayTimer = null;
+  }
+
+  function startAutoplay() {
+    stopAutoplay();
+
+    if (
+      reduceMotion ||
+      slides.length <= 1 ||
+      document.hidden
+    ) {
+      return;
+    }
+
+    autoplayTimer =
+      window.setInterval(
+        nextSlide,
+        autoplayDelay
+      );
+  }
+
+  function restartAutoplay() {
+    stopAutoplay();
+    startAutoplay();
+  }
+
+  dots.forEach(function (
+    dot,
+    dotIndex
+  ) {
+    dot.addEventListener(
+      "click",
+      function () {
+        updateSlider(dotIndex);
+        restartAutoplay();
+      }
+    );
+  });
+
+  slider.addEventListener(
+    "mouseenter",
+    stopAutoplay
+  );
+
+  slider.addEventListener(
+    "mouseleave",
+    startAutoplay
+  );
+
+  slider.addEventListener(
+    "focusin",
+    stopAutoplay
+  );
+
+  slider.addEventListener(
+    "focusout",
+    function (event) {
+      const nextFocusedElement =
+        event.relatedTarget;
+
+      if (
+        nextFocusedElement &&
+        slider.contains(
+          nextFocusedElement
+        )
+      ) {
+        return;
+      }
+
+      startAutoplay();
+    }
+  );
+
+  slider.addEventListener(
+    "keydown",
+    function (event) {
+      if (event.key === "ArrowRight") {
+        event.preventDefault();
+
+        nextSlide();
+        restartAutoplay();
+      }
+
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+
+        previousSlide();
+        restartAutoplay();
+      }
+    }
+  );
+
+  slider.addEventListener(
+    "pointerdown",
+    function (event) {
+      if (
+        event.pointerType === "mouse" &&
+        event.button !== 0
+      ) {
+        return;
+      }
+
+      pointerStartX =
+        event.clientX;
+
+      pointerStartY =
+        event.clientY;
+    }
+  );
+
+  slider.addEventListener(
+    "pointerup",
+    function (event) {
+      if (
+        pointerStartX === null ||
+        pointerStartY === null
+      ) {
+        return;
+      }
+
+      const distanceX =
+        event.clientX -
+        pointerStartX;
+
+      const distanceY =
+        event.clientY -
+        pointerStartY;
+
+      pointerStartX = null;
+      pointerStartY = null;
+
+      const isHorizontalSwipe =
+        Math.abs(distanceX) >
+        Math.abs(distanceY);
+
+      const isLongEnough =
+        Math.abs(distanceX) > 45;
+
+      if (
+        !isHorizontalSwipe ||
+        !isLongEnough
+      ) {
+        return;
+      }
+
+      if (distanceX < 0) {
+        nextSlide();
+      } else {
+        previousSlide();
+      }
+
+      restartAutoplay();
+    }
+  );
+
+  slider.addEventListener(
+    "pointercancel",
+    function () {
+      pointerStartX = null;
+      pointerStartY = null;
+    }
+  );
+
+  document.addEventListener(
+    "visibilitychange",
+    function () {
+      if (document.hidden) {
+        stopAutoplay();
+      } else {
+        startAutoplay();
+      }
+    }
+  );
+
+  if (
+    !slider.hasAttribute(
+      "tabindex"
+    )
+  ) {
+    slider.setAttribute(
+      "tabindex",
+      "0"
+    );
+  }
+
+  updateSlider(currentIndex);
+  startAutoplay();
+}
