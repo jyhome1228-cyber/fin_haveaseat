@@ -1,347 +1,1545 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Have A Seat | Brand</title>
-  <meta name="description" content="해버싯 브랜드 소개" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+
+  <meta
+    name="description"
+    content="사람의 경험과 공간의 조화를 바탕으로 공간에 맞는 가구를 제안하는 해버싯의 브랜드 이야기입니다."
+  >
+
+  <meta name="theme-color" content="#f5f3ee">
+
+  <title>Brand | have a seat</title>
+
+  <link
+    rel="preload"
+    as="image"
+    href="./assets/images/products/30001500banner1.jpg"
+  >
+
+  <link
+    rel="stylesheet"
+    href="./assets/css/style.css"
+  >
 </head>
+
 <body>
-  <!-- promo bar -->
-  <div class="top-banner">
-    <p>Furniture for spaces to stay.</p>
-  </div>
 
-  <!-- header -->
-  <header class="hs-header">
+  <a
+    href="#main-content"
+    class="hs-skip-link"
+  >
+    본문 바로가기
+  </a>
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <header class="hs-header hs-header--solid">
     <div class="hs-header__inner">
-      <h1 class="hs-logo">
-        <a href="./index.html" aria-label="have a seat home">
-          <img src="./assets/images/logo/logo.svg" alt="have a seat" />
-        </a>
-      </h1>
 
-      <nav class="hs-nav hs-nav--center" aria-label="Primary">
-        <ul class="hs-nav__list">
-          <li><a class="is-active" href="./brand.html">Brand</a></li>
-          <li><a href="./shop.html">Shop</a></li>
-          <li><a href="./ordermade.html">Ordermade</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="./community.html">Community</a></li>
-        </ul>
+      <a
+        href="./index.html"
+        class="hs-logo"
+        aria-label="have a seat 홈"
+      >
+        <img
+          src="./assets/images/logo/logo.svg"
+          alt="have a seat"
+        >
+      </a>
+
+      <nav
+        class="hs-nav"
+        aria-label="주요 메뉴"
+      >
+
+        <div class="hs-nav__item">
+
+          <a
+            href="./brand.html"
+            class="hs-nav__link is-active"
+            aria-current="page"
+          >
+            Brand
+          </a>
+
+        </div>
+
+        <div class="hs-nav__item">
+
+          <a
+            href="./shop.html"
+            class="hs-nav__link"
+          >
+            Shop
+          </a>
+
+          <div class="hs-dropdown">
+
+            <a href="./shop.html">
+              All Products
+            </a>
+
+            <a href="./shop.html?category=chair">
+              Chair
+            </a>
+
+            <a href="./shop.html?category=table">
+              Table
+            </a>
+
+            <a href="./shop.html?category=stool">
+              Stool
+            </a>
+
+            <a href="./shop.html?category=lounge">
+              Lounge
+            </a>
+
+            <a href="./shop.html?category=outdoor">
+              Outdoor
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="hs-nav__item">
+
+          <a
+            href="./ordermade.html"
+            class="hs-nav__link"
+          >
+            Ordermade
+          </a>
+
+        </div>
+
+        <div class="hs-nav__item">
+
+          <a
+            href="./portfolio.html"
+            class="hs-nav__link"
+          >
+            Portfolio
+          </a>
+
+        </div>
+
+        <div class="hs-nav__item">
+
+          <a
+            href="./community.html"
+            class="hs-nav__link"
+          >
+            Community
+          </a>
+
+          <div class="hs-dropdown">
+
+            <a href="./notice.html">
+              Notice
+            </a>
+
+            <a href="./faq.html">
+              FAQ
+            </a>
+
+            <a href="./qna.html">
+              Q&amp;A
+            </a>
+
+          </div>
+
+        </div>
+
       </nav>
 
-      <div class="hs-util">
-        <a href="./showroom.html">Showroom</a>
-        <a href="./membership.html">Membership</a>
-        <a href="./faq.html">FAQ</a>
+      <div class="hs-header__utilities">
 
-        <a href="#none" class="hs-icon-link" aria-label="My page">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.4"/>
-            <path d="M5.5 19.5C6.7 16.9 8.9 15.5 12 15.5C15.1 15.5 17.3 16.9 18.5 19.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        <a
+          href="./showroom.html"
+          class="hs-header__text-link"
+        >
+          Showroom
+        </a>
+
+        <a
+          href="./membership.html"
+          class="hs-header__text-link"
+        >
+          Membership
+        </a>
+
+        <a
+          href="./faq.html"
+          class="hs-header__text-link"
+        >
+          FAQ
+        </a>
+
+        <a
+          href="./login.html"
+          class="hs-icon-button hs-account-button"
+          aria-label="회원 메뉴"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <circle
+              cx="12"
+              cy="8"
+              r="3.4"
+            ></circle>
+
+            <path
+              d="M5.5 19c.8-4 3-6 6.5-6s5.7 2 6.5 6"
+            ></path>
           </svg>
         </a>
 
-        <a href="#none" class="hs-icon-link" aria-label="Search">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.4"/>
-            <path d="M16 16L21 21" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        <button
+          type="button"
+          class="hs-icon-button"
+          aria-label="검색 열기"
+          aria-expanded="false"
+          data-search-open
+        >
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <circle
+              cx="10.5"
+              cy="10.5"
+              r="6"
+            ></circle>
+
+            <path
+              d="M15 15l4.5 4.5"
+            ></path>
           </svg>
+        </button>
+
+        <a
+          href="./cart.html"
+          class="hs-icon-button"
+          aria-label="장바구니"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              d="M6.5 8.5h11l-1 10h-9z"
+            ></path>
+
+            <path
+              d="M9 9V7a3 3 0 016 0v2"
+            ></path>
+          </svg>
+
+          <span class="hs-cart-count">
+            <span>0</span>
+          </span>
         </a>
 
-        <a href="#none" class="hs-icon-link hs-cart-link" aria-label="Cart">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M7 7H20L18.8 14.5H8.2L7 7Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-            <path d="M7 7L6.3 4.8C6.1 4.1 5.5 3.7 4.8 3.7H3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-            <circle cx="9.5" cy="18.5" r="1.2" fill="currentColor"/>
-            <circle cx="17" cy="18.5" r="1.2" fill="currentColor"/>
+        <button
+          type="button"
+          class="hs-icon-button hs-menu-button"
+          aria-label="메뉴 열기"
+          aria-expanded="false"
+          data-menu-toggle
+        >
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M4 8h16"></path>
+            <path d="M4 16h16"></path>
           </svg>
-          <span class="hs-cart-count">0</span>
-        </a>
+        </button>
+
       </div>
 
-      <button class="hs-menu-btn" type="button" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </header>
 
-  <!-- mobile panel -->
-  <aside class="hs-mobile-panel" aria-hidden="true">
-    <div class="hs-mobile-panel__inner">
-      <nav class="hs-mobile-nav" aria-label="Mobile">
-        <a href="./brand.html">Brand</a>
-        <a href="./shop.html">Shop</a>
-        <a href="./ordermade.html">Ordermade</a>
-        <a href="./portfolio.html">Portfolio</a>
-        <a href="./community.html">Community</a>
-        <a href="./showroom.html">Showroom</a>
-        <a href="./membership.html">Membership</a>
-        <a href="./faq.html">FAQ</a>
-      </nav>
+  <!-- =====================================================
+       MOBILE MENU
+  ====================================================== -->
+
+  <aside
+    class="hs-mobile-menu"
+    aria-hidden="true"
+  >
+    <div class="hs-mobile-menu__inner">
+
+      <div>
+
+        <nav
+          class="hs-mobile-menu__nav"
+          aria-label="모바일 메뉴"
+        >
+
+          <a
+            href="./brand.html"
+            aria-current="page"
+          >
+            <span>Brand</span>
+            <span>01</span>
+          </a>
+
+          <a href="./shop.html">
+            <span>Shop</span>
+            <span>02</span>
+          </a>
+
+          <a href="./ordermade.html">
+            <span>Ordermade</span>
+            <span>03</span>
+          </a>
+
+          <a href="./portfolio.html">
+            <span>Portfolio</span>
+            <span>04</span>
+          </a>
+
+          <a href="./community.html">
+            <span>Community</span>
+            <span>05</span>
+          </a>
+
+        </nav>
+
+        <div class="hs-mobile-menu__sub">
+
+          <a href="./shop.html">
+            All Products
+          </a>
+
+          <a href="./portfolio.html">
+            Projects
+          </a>
+
+          <a href="./showroom.html">
+            Showroom
+          </a>
+
+          <a href="./membership.html">
+            Membership
+          </a>
+
+          <a href="./notice.html">
+            Notice
+          </a>
+
+          <a href="./faq.html">
+            FAQ
+          </a>
+
+          <a href="./qna.html">
+            Q&amp;A
+          </a>
+
+          <a href="./login.html">
+            Login
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="hs-mobile-menu__footer">
+
+        <p>
+          Connecting Spaces, People, and Perspectives
+        </p>
+
+        <p>
+          © have a seat
+        </p>
+
+      </div>
+
     </div>
   </aside>
 
-  <main class="brand-page">
-    <!-- hero -->
-    <section class="page-hero page-hero--compact">
-      <div class="page-hero__inner hs-container">
-        <p class="page-hero__eyebrow">BRAND</p>
-        <h2 class="page-hero__title">
-          Furniture for<br class="pc-br" />
-          better spatial experience.
-        </h2>
-        <p class="page-hero__desc">
-          해버싯은 공간의 목적과 분위기, 그리고 그 안에 머무는 사람의 흐름을 고려하여
-          공간에 맞는 가구와 구성을 제안합니다.
+  <!-- =====================================================
+       SEARCH
+  ====================================================== -->
+
+  <div
+    class="hs-search"
+    aria-hidden="true"
+  >
+    <div class="hs-search__inner">
+
+      <div class="hs-search__head">
+
+        <p class="hs-search__title">
+          SEARCH
         </p>
+
+        <button
+          type="button"
+          class="hs-search__close"
+          data-search-close
+        >
+          Close
+        </button>
+
+      </div>
+
+      <form
+        class="hs-search__form"
+        action="./shop.html"
+        method="get"
+      >
+
+        <label
+          for="site-search"
+          class="hs-sr-only"
+        >
+          검색어
+        </label>
+
+        <input
+          id="site-search"
+          class="hs-search__input"
+          type="search"
+          name="keyword"
+          placeholder="Search products"
+          autocomplete="off"
+        >
+
+        <button
+          type="submit"
+          class="hs-search__submit"
+        >
+          Search
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- =====================================================
+       MAIN
+  ====================================================== -->
+
+  <main
+    id="main-content"
+    class="hs-main hs-brand-page"
+  >
+
+    <!-- ===================================================
+         HERO
+    ==================================================== -->
+
+    <section class="hs-brand-hero">
+      <div class="hs-container--wide">
+
+        <div
+          class="hs-brand-hero__head"
+          data-reveal
+        >
+
+          <p class="hs-brand-hero__label">
+            Brand
+          </p>
+
+          <h1 class="hs-brand-hero__title">
+            Connecting Spaces,
+            <span class="pc-br"></span>
+            People, and Perspectives
+          </h1>
+
+          <p class="hs-brand-hero__description">
+            해버싯은 공간의 목적과 분위기,
+            그리고 그 안에 머무는 사람의 흐름을 고려하여
+            공간에 맞는 가구와 구성을 제안합니다.
+          </p>
+
+        </div>
+
+        <div
+          class="hs-brand-hero__visual"
+          data-reveal
+        >
+
+          <img
+            src="./assets/images/products/30001500banner1.jpg"
+            alt="해버싯 브랜드와 가구"
+            fetchpriority="high"
+          >
+
+        </div>
+
       </div>
     </section>
 
-    <!-- intro -->
-    <section class="brand-intro section-line">
-      <div class="hs-container hs-narrow">
-        <div class="editorial-image editorial-image--wide">
-          <img src="./assets/images/products/product cut13.png" alt="해버싯 브랜드 이미지" />
+    <!-- ===================================================
+         INTRO
+    ==================================================== -->
+
+    <section class="hs-brand-section">
+      <div class="hs-container--wide">
+
+        <div
+          class="hs-brand-section__head"
+          data-reveal
+        >
+
+          <p class="hs-brand-section__label">
+            Intro
+          </p>
+
+          <h2 class="hs-brand-section__title">
+            가구가 공간 안에서 어떤 역할을 하며
+            <span class="pc-br"></span>
+            어떤 가치를 만들어내는지 이야기합니다.
+          </h2>
+
         </div>
 
-        <div class="brand-copy">
+        <div
+          class="hs-brand-about__copy"
+          data-reveal
+        >
+
           <p>
-            상업 공간에서 가구를 선택하고 배치하는 일은 오랫동안 형태와 기능, 가격과 조건을 맞추는
-            방식으로 이해되어 왔습니다. 하지만 여러 공간을 제안하고 완성해가는 과정 속에서, 우리는
-            가구가 단순히 자리를 채우는 요소에 그치지 않는다는 점을 반복해서 보게 되었습니다.
+            상업 공간에서 가구를 선택하고 배치하는 일은 오랫동안
+            형태와 기능, 가격과 조건을 맞추는 방식으로 이해되어 왔습니다.
+            하지만 여러 공간을 제안하고 완성해가는 과정 속에서,
+            우리는 가구가 단순히 자리를 채우는 요소에 그치지 않는다는 점을
+            반복해서 보게 되었습니다.
           </p>
+
           <p>
-            어떤 가구를 선택하고 어떻게 배치하느냐에 따라 공간의 분위기와 흐름이 달라지고,
-            그 안에 머무는 사람의 시선과 경험 또한 달라졌습니다. 그래서 해버싯은 오랜 시간
-            상업 공간에 맞는 가구를 제안해 온 경험과 더 나은 결과를 만들기 위한 고민을 바탕으로,
-            가구가 공간 안에서 어떤 역할을 하며 어떤 가치를 만들어내는지에 대해 해버싯만의 시선으로
-            이야기하고자 합니다.
+            어떤 가구를 선택하고 어떻게 배치하느냐에 따라
+            공간의 분위기와 흐름이 달라지고,
+            그 안에 머무는 사람의 시선과 경험 또한 달라졌습니다.
+            그래서 해버싯은 오랜 시간 상업 공간에 맞는 가구를 제안해 온 경험과
+            더 나은 결과를 만들기 위한 고민을 바탕으로,
+            가구가 공간 안에서 어떤 역할을 하며 어떤 가치를 만들어내는지에 대해
+            해버싯만의 시선으로 이야기하고자 합니다.
           </p>
+
         </div>
+
+        <div
+          class="hs-brand-about__visual"
+          data-reveal
+        >
+
+          <img
+            src="./assets/images/products/product%20cut10.png"
+            alt="가구가 배치된 상업 공간"
+            loading="lazy"
+          >
+
+        </div>
+
       </div>
     </section>
 
-    <!-- mission -->
-    <section class="brand-block section-line">
-      <div class="hs-container">
-        <div class="section-heading">
-          <p class="section-heading__eyebrow">MISSION</p>
-          <h3 class="section-heading__title">
-            사람의 경험과 공간의 조화를 중요하게 생각합니다.
-          </h3>
-        </div>
+    <!-- ===================================================
+         MISSION
+    ==================================================== -->
 
-        <div class="brand-copy brand-copy--spacious hs-narrow">
-          <p>
-            해버싯은 사람의 경험과 공간의 조화를 중요하게 생각합니다. 우리는 가구가 공간 안에
-            자연스럽게 어우러지고, 공간의 목적과 분위기를 더 분명하게 만들어야 한다고 믿습니다.
-            또한 공간마다 쓰임과 운영 방식, 머무는 사람의 흐름이 다른 만큼, 가구 역시 그에 맞는
-            역할과 기준을 가져야 한다고 생각합니다.
+    <section class="hs-brand-section">
+      <div class="hs-container--wide">
+
+        <div
+          class="hs-brand-section__head"
+          data-reveal
+        >
+
+          <p class="hs-brand-section__label">
+            Mission
           </p>
+
+          <h2 class="hs-brand-section__title">
+            사람의 경험과 공간의 조화를
+            중요하게 생각합니다.
+          </h2>
+
+        </div>
+
+        <div
+          class="hs-brand-about__copy"
+          data-reveal
+        >
+
           <p>
-            해버싯은 이 점을 중요하게 여기며, 공간에 놓이는 가구 하나하나를 세심하게 살피고
-            사용자의 시선과 머무는 방식까지 함께 고려합니다. 공간에 맞는 가구와 구성을 제안해
-            더 나은 공간 경험을 만드는 일, 그것이 해버싯의 미션입니다.
+            해버싯은 사람의 경험과 공간의 조화를 중요하게 생각합니다.
+            우리는 가구가 공간 안에 자연스럽게 어우러지고,
+            공간의 목적과 분위기를 더 분명하게 만들어야 한다고 믿습니다.
+            또한 공간마다 쓰임과 운영 방식, 머무는 사람의 흐름이 다른 만큼,
+            가구 역시 그에 맞는 역할과 기준을 가져야 한다고 생각합니다.
           </p>
+
+          <p>
+            해버싯은 이 점을 중요하게 여기며,
+            공간에 놓이는 가구 하나하나를 세심하게 살피고
+            사용자의 시선과 머무는 방식까지 함께 고려합니다.
+            공간에 맞는 가구와 구성을 제안해 더 나은 공간 경험을 만드는 일,
+            그것이 해버싯의 미션입니다.
+          </p>
+
         </div>
 
-        <div class="brand-card-grid brand-card-grid--3">
-          <article class="brand-info-card">
-            <span class="brand-info-card__number">01</span>
-            <p class="brand-info-card__label">Mission</p>
-            <h4 class="brand-info-card__title">공간과의 조화</h4>
-            <p class="brand-info-card__text">
-              가구가 공간 안에 자연스럽게 어우러지고, 공간의 목적과 분위기를 더욱
-              분명하게 만들어야 한다고 생각합니다.
-            </p>
+        <div class="hs-brand-principles">
+
+          <article
+            class="hs-brand-principle"
+            data-reveal
+          >
+
+            <div class="hs-brand-principle__head">
+
+              <span class="hs-brand-principle__number">
+                01
+              </span>
+
+              <span class="hs-brand-principle__label">
+                Mission
+              </span>
+
+            </div>
+
+            <div class="hs-brand-principle__content">
+
+              <h3 class="hs-brand-principle__title">
+                공간과의 조화
+              </h3>
+
+              <p class="hs-brand-principle__description">
+                가구가 공간 안에 자연스럽게 어우러지고,
+                공간의 목적과 분위기를 더욱 분명하게
+                만들어야 한다고 생각합니다.
+              </p>
+
+            </div>
+
           </article>
 
-          <article class="brand-info-card">
-            <span class="brand-info-card__number">02</span>
-            <p class="brand-info-card__label">Mission</p>
-            <h4 class="brand-info-card__title">사용자의 경험</h4>
-            <p class="brand-info-card__text">
-              사용자의 시선과 머무는 방식, 가구를 실제로 사용하는 과정과 공간 안에서
-              느끼는 경험을 함께 고려합니다.
-            </p>
+          <article
+            class="hs-brand-principle"
+            data-reveal
+          >
+
+            <div class="hs-brand-principle__head">
+
+              <span class="hs-brand-principle__number">
+                02
+              </span>
+
+              <span class="hs-brand-principle__label">
+                Mission
+              </span>
+
+            </div>
+
+            <div class="hs-brand-principle__content">
+
+              <h3 class="hs-brand-principle__title">
+                사용자의 경험
+              </h3>
+
+              <p class="hs-brand-principle__description">
+                사용자의 시선과 머무는 방식,
+                가구를 실제로 사용하는 과정과
+                공간 안에서 느끼는 경험을 함께 고려합니다.
+              </p>
+
+            </div>
+
           </article>
 
-          <article class="brand-info-card">
-            <span class="brand-info-card__number">03</span>
-            <p class="brand-info-card__label">Mission</p>
-            <h4 class="brand-info-card__title">역할과 기준</h4>
-            <p class="brand-info-card__text">
-              공간의 쓰임과 운영 방식, 머무는 사람의 흐름에 맞춰 가구가 가져야 할
-              역할과 기준을 정리합니다.
-            </p>
+          <article
+            class="hs-brand-principle"
+            data-reveal
+          >
+
+            <div class="hs-brand-principle__head">
+
+              <span class="hs-brand-principle__number">
+                03
+              </span>
+
+              <span class="hs-brand-principle__label">
+                Mission
+              </span>
+
+            </div>
+
+            <div class="hs-brand-principle__content">
+
+              <h3 class="hs-brand-principle__title">
+                역할과 기준
+              </h3>
+
+              <p class="hs-brand-principle__description">
+                공간의 쓰임과 운영 방식,
+                머무는 사람의 흐름에 맞춰
+                가구가 가져야 할 역할과 기준을 정리합니다.
+              </p>
+
+            </div>
+
           </article>
+
         </div>
+
       </div>
     </section>
 
-    <!-- vision -->
-    <section class="brand-block section-line">
-      <div class="hs-container">
-        <div class="section-heading">
-          <p class="section-heading__eyebrow">VISION</p>
-          <h3 class="section-heading__title">
-            실용성과 디자인의 균형을 바탕으로,<br class="pc-br" />
-            공간 속에서 오래 사용될 수 있는 가구와 경험을 만들어갑니다.
-          </h3>
-        </div>
+    <!-- ===================================================
+         VISION
+    ==================================================== -->
 
-        <div class="brand-copy brand-copy--spacious hs-narrow">
-          <p>
-            사람의 경험과 공간의 조화를 바탕으로, 공간에 맞는 가구를 세심하게 제안하고
-            필요에 따라 맞춤 제작까지 함께하는 브랜드로 성장하고자 합니다. 우리는 공간의 목적과
-            분위기, 그리고 그 안에 머무는 사용자의 흐름을 깊이 이해하며, 가구가 공간 안에서
-            자연스럽게 어우러지고 더 나은 완성도와 경험을 더할 수 있도록 돕는 방향을 지향합니다.
+    <section class="hs-brand-section">
+      <div class="hs-container--wide">
+
+        <div
+          class="hs-brand-section__head"
+          data-reveal
+        >
+
+          <p class="hs-brand-section__label">
+            Vision
           </p>
+
+          <h2 class="hs-brand-section__title">
+            공간에 대한 이해와 정제된 제안을 바탕으로
+            <span class="pc-br"></span>
+            오래도록 선택받는 브랜드로 성장하겠습니다.
+          </h2>
+
+        </div>
+
+        <div
+          class="hs-brand-about__copy"
+          data-reveal
+        >
+
           <p>
-            이를 통해 고객이 자신의 공간에 더욱 잘 맞는 선택을 할 수 있도록 돕고, 공간의 가치를
-            높이는 신뢰할 수 있는 파트너로 함께하고자 합니다. 나아가 해버싯은 공간에 대한 이해와
-            정제된 제안을 바탕으로 오래도록 선택받는 브랜드로 성장하겠습니다.
+            해버싯은 사람의 경험과 공간의 조화를 바탕으로,
+            공간에 맞는 가구를 세심하게 제안하고
+            필요에 따라 맞춤 제작까지 함께하는 브랜드로 성장하고자 합니다.
           </p>
+
+          <p>
+            우리는 공간의 목적과 분위기,
+            그리고 그 안에 머무는 사용자의 흐름을 깊이 이해하며,
+            가구가 공간 안에서 자연스럽게 어우러지고
+            더 나은 완성도와 경험을 더할 수 있도록 돕는 방향을 지향합니다.
+            이를 통해 고객이 자신의 공간에 더욱 잘 맞는 선택을 할 수 있도록 돕고,
+            공간의 가치를 높이는 신뢰할 수 있는 파트너로 함께하고자 합니다.
+            나아가 해버싯은 공간에 대한 이해와 정제된 제안을 바탕으로
+            오래도록 선택받는 브랜드로 성장하겠습니다.
+          </p>
+
         </div>
 
-        <div class="brand-card-grid brand-card-grid--3">
-          <article class="brand-info-card">
-            <span class="brand-info-card__number">01</span>
-            <p class="brand-info-card__label">Vision</p>
-            <h4 class="brand-info-card__title">정제된 제안</h4>
-            <p class="brand-info-card__text">
-              공간의 목적과 분위기에 맞춰 더 적합한 가구와 구성을 제안하는 브랜드로
-              자리하고자 합니다.
-            </p>
+        <div class="hs-brand-principles">
+
+          <article
+            class="hs-brand-principle"
+            data-reveal
+          >
+
+            <div class="hs-brand-principle__head">
+
+              <span class="hs-brand-principle__number">
+                01
+              </span>
+
+              <span class="hs-brand-principle__label">
+                Vision
+              </span>
+
+            </div>
+
+            <div class="hs-brand-principle__content">
+
+              <h3 class="hs-brand-principle__title">
+                세심한 제안
+              </h3>
+
+              <p class="hs-brand-principle__description">
+                공간의 목적과 분위기,
+                그 안에 머무는 사용자의 흐름을 깊이 이해한 뒤
+                공간에 맞는 가구를 제안합니다.
+              </p>
+
+            </div>
+
           </article>
 
-          <article class="brand-info-card">
-            <span class="brand-info-card__number">02</span>
-            <p class="brand-info-card__label">Vision</p>
-            <h4 class="brand-info-card__title">맞춤형 경험</h4>
-            <p class="brand-info-card__text">
-              기성 가구 제안에서 나아가 필요에 따라 맞춤 제작까지 연결하며,
-              공간에 꼭 맞는 경험을 제공합니다.
-            </p>
+          <article
+            class="hs-brand-principle"
+            data-reveal
+          >
+
+            <div class="hs-brand-principle__head">
+
+              <span class="hs-brand-principle__number">
+                02
+              </span>
+
+              <span class="hs-brand-principle__label">
+                Vision
+              </span>
+
+            </div>
+
+            <div class="hs-brand-principle__content">
+
+              <h3 class="hs-brand-principle__title">
+                맞춤 제작
+              </h3>
+
+              <p class="hs-brand-principle__description">
+                공간의 조건과 필요에 따라
+                적합한 제품을 선별하고,
+                필요한 경우 맞춤 제작까지 함께 진행합니다.
+              </p>
+
+            </div>
+
           </article>
 
-          <article class="brand-info-card">
-            <span class="brand-info-card__number">03</span>
-            <p class="brand-info-card__label">Vision</p>
-            <h4 class="brand-info-card__title">지속 가능한 선택</h4>
-            <p class="brand-info-card__text">
-              오래 사용할 수 있는 가구와 공간 경험을 통해 고객에게 신뢰받는 브랜드로
-              성장하고자 합니다.
-            </p>
+          <article
+            class="hs-brand-principle"
+            data-reveal
+          >
+
+            <div class="hs-brand-principle__head">
+
+              <span class="hs-brand-principle__number">
+                03
+              </span>
+
+              <span class="hs-brand-principle__label">
+                Vision
+              </span>
+
+            </div>
+
+            <div class="hs-brand-principle__content">
+
+              <h3 class="hs-brand-principle__title">
+                신뢰할 수 있는 파트너
+              </h3>
+
+              <p class="hs-brand-principle__description">
+                고객이 자신의 공간에 더 잘 맞는 선택을 할 수 있도록 돕고,
+                공간의 가치를 높이는 신뢰할 수 있는 파트너로 함께합니다.
+              </p>
+
+            </div>
+
           </article>
+
         </div>
+
       </div>
     </section>
 
-    <!-- identity -->
-    <section class="brand-identity section-line">
-      <div class="hs-container">
-        <div class="section-heading">
-          <p class="section-heading__eyebrow">IDENTITY</p>
-          <h3 class="section-heading__title">
-            해버싯은 공간을 이해하고, <br class="pc-br" />
-            그 안에 어울리는 가구를 제안합니다.
-          </h3>
+    <!-- ===================================================
+         CORE VALUE
+    ==================================================== -->
+
+    <section class="hs-brand-section">
+      <div class="hs-container--wide">
+
+        <div
+          class="hs-brand-section__head"
+          data-reveal
+        >
+
+          <p class="hs-brand-section__label">
+            Core Value
+          </p>
+
+          <h2 class="hs-brand-section__title">
+            해버싯의 가치는
+            사람의 경험에서 시작됩니다.
+          </h2>
+
+          <p class="hs-brand-section__description">
+            우리는 공간의 목적과 사용자의 시선을 기준으로 가구를 설계하며,
+            공간과 사람이 자연스럽게 연결되는 경험을 만들어갑니다.
+          </p>
+
         </div>
 
-        <div class="identity-layout">
-          <div class="identity-layout__copy">
-            <p>
-              가구는 공간의 완성도를 높이는 중요한 기준이라고 믿습니다.
+        <div
+          class="hs-brand-about__copy"
+          data-reveal
+        >
+
+          <p>
+            가구 제작에서 출발한 해버싯은 제품을 넘어
+            공간의 감도와 브랜드의 태도를 함께 설계하는 것을 지향합니다.
+            작은 요소까지 균형 있게 구성된 가구는
+            공간의 완성도를 높이는 중요한 기준이라고 믿습니다.
+          </p>
+
+          <p>
+            해버싯은 실용성과 디자인의 균형을 바탕으로,
+            공간 속에서 오래 사용할 수 있는 가구와 경험을 만들어갑니다.
+          </p>
+
+        </div>
+
+        <div class="hs-brand-consider-grid">
+
+          <article
+            class="hs-brand-consider-card"
+            data-reveal
+          >
+
+            <span class="hs-brand-consider-card__number">
+              01
+            </span>
+
+            <h3 class="hs-brand-consider-card__title">
+              본질에 대한 이해
+            </h3>
+
+            <p class="hs-brand-consider-card__description">
+              해버싯은 공간의 목적과 운영 방식,
+              고객의 요구를 충분히 이해한 뒤 제안을 시작합니다.
+              보이는 요소를 넘어 공간이 실제로 어떻게 사용되는지까지
+              깊이 있게 살핍니다.
             </p>
-            <p>
-              해버싯은 실용성과 디자인의 균형을 바탕으로, 공간 속에서 오래 사용할 수 있는
-              가구와 경험을 만들어갑니다.
+
+          </article>
+
+          <article
+            class="hs-brand-consider-card"
+            data-reveal
+          >
+
+            <span class="hs-brand-consider-card__number">
+              02
+            </span>
+
+            <h3 class="hs-brand-consider-card__title">
+              사용자 경험 중심
+            </h3>
+
+            <p class="hs-brand-consider-card__description">
+              모든 제안은 사용자의 경험에서 출발합니다.
+              가구의 형태와 배치, 착석자의 시선,
+              작업과 이동 동선까지 실제로 머무는 사람의 경험을 기준으로 판단합니다.
             </p>
+
+          </article>
+
+          <article
+            class="hs-brand-consider-card"
+            data-reveal
+          >
+
+            <span class="hs-brand-consider-card__number">
+              03
+            </span>
+
+            <h3 class="hs-brand-consider-card__title">
+              명확한 제안
+            </h3>
+
+            <p class="hs-brand-consider-card__description">
+              불필요한 많은 선택지를 나열하기보다
+              공간에 적합한 정제된 방향을 분명하게 제안합니다.
+              고객이 더 쉽게 이해하고 판단할 수 있는 제안을 지향합니다.
+            </p>
+
+          </article>
+
+          <article
+            class="hs-brand-consider-card"
+            data-reveal
+          >
+
+            <span class="hs-brand-consider-card__number">
+              04
+            </span>
+
+            <h3 class="hs-brand-consider-card__title">
+              책임 있는 실행
+            </h3>
+
+            <p class="hs-brand-consider-card__description">
+              기획부터 제작, 납품까지 전 과정에서
+              일관된 품질과 책임 있는 태도를 유지합니다.
+              해버싯은 결과를 통해 신뢰를 만들어가는 브랜드가 되고자 합니다.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         CAPABILITIES
+    ==================================================== -->
+
+    <section class="hs-brand-section">
+      <div class="hs-container--wide">
+
+        <div
+          class="hs-brand-section__head"
+          data-reveal
+        >
+
+          <p class="hs-brand-section__label">
+            Capabilities
+          </p>
+
+          <h2 class="hs-brand-section__title">
+            감도를 잃지 않는 설계와
+            그 설계를 실행할 수 있는 구조를 갖추고 있습니다.
+          </h2>
+
+          <p class="hs-brand-section__description">
+            해버싯의 역량은 공간의 목적과 관계,
+            브랜드의 방향성을 이해하고 실현하는 데 있습니다.
+          </p>
+
+        </div>
+
+        <div class="hs-brand-value-grid">
+
+          <article
+            class="hs-brand-value"
+            data-reveal
+          >
+
+            <span class="hs-brand-value__label">
+              Customizing
+            </span>
+
+            <h3 class="hs-brand-value__title">
+              전문화된 커스터마이징 역량
+            </h3>
+
+            <p class="hs-brand-value__description">
+              해버싯은 12년 이상, 12,000건 이상의 프로젝트 경험과
+              상업 공간 중심의 가구 설계 및 제작 경험을 바탕으로,
+              공간의 목적과 분위기에 맞는 가구를 세심하게 제안합니다.
+              재료의 물성과 마감 표현에 대한 높은 이해를 바탕으로
+              다양한 우드톤, 컬러, 마감재의 특성을 고려하며,
+              기능성과 심미성을 함께 반영한 결과물을 구현합니다.
+            </p>
+
+          </article>
+
+          <article
+            class="hs-brand-value"
+            data-reveal
+          >
+
+            <span class="hs-brand-value__label">
+              Infrastructure
+            </span>
+
+            <h3 class="hs-brand-value__title">
+              1,000평 규모의 제조 및 물류 인프라
+            </h3>
+
+            <p class="hs-brand-value__description">
+              해버싯은 포천에 자체 공장과 물류 인프라를 운영하고 있습니다.
+              이를 바탕으로 제작과 납품 전반을 안정적으로 관리하며,
+              일관된 품질과 납기 대응력을 유지합니다.
+            </p>
+
+          </article>
+
+          <article
+            class="hs-brand-value"
+            data-reveal
+          >
+
+            <span class="hs-brand-value__label">
+              Production
+            </span>
+
+            <h3 class="hs-brand-value__title">
+              전국 단위 대응과 유연한 생산 운영
+            </h3>
+
+            <p class="hs-brand-value__description">
+              대규모 프로젝트부터 소규모 리뉴얼까지,
+              각 현장의 조건과 일정에 맞춰 유연하게 대응합니다.
+              제작과 납품 계획을 체계적으로 수립해
+              안정적인 진행을 지원합니다.
+            </p>
+
+          </article>
+
+          <article
+            class="hs-brand-value"
+            data-reveal
+          >
+
+            <span class="hs-brand-value__label">
+              Management
+            </span>
+
+            <h3 class="hs-brand-value__title">
+              전 과정을 관리하는 통합 운영 체계
+            </h3>
+
+            <p class="hs-brand-value__description">
+              해버싯은 CRM 기반의 고객 관리 시스템을 바탕으로
+              상담, 발주, 제작, 배송, 설치, A/S까지
+              전 과정의 흐름을 통합적으로 관리합니다.
+              각 단계의 정보를 보다 직관적이고 투명하게 공유하여
+              고객이 프로젝트 전반을 정확하고 신뢰감 있게 경험할 수 있도록 돕습니다.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         TARGET CLIENTS
+    ==================================================== -->
+
+    <section class="hs-brand-section">
+      <div class="hs-container--wide">
+
+        <div
+          class="hs-brand-section__head"
+          data-reveal
+        >
+
+          <p class="hs-brand-section__label">
+            Target Clients
+          </p>
+
+          <h2 class="hs-brand-section__title">
+            공간의 목적과 브랜드의 방향이
+            분명한 고객들과 함께합니다.
+          </h2>
+
+          <p class="hs-brand-section__description">
+            브랜드 공간을 준비하는 창업자와 운영자,
+            공간의 완성도를 높이고자 하는 인테리어 디자이너,
+            안정적인 제작과 납품이 중요한 실무 담당자까지,
+            해버싯은 다양한 업종과 규모의 상업 공간 파트너와 함께합니다.
+          </p>
+
+        </div>
+
+        <div class="hs-brand-consider-grid">
+
+          <article
+            class="hs-brand-consider-card"
+            data-reveal
+          >
+
+            <span class="hs-brand-consider-card__number">
+              01
+            </span>
+
+            <h3 class="hs-brand-consider-card__title">
+              브랜드 쇼룸 및 체험형 공간
+            </h3>
+
+            <p class="hs-brand-consider-card__description">
+              제품과 브랜드의 분위기를 함께 경험하며,
+              공간을 통해 브랜드의 인상과 스토리를 전달하는 공간
+            </p>
+
+          </article>
+
+          <article
+            class="hs-brand-consider-card"
+            data-reveal
+          >
+
+            <span class="hs-brand-consider-card__number">
+              02
+            </span>
+
+            <h3 class="hs-brand-consider-card__title">
+              식음료 공간
+            </h3>
+
+            <p class="hs-brand-consider-card__description">
+              카페, 레스토랑, 디저트숍 등
+              분위기와 운영 동선이 함께 고려되어야 하는 공간
+            </p>
+
+          </article>
+
+          <article
+            class="hs-brand-consider-card"
+            data-reveal
+          >
+
+            <span class="hs-brand-consider-card__number">
+              03
+            </span>
+
+            <h3 class="hs-brand-consider-card__title">
+              업무 및 학습 공간
+            </h3>
+
+            <p class="hs-brand-consider-card__description">
+              스터디카페, 독서실, 공유오피스 등
+              집중과 효율적인 사용 환경이 중요한 공간
+            </p>
+
+          </article>
+
+          <article
+            class="hs-brand-consider-card"
+            data-reveal
+          >
+
+            <span class="hs-brand-consider-card__number">
+              04
+            </span>
+
+            <h3 class="hs-brand-consider-card__title">
+              고객 응대 공간
+            </h3>
+
+            <p class="hs-brand-consider-card__description">
+              미용실, 네일샵, 병원 대기실 등
+              첫인상과 머무는 경험의 완성도가 중요한 공간
+            </p>
+
+          </article>
+
+          <article
+            class="hs-brand-consider-card"
+            data-reveal
+          >
+
+            <span class="hs-brand-consider-card__number">
+              05
+            </span>
+
+            <h3 class="hs-brand-consider-card__title">
+              숙박시설 및 대기 공간
+            </h3>
+
+            <p class="hs-brand-consider-card__description">
+              로비, 라운지, 객실 공용부 등
+              편안함과 브랜드의 분위기가 함께 전달되어야 하는 공간
+            </p>
+
+          </article>
+
+          <article
+            class="hs-brand-consider-card"
+            data-reveal
+          >
+
+            <span class="hs-brand-consider-card__number">
+              06
+            </span>
+
+            <h3 class="hs-brand-consider-card__title">
+              이벤트 및 임시 공간
+            </h3>
+
+            <p class="hs-brand-consider-card__description">
+              팝업, 전시, 행사 공간 등
+              목적에 맞는 분위기와 유연한 구성이 필요한 공간
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         NEXT
+    ==================================================== -->
+
+    <section class="hs-brand-next">
+      <div class="hs-container--wide">
+
+        <div
+          class="hs-brand-next__content"
+          data-reveal
+        >
+
+          <p class="hs-brand-next__label">
+            Next
+          </p>
+
+          <h2 class="hs-brand-next__title">
+            공간에 맞는 해버싯의 가구를 살펴보세요.
+          </h2>
+
+          <p class="hs-brand-next__description">
+            체어와 테이블, 스툴과 라운지 가구를 살펴보거나
+            공간의 목적에 맞는 가구 제작과 프로젝트 상담을 진행할 수 있습니다.
+          </p>
+
+          <div class="hs-brand-next__action">
+
+            <a
+              href="./shop.html"
+              class="hs-button"
+            >
+              View Shop
+            </a>
+
           </div>
 
-          <div class="identity-layout__image">
-            <img src="./assets/images/products/product cut15.png" alt="해버싯 아이덴티티 이미지" />
-          </div>
         </div>
+
       </div>
     </section>
 
-    <!-- showroom banner -->
-    <section class="showroom-banner showroom-banner--center section-line">
-      <div class="showroom-banner__media">
-        <img src="./assets/images/products/product cut10.png" alt="Have a seat showroom" />
-      </div>
-      <div class="showroom-banner__overlay"></div>
-      <div class="showroom-banner__content">
-        <p class="showroom-banner__eyebrow">VISIT OUR SHOWROOM</p>
-        <h3 class="showroom-banner__title">
-          해버싯의 가구를<br />
-          직접 경험해보세요.
-        </h3>
-        <p class="showroom-banner__desc">
-          제품의 크기와 소재, 색감과 착석감을 쇼룸에서 직접 확인할 수 있습니다.
-        </p>
-        <a href="./showroom.html" class="hs-btn hs-btn--light">Find Showroom</a>
-      </div>
-    </section>
   </main>
 
-  <!-- footer -->
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
   <footer class="hs-footer">
-    <div class="hs-footer__inner hs-container">
-      <div class="hs-footer__col">
-        <h4>COMPANY</h4>
-        <ul>
-          <li>have a seat</li>
-          <li>대표자 Lee Kyoung Ha</li>
-          <li>사업자등록번호 139-07-63165</li>
-          <li>통신판매업신고 2018-서울중구-0699</li>
-          <li>haveaseat@naver.com</li>
-        </ul>
+    <div class="hs-footer__inner">
+
+      <div class="hs-footer__grid">
+
+        <div>
+
+          <h2 class="hs-footer__title">
+            Company
+          </h2>
+
+          <p class="hs-footer__text">
+            have a seat
+          </p>
+
+          <p class="hs-footer__text">
+            대표자 Lee Kyoung Ha
+          </p>
+
+          <p class="hs-footer__text">
+            사업자등록번호 139-07-63165
+          </p>
+
+          <p class="hs-footer__text">
+            통신판매업신고 2018-서울중구-0699
+          </p>
+
+          <a
+            href="mailto:haveaseat@naver.com"
+            class="hs-footer__link"
+          >
+            haveaseat@naver.com
+          </a>
+
+        </div>
+
+        <div>
+
+          <h2 class="hs-footer__title">
+            Customer Center
+          </h2>
+
+          <div class="hs-footer__links">
+
+            <a
+              href="tel:01030058374"
+              class="hs-footer__link"
+            >
+              010-3005-8374
+            </a>
+
+            <span class="hs-footer__text">
+              Mon–Fri 10:00–17:00
+            </span>
+
+            <span class="hs-footer__text">
+              Lunch 12:30–13:30
+            </span>
+
+            <a
+              href="./notice.html"
+              class="hs-footer__link"
+            >
+              Notice
+            </a>
+
+            <a
+              href="./faq.html"
+              class="hs-footer__link"
+            >
+              FAQ
+            </a>
+
+            <a
+              href="./qna.html"
+              class="hs-footer__link"
+            >
+              Q&amp;A
+            </a>
+
+          </div>
+
+        </div>
+
+        <div>
+
+          <h2 class="hs-footer__title">
+            Showroom
+          </h2>
+
+          <p class="hs-footer__text">
+            서울시 중구 흥인동 2-10 1층
+          </p>
+
+          <p class="hs-footer__text">
+            Mon–Fri 10:00–18:00
+          </p>
+
+          <p class="hs-footer__text">
+            Sat 11:00–18:00
+          </p>
+
+          <div class="hs-footer__links">
+
+            <a
+              href="./showroom.html"
+              class="hs-footer__link"
+            >
+              View Showroom
+            </a>
+
+            <a
+              href="./membership.html"
+              class="hs-footer__link"
+            >
+              Membership
+            </a>
+
+          </div>
+
+        </div>
+
+        <div>
+
+          <h2 class="hs-footer__title">
+            Service
+          </h2>
+
+          <div class="hs-footer__links">
+
+            <a
+              href="./shop.html"
+              class="hs-footer__link"
+            >
+              Shop
+            </a>
+
+            <a
+              href="./ordermade.html"
+              class="hs-footer__link"
+            >
+              Ordermade
+            </a>
+
+            <a
+              href="./portfolio.html"
+              class="hs-footer__link"
+            >
+              Portfolio
+            </a>
+
+            <a
+              href="./orders.html"
+              class="hs-footer__link"
+            >
+              Order List
+            </a>
+
+            <a
+              href="./mypage.html"
+              class="hs-footer__link"
+            >
+              My Page
+            </a>
+
+            <a
+              href="#"
+              class="hs-footer__link"
+            >
+              Instagram
+            </a>
+
+            <a
+              href="#"
+              class="hs-footer__link"
+            >
+              Kakao
+            </a>
+
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="hs-footer__col">
-        <h4>CUSTOMER CENTER</h4>
-        <ul>
-          <li>010-3005-8374</li>
-          <li>Mon–Fri 10:00–17:00</li>
-          <li>Lunch 12:30–13:30</li>
-          <li><a href="./notice.html">Notice</a></li>
-          <li><a href="./faq.html">FAQ</a></li>
-          <li><a href="./qna.html">Q&amp;A</a></li>
-        </ul>
+      <div class="hs-footer__bottom">
+
+        <p>
+          © have a seat. All rights reserved.
+        </p>
+
+        <div class="hs-footer__policy">
+
+          <a href="./terms.html">
+            Terms and Conditions
+          </a>
+
+          <a href="./privacy.html">
+            Privacy Policy
+          </a>
+
+          <a href="./guide.html">
+            Shopping Guide
+          </a>
+
+        </div>
+
       </div>
 
-      <div class="hs-footer__col">
-        <h4>SHOWROOM</h4>
-        <ul>
-          <li>서울시 중구 흥인동 2-10 1층</li>
-          <li>Mon–Fri 10:00–18:00</li>
-          <li>Sat 11:00–18:00</li>
-          <li><a href="./showroom.html">View Showroom</a></li>
-          <li><a href="./membership.html">Membership</a></li>
-        </ul>
-      </div>
-
-      <div class="hs-footer__col">
-        <h4>SERVICE</h4>
-        <ul>
-          <li><a href="./shop.html">Shop</a></li>
-          <li><a href="./ordermade.html">Ordermade</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="#none">Order List</a></li>
-          <li><a href="#none">My Page</a></li>
-          <li><a href="#none">Instagram</a></li>
-          <li><a href="#none">Kakao</a></li>
-        </ul>
-      </div>
     </div>
   </footer>
 
   <script src="./assets/js/main.js"></script>
+
 </body>
 </html>
