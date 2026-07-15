@@ -6529,3 +6529,564 @@ body.is-search-open .hs-search {
   }
 
 }
+
+/* =========================================================
+   BRAND INFOGRAPHIC CARDS — FINAL FIX
+   Mission / Vision / Core Value / Capabilities
+========================================================= */
+
+/* ---------------------------------------------------------
+   공통 브랜드 섹션 간격
+--------------------------------------------------------- */
+
+.hs-brand-section {
+  position: relative;
+  padding-top: 120px !important;
+  padding-bottom: 120px !important;
+  border-bottom: 1px solid #d8d4ce;
+}
+
+.hs-brand-section__head {
+  margin: 0 !important;
+}
+
+.hs-brand-section__label {
+  display: block !important;
+  margin: 0 0 34px !important;
+  padding: 0 !important;
+
+  color: #938d84 !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+}
+
+.hs-brand-section__title {
+  max-width: 1100px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #23211f !important;
+  font-size: clamp(34px, 3.4vw, 58px) !important;
+  font-weight: 500 !important;
+  line-height: 1.18 !important;
+  letter-spacing: -0.055em !important;
+
+  word-break: keep-all !important;
+  overflow-wrap: break-word !important;
+}
+
+.hs-brand-section__description {
+  max-width: 900px !important;
+  margin: 42px 0 0 !important;
+
+  color: #77716a !important;
+  font-size: 16px !important;
+  line-height: 1.85 !important;
+
+  word-break: keep-all !important;
+  overflow-wrap: break-word !important;
+}
+
+/* ---------------------------------------------------------
+   브랜드 설명 문단
+--------------------------------------------------------- */
+
+.hs-brand-section__head + .hs-brand-about__copy {
+  margin-top: 70px !important;
+}
+
+.hs-brand-about__copy {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 32px 72px !important;
+
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.hs-brand-about__copy p {
+  max-width: 700px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #77716a !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 1.95 !important;
+  letter-spacing: -0.025em !important;
+
+  word-break: keep-all !important;
+  overflow-wrap: break-word !important;
+}
+
+/* =========================================================
+   MISSION / VISION INFOGRAPHIC GRID
+========================================================= */
+
+.hs-brand-about__copy + .hs-brand-principles {
+  margin-top: 78px !important;
+}
+
+.hs-brand-principles {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  align-items: stretch !important;
+
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+
+  border-top: 1px solid #aaa49b !important;
+  border-bottom: 1px solid #aaa49b !important;
+
+  background: transparent !important;
+}
+
+/* 카드 */
+
+.hs-brand-principle {
+  position: relative !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  min-width: 0 !important;
+  min-height: 340px !important;
+
+  margin: 0 !important;
+  padding: 30px 32px 34px !important;
+
+  border: 0 !important;
+  border-left: 1px solid #c6c1b9 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+  box-shadow: none !important;
+
+  color: #23211f !important;
+  text-align: left !important;
+
+  box-sizing: border-box !important;
+}
+
+.hs-brand-principle:first-child {
+  border-left: 0 !important;
+}
+
+/* 번호 + 라벨 */
+
+.hs-brand-principle__head {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 20px !important;
+
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 0 22px !important;
+
+  border-bottom: 1px solid #ddd9d3 !important;
+}
+
+.hs-brand-principle__number {
+  display: block !important;
+  flex: none !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #8f897f !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.04em !important;
+}
+
+.hs-brand-principle__number::after {
+  display: none !important;
+  content: none !important;
+}
+
+.hs-brand-principle__label {
+  display: block !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #9b958c !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+}
+
+/* 카드 하단 내용 */
+
+.hs-brand-principle__content {
+  display: flex !important;
+  flex: 1 1 auto !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 64px 0 0 !important;
+}
+
+.hs-brand-principle__content > .hs-brand-principle__label {
+  margin-bottom: 16px !important;
+}
+
+.hs-brand-principle__title {
+  display: block !important;
+
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #23211f !important;
+  font-size: 23px !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  letter-spacing: -0.04em !important;
+
+  word-break: keep-all !important;
+  overflow-wrap: break-word !important;
+}
+
+.hs-brand-principle__description {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 420px !important;
+
+  margin: 20px 0 0 !important;
+  padding: 0 !important;
+
+  color: #716b64 !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.85 !important;
+  letter-spacing: -0.02em !important;
+
+  word-break: keep-all !important;
+  overflow-wrap: break-word !important;
+}
+
+/* 가볍고 절제된 호버 */
+
+.hs-brand-principle {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease !important;
+}
+
+.hs-brand-principle:hover {
+  background: #efede8 !important;
+}
+
+.hs-brand-principle:hover .hs-brand-principle__title {
+  color: #23211f !important;
+}
+
+/* =========================================================
+   CORE VALUE / TARGET CLIENT CARDS
+========================================================= */
+
+.hs-brand-about__copy + .hs-brand-consider-grid,
+.hs-brand-section__head + .hs-brand-consider-grid {
+  margin-top: 76px !important;
+}
+
+.hs-brand-consider-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  align-items: stretch !important;
+
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+
+  border-top: 1px solid #aaa49b !important;
+  border-left: 1px solid #c6c1b9 !important;
+}
+
+.hs-brand-consider-card {
+  display: flex !important;
+  flex-direction: column !important;
+
+  min-width: 0 !important;
+  min-height: 290px !important;
+
+  margin: 0 !important;
+  padding: 28px 32px 34px !important;
+
+  border: 0 !important;
+  border-right: 1px solid #c6c1b9 !important;
+  border-bottom: 1px solid #c6c1b9 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+  box-shadow: none !important;
+
+  box-sizing: border-box !important;
+}
+
+.hs-brand-consider-card__number {
+  display: block !important;
+
+  margin: 0 0 auto !important;
+  padding: 0 0 22px !important;
+
+  border-bottom: 1px solid #ddd9d3 !important;
+
+  color: #938d84 !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+}
+
+.hs-brand-consider-card__title {
+  margin: 58px 0 0 !important;
+
+  color: #23211f !important;
+  font-size: 21px !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  letter-spacing: -0.04em !important;
+
+  word-break: keep-all !important;
+}
+
+.hs-brand-consider-card__description {
+  max-width: 520px !important;
+  margin: 18px 0 0 !important;
+
+  color: #716b64 !important;
+  font-size: 14px !important;
+  line-height: 1.85 !important;
+  letter-spacing: -0.02em !important;
+
+  word-break: keep-all !important;
+  overflow-wrap: break-word !important;
+}
+
+/* =========================================================
+   CAPABILITIES CARDS
+========================================================= */
+
+.hs-brand-section__head + .hs-brand-value-grid,
+.hs-brand-about__copy + .hs-brand-value-grid {
+  margin-top: 76px !important;
+}
+
+.hs-brand-value-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+  width: 100% !important;
+  margin: 0 !important;
+
+  border-top: 1px solid #aaa49b !important;
+  border-left: 1px solid #c6c1b9 !important;
+}
+
+.hs-brand-value {
+  display: flex !important;
+  flex-direction: column !important;
+
+  min-width: 0 !important;
+  min-height: 330px !important;
+
+  margin: 0 !important;
+  padding: 28px 32px 36px !important;
+
+  border: 0 !important;
+  border-right: 1px solid #c6c1b9 !important;
+  border-bottom: 1px solid #c6c1b9 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+  box-shadow: none !important;
+
+  box-sizing: border-box !important;
+}
+
+.hs-brand-value__label {
+  display: block !important;
+
+  margin: 0 !important;
+  padding: 0 0 22px !important;
+
+  border-bottom: 1px solid #ddd9d3 !important;
+
+  color: #938d84 !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+}
+
+.hs-brand-value__title {
+  margin: 62px 0 0 !important;
+
+  color: #23211f !important;
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  letter-spacing: -0.04em !important;
+
+  word-break: keep-all !important;
+}
+
+.hs-brand-value__description {
+  max-width: 590px !important;
+  margin: 20px 0 0 !important;
+
+  color: #716b64 !important;
+  font-size: 14px !important;
+  line-height: 1.9 !important;
+  letter-spacing: -0.02em !important;
+
+  word-break: keep-all !important;
+  overflow-wrap: break-word !important;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .hs-brand-section {
+    padding-top: 96px !important;
+    padding-bottom: 96px !important;
+  }
+
+  .hs-brand-about__copy {
+    gap: 28px 44px !important;
+  }
+
+  .hs-brand-principles {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .hs-brand-principle:nth-child(3) {
+    grid-column: 1 / -1 !important;
+
+    border-top: 1px solid #c6c1b9 !important;
+    border-left: 0 !important;
+  }
+
+  .hs-brand-principle {
+    min-height: 320px !important;
+  }
+
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+  .hs-brand-section {
+    padding-top: 72px !important;
+    padding-bottom: 72px !important;
+  }
+
+  .hs-brand-section__label {
+    margin-bottom: 24px !important;
+  }
+
+  .hs-brand-section__title {
+    font-size: 31px !important;
+    line-height: 1.25 !important;
+  }
+
+  .hs-brand-section__description {
+    margin-top: 30px !important;
+    font-size: 14px !important;
+  }
+
+  .hs-brand-section__head + .hs-brand-about__copy {
+    margin-top: 42px !important;
+  }
+
+  .hs-brand-about__copy {
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+  }
+
+  .hs-brand-about__copy p {
+    max-width: none !important;
+    font-size: 13px !important;
+    line-height: 1.9 !important;
+  }
+
+  .hs-brand-about__copy + .hs-brand-principles {
+    margin-top: 50px !important;
+  }
+
+  .hs-brand-principles {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hs-brand-principle,
+  .hs-brand-principle:nth-child(3) {
+    grid-column: auto !important;
+
+    min-height: 280px !important;
+    padding: 24px 22px 28px !important;
+
+    border-left: 0 !important;
+    border-top: 1px solid #c6c1b9 !important;
+  }
+
+  .hs-brand-principle:first-child {
+    border-top: 0 !important;
+  }
+
+  .hs-brand-principle__content {
+    padding-top: 46px !important;
+  }
+
+  .hs-brand-principle__title {
+    font-size: 21px !important;
+  }
+
+  .hs-brand-principle__description {
+    font-size: 13px !important;
+    line-height: 1.82 !important;
+  }
+
+  .hs-brand-consider-grid,
+  .hs-brand-value-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hs-brand-consider-card,
+  .hs-brand-value {
+    min-height: 270px !important;
+    padding: 24px 22px 28px !important;
+  }
+
+  .hs-brand-consider-card__title,
+  .hs-brand-value__title {
+    margin-top: 44px !important;
+    font-size: 20px !important;
+  }
+
+  .hs-brand-consider-card__description,
+  .hs-brand-value__description {
+    font-size: 13px !important;
+  }
+
+}
